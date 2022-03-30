@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".level"
+    tools:ignore="ExtraText"
+    android:background="@drawable/backg1"><![CDATA[
+
+    tools:ignore="MissingConstraints">
+
+
+
+
+
+
+
+
+
+    ]]>
+
+    <RelativeLayout
+        android:layout_width="181dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:paddingTop="25dp">
+
+        <Button
+            android:id="@+id/Easy"
+            android:layout_width="173dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentTop="true"
+            android:backgroundTint="#e6e600"
+            android:text="Grade 7"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/Average"
+            android:layout_width="173dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/Easy"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="#33cc33"
+            android:gravity="center"
+            android:text="Grade 8"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/Hard"
+            android:layout_width="173dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/Average"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="#3366ff"
+            android:gravity="center"
+            android:text="Grade 9"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/Difficult"
+            android:layout_width="173dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/Hard"
+            android:backgroundTint="#ff3333"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="Grade 10"
+            android:textColor="@color/black" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

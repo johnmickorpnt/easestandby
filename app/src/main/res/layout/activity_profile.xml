@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backkg"
+    tools:context=".profile">
+
+    <Button
+        android:id="@+id/verifybtn"
+        android:layout_width="135dp"
+        android:layout_height="37dp"
+        android:text="Verify Now"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/Profilepic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/verifytext"
+        android:layout_width="116dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="16dp"
+        android:text="Not yet verified?"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="84dp"
+        android:backgroundTint="#f90539"
+        android:gravity="center|center_horizontal"
+        android:onClick="logout"
+        android:text="Logout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/changepassword"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#C3BBBB"
+        android:text="Change Password"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/logout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/editProfile"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#C3BBBB"
+        android:text="Edit Profile"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/changepassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/Profilepic"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="80dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher_background"
+        app:civ_border_color="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ProfileNumber"
+        android:layout_width="210dp"
+        android:layout_height="22sp"
+        android:layout_marginTop="20dp"
+        android:text="YourNumber"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="130dp"
+        android:layout_height="22sp"
+        android:text="Email address"
+        android:textAlignment="center"
+        android:textSize="13sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ProfileEmail"
+        app:layout_constraintVertical_bias="0.044" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="130dp"
+        android:layout_height="22sp"
+        android:layout_marginTop="16dp"
+        android:text="Contact Number"
+        android:textAlignment="center"
+        android:textSize="13sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/editProfile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ProfileNumber"
+        app:layout_constraintVertical_bias="0.022" />
+
+
+    <TextView
+        android:id="@+id/ProfileEmail"
+        android:layout_width="210dp"
+        android:layout_height="22sp"
+        android:layout_marginTop="104dp"
+        android:text="YourEmail"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Profilepic" />
+
+    <TextView
+        android:id="@+id/ProfileSurname"
+        android:layout_width="100dp"
+        android:layout_height="30sp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="100dp"
+        android:text="YourSurname"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Profilepic" />
+
+    <TextView
+        android:id="@+id/ProfileName"
+        android:layout_width="100dp"
+        android:layout_height="30sp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="28dp"
+        android:text="YourName"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Profilepic" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="80dp"
+        android:layout_height="22sp"
+        android:layout_centerHorizontal="true"
+        android:text="Name"
+        android:textAlignment="center"
+        android:textSize="13sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ProfileName"
+        app:layout_constraintVertical_bias="0.032" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

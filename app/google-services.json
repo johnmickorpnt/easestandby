@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "457286871108",
+    "project_id": "easestandby-a804f",
+    "storage_bucket": "easestandby-a804f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:457286871108:android:7b1aa9cc8a90ff46f93411",
+        "android_client_info": {
+          "package_name": "com.test.easestandby"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "457286871108-tj95k6jct5b5d7aa0f7iaohvcuf0fnva.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBvMrFwQT9qMOrKsFHE5l8QOD_Y5UpIwE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "457286871108-tj95k6jct5b5d7aa0f7iaohvcuf0fnva.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
