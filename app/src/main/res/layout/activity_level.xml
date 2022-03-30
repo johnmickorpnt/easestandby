@@ -32,8 +32,10 @@
             android:id="@+id/Easy"
             android:layout_width="173dp"
             android:layout_height="40dp"
-            android:layout_marginTop="5dp"
             android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
             android:backgroundTint="#e6e600"
             android:text="Grade 7"
             android:textColor="@color/black" />
@@ -43,11 +45,13 @@
             android:layout_width="173dp"
             android:layout_height="40dp"
             android:layout_below="@+id/Easy"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
             android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
             android:backgroundTint="#33cc33"
             android:gravity="center"
             android:text="Grade 8"
-            android:layout_marginTop="5dp"
             android:textColor="@color/black" />
 
         <Button
@@ -57,6 +61,8 @@
             android:layout_below="@+id/Average"
             android:layout_marginTop="5dp"
             android:backgroundTint="#3366ff"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
             android:gravity="center"
             android:text="Grade 9"
             android:textColor="@color/black" />
@@ -68,6 +74,8 @@
             android:layout_below="@+id/Hard"
             android:backgroundTint="#ff3333"
             android:layout_marginTop="5dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
             android:gravity="center"
             android:text="Grade 10"
             android:textColor="@color/black" />
