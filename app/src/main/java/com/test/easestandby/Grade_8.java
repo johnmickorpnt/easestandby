@@ -9,10 +9,23 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
+
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Random;
 
 public class Grade_8 extends level {
@@ -29,6 +42,12 @@ public class Grade_8 extends level {
     List<Integer> usedNumbers = new ArrayList<Integer>();
     private answerclass[] questionBank = new answerclass[10];
 
+    FirebaseAuth fAuth;
+    FirebaseFirestore fStore;
+    FirebaseUser user;
+    String UserID;
+    StorageReference storageReference;
+    int grade = 8;
 
     final int PROGRESS_BAR = (int) Math.ceil(100/questionBank.length);
 
@@ -42,6 +61,12 @@ public class Grade_8 extends level {
         optionB=findViewById(R.id.optionB);
         optionC=findViewById(R.id.optionC);
         optionD=findViewById(R.id.optionD);
+
+        fAuth = FirebaseAuth.getInstance();
+        fStore = FirebaseFirestore.getInstance();
+        storageReference = FirebaseStorage.getInstance().getReference();
+        UserID = fAuth.getCurrentUser().getUid();
+        user = fAuth.getCurrentUser();
 
         question = findViewById(R.id.question);
         score=findViewById(R.id.score);
@@ -98,10 +123,6 @@ public class Grade_8 extends level {
 
             }
         });
-
-
-
-
     }
 
     private void checkAnswer(int userSelection) {
@@ -123,11 +144,43 @@ public class Grade_8 extends level {
         {
             Toast.makeText(getApplicationContext(),"Wrong",Toast.LENGTH_SHORT).show();
         }
+    }
 
-
-
+    private void save(){
+        Map<String, Object> scores = new HashMap<>();
+        int finScore = mscore;
+        Log.d("tagZ", String.valueOf(mscore));
+        DocumentReference documentReference = fStore.collection("users").document(UserID);
+        documentReference.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+            @Override
+            public void onSuccess(DocumentSnapshot documentSnapshot) {
+                String username = documentSnapshot.getString("email");
+                documentSnapshot.getString("email");
+                store(username, scores, finScore);
+            }
+        });
 
     }
+
+    public void store(String username, Map scoreList, int finScore){
+        scoreList.put("score", finScore);
+        scoreList.put("grade", grade);
+        scoreList.put("username", username);
+        fStore.collection("leaderboards").document()
+                .set(scoreList)
+                .addOnSuccessListener(new OnSuccessListener<Void>() {
+                    @Override
+                    public void onSuccess(Void unused) {
+                        Log.d("tagZ", "data added!");
+                    }
+                }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+                Log.d("tagZ", "not added >:(");
+            }
+        });
+    }
+
 
     @SuppressLint("SetTextI18n")
     private void updateQuestion() {
@@ -144,6 +197,7 @@ public class Grade_8 extends level {
             alert.setPositiveButton("Back", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
+                    save();
                     finish();
                 }
             });
@@ -153,6 +207,7 @@ public class Grade_8 extends level {
                 public void onClick(DialogInterface dialog, int which) {
 //                    generateQuestions();
                     newGame[0] = true;
+                    save();
                     mscore=0;
                     qn=1;
                     progressBar.setProgress(0);
@@ -255,6 +310,9 @@ public class Grade_8 extends level {
         }
         Log.i("to_string",toString(usedNumbers));
     }
+
+
+
     public static int getRandomNumber(int min, int max) {
         return (new Random()).nextInt((max - min) + 1) + min;
     }

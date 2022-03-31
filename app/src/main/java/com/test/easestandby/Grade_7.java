@@ -10,9 +10,28 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
+
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.EventListener;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.FirebaseFirestoreException;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
+
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Random;
 
 public class Grade_7 extends level {
@@ -27,16 +46,27 @@ public class Grade_7 extends level {
     int CurrentQuestion,CurrentOptionA,CurrentOptionB,CurrentOptionC,CurrentOptionD;
     List<Integer> usedNumbers = new ArrayList<Integer>();
     private answerclass[] questionBank = new answerclass[10];
-
+    FirebaseAuth fAuth;
+    FirebaseFirestore fStore;
+    FirebaseUser user;
+    String UserID;
+    StorageReference storageReference;
+    int grade = 7;
 
     final int PROGRESS_BAR = (int) Math.ceil(100/questionBank.length);
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
         generateQuestions();
+
+        fAuth = FirebaseAuth.getInstance();
+        fStore = FirebaseFirestore.getInstance();
+        storageReference = FirebaseStorage.getInstance().getReference();
+        UserID = fAuth.getCurrentUser().getUid();
+        user = fAuth.getCurrentUser();
+
         optionA=findViewById(R.id.optionA);
         optionB=findViewById(R.id.optionB);
         optionC=findViewById(R.id.optionC);
@@ -66,38 +96,29 @@ public class Grade_7 extends level {
            public void onClick(View view) {
                checkAnswer(CurrentOptionA);
                updateQuestion();
-
            }
        });
-
-        optionB.setOnClickListener(new View.OnClickListener() {
+       optionB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 checkAnswer(CurrentOptionB);
                 updateQuestion();
-
-
             }
         });
-        optionC.setOnClickListener(new View.OnClickListener() {
+       optionC.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 checkAnswer(CurrentOptionC);
                 updateQuestion();
-
-
             }
         });
-        optionD.setOnClickListener(new View.OnClickListener() {
+       optionD.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 checkAnswer(CurrentOptionD);
                 updateQuestion();
-
             }
         });
-
     }
 
     //Checking Answer
@@ -139,6 +160,7 @@ public class Grade_7 extends level {
             alert.setPositiveButton("Back", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
+                    save();
                     finish();
                 }
             });
@@ -146,8 +168,9 @@ public class Grade_7 extends level {
             alert.setNegativeButton("Try Again", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
-//                    generateQuestions();
+                    generateQuestions();
                     newGame[0] = true;
+                    save();
                     mscore=0;
                     qn=1;
                     progressBar.setProgress(0);
@@ -155,7 +178,6 @@ public class Grade_7 extends level {
                     questionnumber.setText(qn + "/" + questionBank.length +"Question");
                 }
             });
-
             alert.show();
 
         }
@@ -182,8 +204,42 @@ public class Grade_7 extends level {
 
     }
 
-    //Generate questions
+    private void save(){
+        Map<String, Object> scores = new HashMap<>();
+        int finScore = mscore;
+        Log.d("tagZ", String.valueOf(mscore));
+        DocumentReference documentReference = fStore.collection("users").document(UserID);
+        documentReference.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+            @Override
+            public void onSuccess(DocumentSnapshot documentSnapshot) {
+                String username = documentSnapshot.getString("email");
+                documentSnapshot.getString("email");
+                store(username, scores, finScore);
+            }
+        });
 
+    }
+
+    public void store(String username, Map scoreList, int finScore){
+        scoreList.put("score", finScore);
+        scoreList.put("grade", grade);
+        scoreList.put("username", username);
+        fStore.collection("leaderboards").document()
+                .set(scoreList)
+                .addOnSuccessListener(new OnSuccessListener<Void>() {
+                    @Override
+                    public void onSuccess(Void unused) {
+                        Log.d("tagZ", "data added!");
+                    }
+                }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+                Log.d("tagZ", "not added >:(");
+            }
+        });
+    }
+
+    //Generate questions
     private void generateQuestions(){
         usedNumbers.clear();
         for(int x = 1; x <= 10;){
@@ -243,8 +299,8 @@ public class Grade_7 extends level {
                 usedNumbers.add(currIndex);
             }
         }
-        Log.i("to_string",toString(usedNumbers));
     }
+
     public static int getRandomNumber(int min, int max) {
         return (new Random()).nextInt((max - min) + 1) + min;
     }

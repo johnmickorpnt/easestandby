@@ -79,13 +79,17 @@ public class level extends AppCompatActivity{
             @Override
             public void onEvent(@Nullable DocumentSnapshot documentSnapshot, @Nullable FirebaseFirestoreException e){
                 if (documentSnapshot.exists()){
-                    List<Long> levels = (List<Long>) documentSnapshot.get("levels");
-                    Log.d("haha", String.valueOf(levels.size()));
-                    for(int x = 0; x < (int)levels.size(); x++){
-                        Button btn = (x == 1) ? (Average) : ((x == 2) ? (Hard) : (Difficult));
-                        if(x == 1 && levels.get(x).intValue() == 0){disableButton(btn);}
-                        if(x == 2 && levels.get(x).intValue() == 0){disableButton(btn);}
-                        if(x == 3 && levels.get(x).intValue() == 0){disableButton(btn);}
+                    try {
+                        List<Long> levels = (List<Long>) documentSnapshot.get("levels");
+                        Log.d("haha", String.valueOf(levels.size()));
+                        for(int x = 0; x < (int)levels.size(); x++){
+                            Button btn = (x == 1) ? (Average) : ((x == 2) ? (Hard) : (Difficult));
+                            if(x == 1 && levels.get(x).intValue() == 0){disableButton(btn);}
+                            if(x == 2 && levels.get(x).intValue() == 0){disableButton(btn);}
+                            if(x == 3 && levels.get(x).intValue() == 0){disableButton(btn);}
+                        }
+                    }catch (Exception exception){
+                        Log.d("error", e.getMessage());
                     }
                 }
                 else{
