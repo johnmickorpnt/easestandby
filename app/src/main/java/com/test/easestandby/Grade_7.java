@@ -82,7 +82,7 @@ public class Grade_7 extends level {
         optionD=findViewById(R.id.optionD);
 
         // Timer, Scores and Question
-        Timer = findViewById(R.id.TimeTextView);
+//        Timer = findViewById(R.id.TimeTextView);
         question = findViewById(R.id.question);
         score = findViewById(R.id.score);
         questionnumber=findViewById(R.id.QuestionNumber);
@@ -358,8 +358,9 @@ public class Grade_7 extends level {
         timeLeftText += ":";
         if (seconds < 10) timeLeftText += "0";
         timeLeftText += seconds;
+        Log.d("timer",timeLeftText);
 
-        Timer.setText(timeLeftText);
+//        Timer.setText(timeLeftText);
 
     }
 
