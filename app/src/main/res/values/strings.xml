@@ -38,15 +38,15 @@
     <string name="question_2B">super typhoon</string>
     <string name="question_2C">tropical storm</string>
     <string name="question_2D">typhoon</string>
-    <string name="answer_2">typhoon</string>
+    <string name="answer_2">super typhoon</string>
 
 
     <string name="question_3">When public storm raises to signal no.3. the expected wind velocity of the tropical cyclone is ?  </string>
-    <string name="question_3A">greater than 220kph </string>
-    <string name="question_3B">greater than 170kph </string>
-    <string name="question_3C">greater than 120kph </string>
-    <string name="question_3D">greater than 60kph </string>
-    <string name="answer_3">greater than 120kph</string>
+    <string name="question_3A"> 62-88 kph </string>
+    <string name="question_3B"> 39-61 kph </string>
+    <string name="question_3C"> 89-117 kph  </string>
+    <string name="question_3D"> 185-above 60kph </string>
+    <string name="answer_3">89-117 kph</string>
 
     <string name="question_4">What part of tropical cyclone brings great damage to property? </string>
     <string name="question_4A">rainbands </string>
@@ -104,20 +104,20 @@
 
     //GRADE 8
     <string name="question_11">Do you think the destructive effects of a tropical cyclone can be mitigated through preparations ? </string>
-    <string name="question11_A">TRUE, because by being prepared we can help to prevent or minimize the damages that will occur. Thus, leading ourselves to safety.</string>
-    <string name="question11_B">FALSE, I don’ think that is the case. There are better alternatives for this part. We can just carry on with our daily routines. </string>
-    <string name="question11_C">Maybe</string>
-    <string name="question11_D">None of the Above</string>
-    <string name="answer_11">TRUE,because by being prepared we can help to prevent or minimize the damages that will occur.Thus,leading ourselves to safety.</string>
+    <string name="question_11A">TRUE, because by being prepared we can help to prevent or minimize the damages that will occur. Thus, leading ourselves to safety.</string>
+    <string name="question_11B">FALSE, I don’ think that is the case. There are better alternatives for this part. We can just carry on with our daily routines. </string>
+    <string name="question_11C">Maybe</string>
+    <string name="question_11D">None of the Above</string>
+    <string name="answer_11A">TRUE,because by being prepared we can help to prevent or minimize the damages that will occur.Thus,leading ourselves to safety.</string>
 
 
     <string name="question_12">The occurrence of a tropical cyclone can be predicted.Hence,there is no need to worry and prepare ahead of time,right?</string>
     <string name="question_12A">TRUE,since we can anticipate it. Why prepare when we can just wait for the it and do something about the typhoon afterwards.
 </string>
-    <string name="question_12B">FALSE, whether we can predict it or not it’s always best to be prepare things or having a backup plan if things went not according as plan. It’s better to be safe than sorry.</string>
+    <string name="question_12B">FALSE, whether we can predict it or not it’s always best to be prepare things or having a backup plan if things went not according as plan. </string>
     <string name="question_12C">Maybe</string>
     <string name="question_12D">None of the above</string>
-    <string name="answer_12">FALSE,whether we can predict it or not it’s always best to be prepare things or having a backup plan if things went not according as plan. It’s better to be safe than sorry.</string>
+    <string name="answer_12B">FALSE,whether we can predict it or not it’s always best to be prepare things or having a backup plan if things went not according as plan. It’s better to be safe than sorry.</string>
 
 
     <string name="question_13">Panic-Buying of goods is advisable in times of calamities</string>
@@ -125,14 +125,14 @@
     <string name="question_13B">FALSE,panic buying will the increase of products getting sold out quickly and results into getting few products or none. It’s best to buy ahead of time and stack the goods that has longer expiration date so that when calamity occurs we don’t have to risk ourselves to go outside.</string>
     <string name="question_13C">Maybe</string>
     <string name="question_13D">None of the above</string>
-    <string name="answer_13">FALSE, panic buying will the increase of products getting sold out quickly and results into getting few products or none. It’s best to buy ahead of time and stack the goods that has longer expiration date so that when calamity occurs we don’t have to risk ourselves to go outside. </string>
+    <string name="answer_13B">FALSE, panic buying will the increase of products getting sold out quickly and results into getting few products or none. It’s best to buy ahead of time and stack the goods that has longer expiration date so that when calamity occurs we don’t have to risk ourselves to go outside. </string>
 
     <string name="question_14">Do you think coordinating with the local authorities will greatly help in the preparation for the possible effects of a typhoon.</string>
     <string name="question_14A">TRUE,since working with local authorities will help us be updated with the news and further improve the speed of the performance in preparing for the typhoon</string>
     <string name="question_14B">FALSE,since there is no need for that and just focus on your own.</string>
     <string name="question_14C">Maybe</string>
     <string name="question_14D">None of the Above</string>
-    <string name="answer_14">TRUE, since working with local authorities will help us be updated with the news and further improve the speed of the performance in preparing for the typhoon</string>
+    <string name="answer_14A">TRUE, since working with local authorities will help us be updated with the news and further improve the speed of the performance in preparing for the typhoon</string>
 
     <string name="question_15">Is it safe to stay inside the car during floodwater?</string>
     <string name="question_15A">YES, since we can just stay inside and wait for rescue </string>
@@ -146,7 +146,7 @@
     <string name="question_16B">Volcanic Earthquake </string>
     <string name="question_16C">Magnitude </string>
     <string name="question_16D">Richer sale </string>
-    <string name="answer_16">Intensity</string>
+    <string name="answer_16A">Intensity</string>
 
     <string name="question_17">It is an earthquake associated with volcanic activities? </string>
     <string name="question_17A">Intensity </string>
@@ -194,7 +194,7 @@
     <string name="question_22B">Surface waves </string>
     <string name="question_22C">Seismologist</string>
     <string name="question_22D">Magnitude  </string>
-    <string name="answer_22">Richer scale</string>
+    <string name="answer_22C">Richer scale</string>
 
 
     <string name="question_23">These are the seismic waves that causes damage when an earthquake occurs.</string>
@@ -216,7 +216,7 @@
     <string name="question_25B">Surface waves </string>
     <string name="question_25C">Seismologist</string>
     <string name="question_25D">Magnitude </string>
-    <string name="answer_25">Tectonic earthquake</string>
+    <string name="answer_25A">Tectonic earthquake</string>
 
     <string name="question_26">If you are driving when an earthquake happens, should you continue to keep driving the car?</string>
     <string name="question_26A">YES, so that we can escape from the earthquake </string>
@@ -230,21 +230,21 @@
     <string name="question_27B">NO, since it offers no protection at all and your head would likely get damaged by a falling debris</string>
     <string name="question_27C">Maybe</string>
     <string name="question_27D">None of the above</string>
-    <string name="answer_27">NO,since it offers no protection at all and your head would likely get damaged by a falling debris</string>
+    <string name="answer_27B">NO,since it offers no protection at all and your head would likely get damaged by a falling debris</string>
 
     <string name="question_28">If you are outside when an earthquake strikes, move away from building and utility views.</string>
     <string name="question_28A">YES, and go to the open place so that we can avoid falling debris and potential hazard</string>
     <string name="question_28B">NO, since going to the building is preferable because there are people there meaning they can help you </string>
     <string name="question_28C">Maybe</string>
     <string name="question_28D">None of the Above</string>
-    <string name="answer_28">YES, and go to the open place so that we can avoid falling debris and potential hazard</string>
+    <string name="answer_28A">YES, and go to the open place so that we can avoid falling debris and potential hazard</string>
 
     <string name="question_29">Earthquakes do not pose threats to people and buildings.</string>
     <string name="question_29A">YES, since they will only shake the people and the building what harm can it cause</string>
     <string name="question_29B">NO, since earthquake is one of the deadliest calamities ever reported in the history along with tsunamis. </string>
     <string name="question_29C">Maybe</string>
     <string name="question_29D">None of the above</string>
-    <string name="answer_29">YES, since they will only shake the people and the building what harm can it cause</string>
+    <string name="answer_29B">YES, since they will only shake the people and the building what harm can it cause</string>
 
 
     <string name="question_30">Earthquakes do pose threats to people and buildings.</string>
@@ -252,7 +252,7 @@
     <string name="question_30B">False, it is unpredictable</string>
     <string name="question_30C">Maybe</string>
     <string name="question_30D">None of the above</string>
-    <string name="answer_30">True, that is why we have to prepare counter measures</string>
+    <string name="answer_30A">True, that is why we have to prepare counter measures</string>
 
     <string name="selectedoption3">SelectedOption</string>
     <string name="correctanswer3">CorrectAnswer</string>
@@ -275,19 +275,19 @@
     <string name="answer_32">Volcano</string>
 
 
-    <string name="question_33"> Many volcanoes on Earth are found an are called</string>
-    <string name="question_33A"> The Pacific Ring of Fire</string>
+    <string name="question_33"> Many volcanoes on Earth are found  are called</string>
+    <string name="question_33A">The Pacific Ring of Fire</string>
     <string name="question_33B">Vent</string>
-    <string name="question_33C"> Islands</string>
-    <string name="question_33D"> Underwater</string>
-    <string name="answer_33">The Pacific Ring of Fire.</string>
+    <string name="question_33C">Islands</string>
+    <string name="question_33D">Underwater</string>
+    <string name="answer_33A">The Pacific Ring of Fire</string>
 
     <string name="question_34">Is a circular depression around a vent</string>
     <string name="question_34A">Crater</string>
     <string name="question_34B"> Vent </string>
     <string name="question_34C">Magma Chamber</string>
     <string name="question_34D">Lava</string>
-    <string name="answer_34">Lava</string>
+    <string name="answer_34D">Lava</string>
 
     <string name="question_35">When magma is expelled out of the volcano in the Earths surface</string>
     <string name="question_35A">Cinder Cone Volcano</string>
@@ -301,7 +301,7 @@
     <string name="question_36B">Active</string>
     <string name="question_36C">Dangerous</string>
     <string name="question_36D">Extinct</string>
-    <string name="answer_36">Active</string>
+    <string name="answer_36B">Active</string>
 
     <string name="question_37">Volcanoes can be classified _____ if they erupted before and became inactive for a long of period of time</string>
     <string name="question_37A">Dormant</string>
@@ -322,7 +322,7 @@
     <string name="question_39B">Avoid low lying places due to lava flows and mudflows</string>
     <string name="question_39C"> Go near the activity in order to assess the situation</string>
     <string name="question_39D">None of the Above</string>
-    <string name="answer_39">Seek cover in case of ash falls and rock falls</string>
+    <string name="answer_39C">Go near the activity in order to assess the situation</string>
 
 
     <string name="question_40"> Which of the following generally handles disasters-related problem</string>
@@ -340,15 +340,6 @@
     <string name="Grade9"> Grade 9 </string>
     <string name="Grade10"> Grade 10 </string>
 
-    <string-array name="programming_languages">
-        <item>Grade 7</item>
-        <item>Grade 7</item>
-        <item>Grade 7</item>
-        <item>Grade 7</item>
-        <item>Grade 7</item>
-        <item>Grade 7</item>
-
-    </string-array>
 
 
 </resources>

@@ -118,7 +118,7 @@ public class test_activity extends AppCompatActivity {
                             rank++;
                             LeaderBoardScores newScore = dc.getDocument().toObject(LeaderBoardScores.class);
                             userlist.add(new ModelClass(R.drawable.ken,
-                                    "No." + String.valueOf(rank),
+                                    "#" + String.valueOf(rank),
                                     newScore.getStringScore()+ "pts",
                                     "Grade " + String.valueOf(newScore.getGrade()) + ", " + String.valueOf(newScore.getUsername()),
                                     "_______________________"));

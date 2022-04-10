@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#EEF884"
+    android:background="@drawable/gradient_background2"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".test_activity">
 
@@ -24,8 +24,7 @@
             android:layout_width="match_parent"
             android:layout_height="46dp"
             android:layout_below="@+id/imageView5"
-            android:layout_marginTop="5dp"
-            android:background="#CEEAF7">
+            android:layout_marginTop="5dp">
 
             <TextView
                 android:id="@+id/textView"
@@ -34,9 +33,9 @@
                 android:layout_marginTop="8dp"
                 android:fontFamily="@font/abeezee"
                 android:gravity="center"
+                android:textColor="@color/black"
                 android:text="Leaderboards"
-                android:textColor="#2B689D"
-                android:textSize="30dp"/>
+                android:textSize="30dp" />
 
         </RelativeLayout>
 
@@ -62,7 +61,10 @@
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/textInputLayout">
+            android:layout_below="@+id/textInputLayout"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="-3dp">
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recyclerView"

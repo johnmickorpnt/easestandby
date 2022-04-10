@@ -3,10 +3,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -17,9 +20,11 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button level,game,leaderboard;
+    Button level,game;
+    public ImageView leaderboard;
     private Button profileBtn;
 
+    @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,12 +46,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(), com.test.easestandby.level.class));
+
             }
         });
 
 
       //LeaderBoards
-       leaderboard = findViewById(R.id.leaderboards);
+       leaderboard = (ImageView) findViewById(R.id.leaderboards);
         leaderboard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -264,12 +264,12 @@ public class Grade_10 extends level {
                 usedNumbers.add(currIndex);
             }
             else if(currIndex == 3 && !usedNumbers.contains(currIndex)){
-                questionBank[x-1] = new answerclass(R.string.question_33, R.string.question_33A, R.string.question_33B, R.string.question_33C, R.string.question_33D, R.string.answer_33);
+                questionBank[x-1] = new answerclass(R.string.question_33, R.string.question_33A, R.string.question_33B, R.string.question_33C, R.string.question_33D, R.string.answer_33A);
                 x++;
                 usedNumbers.add(currIndex);
             }
             else if(currIndex == 4 && !usedNumbers.contains(currIndex)){
-                questionBank[x-1] = new answerclass(R.string.question_34, R.string.question_34A, R.string.question_34B, R.string.question_34C, R.string.question_34D, R.string.answer_34);
+                questionBank[x-1] = new answerclass(R.string.question_34, R.string.question_34A, R.string.question_34B, R.string.question_34C, R.string.question_34D, R.string.answer_34D);
                 x++;
                 usedNumbers.add(currIndex);
             }
@@ -279,7 +279,7 @@ public class Grade_10 extends level {
                 usedNumbers.add(currIndex);
             }
             else if(currIndex == 6 && !usedNumbers.contains(currIndex)){
-                questionBank[x-1] = new answerclass(R.string.question_36, R.string.question_36A, R.string.question_36B, R.string.question_36C, R.string.question_36D, R.string.answer_36);
+                questionBank[x-1] = new answerclass(R.string.question_36, R.string.question_36A, R.string.question_36B, R.string.question_36C, R.string.question_36D, R.string.answer_36B);
                 x++;
                 usedNumbers.add(currIndex);
             }
@@ -295,7 +295,7 @@ public class Grade_10 extends level {
             }
 
             else if(currIndex == 9 && !usedNumbers.contains(currIndex)) {
-                questionBank[x-1] = new answerclass(R.string.question_39, R.string.question_39A, R.string.question_39B, R.string.question_39C, R.string.question_39D, R.string.answer_39);
+                questionBank[x-1] = new answerclass(R.string.question_39, R.string.question_39A, R.string.question_39B, R.string.question_39C, R.string.question_39D, R.string.answer_39C);
                 usedNumbers.add(currIndex);
                 x++;
             }

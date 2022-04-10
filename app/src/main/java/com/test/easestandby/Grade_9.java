@@ -260,7 +260,7 @@ public class Grade_9 extends level {
                 usedNumbers.add(currIndex);
             }
             else if(currIndex == 2 && !usedNumbers.contains(currIndex)){
-                questionBank[x-1] = new answerclass(R.string.question_22, R.string.question_22A, R.string.question_22B, R.string.question_22C, R.string.question_22D, R.string.answer_22);
+                questionBank[x-1] = new answerclass(R.string.question_22, R.string.question_22A, R.string.question_22B, R.string.question_22C, R.string.question_22D, R.string.answer_22C);
                 x++;
                 usedNumbers.add(currIndex);
             }
@@ -275,7 +275,7 @@ public class Grade_9 extends level {
                 usedNumbers.add(currIndex);
             }
             else if(currIndex == 5 && !usedNumbers.contains(currIndex)){
-                questionBank[x-1] = new answerclass(R.string.question_25, R.string.question_25A, R.string.question_25B, R.string.question_25C, R.string.question_25D, R.string.answer_25);
+                questionBank[x-1] = new answerclass(R.string.question_25, R.string.question_25A, R.string.question_25B, R.string.question_25C, R.string.question_25D, R.string.answer_25A);
                 x++;
                 usedNumbers.add(currIndex);
             }
@@ -285,24 +285,24 @@ public class Grade_9 extends level {
                 usedNumbers.add(currIndex);
             }
             else if(currIndex == 7 && !usedNumbers.contains(currIndex)){
-                questionBank[x-1] = new answerclass(R.string.question_27, R.string.question_27A, R.string.question_27B, R.string.question_27C, R.string.question_27D, R.string.answer_27);
+                questionBank[x-1] = new answerclass(R.string.question_27, R.string.question_27A, R.string.question_27B, R.string.question_27C, R.string.question_27D, R.string.answer_27B);
                 x++;
                 usedNumbers.add(currIndex);
             }
             else if(currIndex == 8 && !usedNumbers.contains(currIndex)) {
-                questionBank[x-1] = new answerclass(R.string.question_28, R.string.question_28A, R.string.question_28B, R.string.question_28C, R.string.question_28D, R.string.answer_28);
+                questionBank[x-1] = new answerclass(R.string.question_28, R.string.question_28A, R.string.question_28B, R.string.question_28C, R.string.question_28D, R.string.answer_28A);
                 usedNumbers.add(currIndex);
                 x++;
             }
 
             else if(currIndex == 9 && !usedNumbers.contains(currIndex)) {
-                questionBank[x-1] = new answerclass(R.string.question_29, R.string.question_29A, R.string.question_29B, R.string.question_29C, R.string.question_29D, R.string.answer_29);
+                questionBank[x-1] = new answerclass(R.string.question_29, R.string.question_29A, R.string.question_29B, R.string.question_29C, R.string.question_29D, R.string.answer_29B);
                 usedNumbers.add(currIndex);
                 x++;
             }
 
             else if(currIndex == 10 && !usedNumbers.contains(currIndex)) {
-                questionBank[x-1] = new answerclass(R.string.question_30, R.string.question_30A, R.string.question_30B, R.string.question_30C, R.string.question_30D, R.string.answer_30);
+                questionBank[x-1] = new answerclass(R.string.question_30, R.string.question_30A, R.string.question_30B, R.string.question_30C, R.string.question_30D, R.string.answer_30A);
                 usedNumbers.add(currIndex);
                 x++;
             }

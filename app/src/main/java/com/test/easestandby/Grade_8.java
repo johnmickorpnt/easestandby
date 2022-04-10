@@ -249,22 +249,22 @@ public class Grade_8 extends level {
             int currIndex = getRandomNumber(1, 10);
             Log.i("current_index_random",Integer.toString(currIndex));
             if(currIndex == 1 && !usedNumbers.contains(currIndex)){
-                questionBank[x-1] = new answerclass(R.string.question_11, R.string.question11_A, R.string.question11_B, R.string.question11_C, R.string.question11_D, R.string.answer_11);
+                questionBank[x-1] = new answerclass(R.string.question_11, R.string.question_11A, R.string.question_11B, R.string.question_11C, R.string.question_11D, R.string.answer_11A);
                 x++;
                 usedNumbers.add(currIndex);
             }
             else if(currIndex == 2 && !usedNumbers.contains(currIndex)){
-                questionBank[x-1] = new answerclass(R.string.question_12, R.string.question_12A, R.string.question_12B, R.string.question_12C, R.string.question_12D, R.string.answer_12);
+                questionBank[x-1] = new answerclass(R.string.question_12, R.string.question_12A, R.string.question_12B, R.string.question_12C, R.string.question_12D, R.string.answer_12B);
                 x++;
                 usedNumbers.add(currIndex);
             }
             else if(currIndex == 3 && !usedNumbers.contains(currIndex)){
-                questionBank[x-1] = new answerclass(R.string.question_13, R.string.question_13A, R.string.question_13B, R.string.question_13C, R.string.question_13D, R.string.answer_13);
+                questionBank[x-1] = new answerclass(R.string.question_13, R.string.question_13A, R.string.question_13B, R.string.question_13C, R.string.question_13D, R.string.answer_13B);
                 x++;
                 usedNumbers.add(currIndex);
             }
             else if(currIndex == 4 && !usedNumbers.contains(currIndex)){
-                questionBank[x-1] = new answerclass(R.string.question_14, R.string.question_14A, R.string.question_14B, R.string.question_14C, R.string.question_14D, R.string.answer_14);
+                questionBank[x-1] = new answerclass(R.string.question_14, R.string.question_14A, R.string.question_14B, R.string.question_14C, R.string.question_14D, R.string.answer_14A);
                 x++;
                 usedNumbers.add(currIndex);
             }
@@ -274,7 +274,7 @@ public class Grade_8 extends level {
                 usedNumbers.add(currIndex);
             }
             else if(currIndex == 6 && !usedNumbers.contains(currIndex)){
-                questionBank[x-1] = new answerclass(R.string.question_16, R.string.question_16A, R.string.question_16B, R.string.question_16C, R.string.question_16D, R.string.answer_16);
+                questionBank[x-1] = new answerclass(R.string.question_16, R.string.question_16A, R.string.question_16B, R.string.question_16C, R.string.question_16D, R.string.answer_16A);
                 x++;
                 usedNumbers.add(currIndex);
             }

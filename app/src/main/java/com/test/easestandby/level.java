@@ -1,13 +1,17 @@
 package com.test.easestandby;
 
 
+import static com.test.easestandby.Grade_7.*;
+
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -25,6 +29,8 @@ import java.util.List;
 
 
 public class level extends AppCompatActivity{
+    CountDownTimer Timer;
+    public  int secondsRemaining = 30;
     Button Easy,Average,Hard,Difficult;
     FirebaseAuth fAuth;
     FirebaseFirestore fStore;
@@ -40,12 +46,15 @@ public class level extends AppCompatActivity{
         storageReference = FirebaseStorage.getInstance().getReference();
         UserID = fAuth.getCurrentUser().getUid();
         user = fAuth.getCurrentUser();
+
         //     For Grade_7
         Easy = findViewById(R.id.Easy);
         Easy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(), Grade_7.class));
+               Grade_7 timer = new Grade_7();
+                timer.startTimer();
             }
         });
         // For Grade_8

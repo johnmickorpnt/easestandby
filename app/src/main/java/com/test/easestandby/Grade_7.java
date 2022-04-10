@@ -2,7 +2,9 @@ package com.test.easestandby;
 
 import android.annotation.SuppressLint;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.util.Log;
 import android.view.View;
 import android.widget.ProgressBar;
@@ -33,15 +35,20 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Random;
+import java.util.concurrent.TimeUnit;
 
 public class Grade_7 extends level {
 
     private TextView optionA,optionB,optionC,optionD;
     private TextView questionnumber,question,score;
     private TextView chechkout1,checkout2;
+    private TextView Timer;
+    private CountDownTimer countDownTimer;
+    private  long timeLeftMilsec = 600000;
     int currentIndex;
     int mscore=0;
     int qn=1;
+    int grade = 7;
     ProgressBar progressBar;
     int CurrentQuestion,CurrentOptionA,CurrentOptionB,CurrentOptionC,CurrentOptionD;
     List<Integer> usedNumbers = new ArrayList<Integer>();
@@ -51,7 +58,8 @@ public class Grade_7 extends level {
     FirebaseUser user;
     String UserID;
     StorageReference storageReference;
-    int grade = 7;
+
+
 
     final int PROGRESS_BAR = (int) Math.ceil(100/questionBank.length);
 
@@ -67,13 +75,15 @@ public class Grade_7 extends level {
         UserID = fAuth.getCurrentUser().getUid();
         user = fAuth.getCurrentUser();
 
+        //Choices
         optionA=findViewById(R.id.optionA);
         optionB=findViewById(R.id.optionB);
         optionC=findViewById(R.id.optionC);
         optionD=findViewById(R.id.optionD);
 
+        // Timer, Scores and Question
+        Timer = findViewById(R.id.TimeTextView);
         question = findViewById(R.id.question);
-        // score=findViewById(R.id.score);
         score = findViewById(R.id.score);
         questionnumber=findViewById(R.id.QuestionNumber);
         chechkout1=findViewById(R.id.selectoption);
@@ -121,6 +131,10 @@ public class Grade_7 extends level {
         });
     }
 
+
+
+
+
     //Checking Answer
     private void checkAnswer(int userSelection) {
 
@@ -134,12 +148,12 @@ public class Grade_7 extends level {
 
         if(m.equals(n))
         {
-            Toast.makeText(getApplicationContext(),"Right",Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(),"Correct",Toast.LENGTH_SHORT).show();
             mscore=mscore+1;
         }
         else
         {
-            Toast.makeText(getApplicationContext(),"Wrong",Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(),"Incorrect",Toast.LENGTH_SHORT).show();
         }
 
     }
@@ -153,7 +167,7 @@ public class Grade_7 extends level {
         if(currentIndex==0)
         {
             generateQuestions();
-            AlertDialog.Builder alert=new AlertDialog.Builder(this);
+            AlertDialog.Builder alert = new AlertDialog.Builder(this);
             alert.setTitle("Game Over");
             alert.setCancelable(false);
             alert.setMessage("Your Score" + mscore +"points");
@@ -242,6 +256,7 @@ public class Grade_7 extends level {
     //Generate questions
     private void generateQuestions(){
         usedNumbers.clear();
+
         for(int x = 1; x <= 10;){
             int currIndex = getRandomNumber(1, 10);
             Log.i("current_index_random",Integer.toString(currIndex));
@@ -299,6 +314,7 @@ public class Grade_7 extends level {
                 usedNumbers.add(currIndex);
             }
         }
+        Log.i("to_string",toString(usedNumbers));
     }
 
     public static int getRandomNumber(int min, int max) {
@@ -312,4 +328,39 @@ public class Grade_7 extends level {
         }
         return full;
     }
+
+
+    // Countdown TIMER
+    public void startTimer() {
+        countDownTimer = new CountDownTimer(timeLeftMilsec,1000) {
+            @Override
+            public void onTick(long l) {
+                timeLeftMilsec = l;
+                updateTimer();
+            }
+
+            @Override
+            public void onFinish() {
+
+
+            }
+        }.start();
+
+    }
+
+    public  void updateTimer() {
+        int minutes = (int) timeLeftMilsec / 60000;
+        int seconds =  (int) timeLeftMilsec % 60000 / 1000;
+
+        String timeLeftText;
+
+        timeLeftText = " " + minutes;
+        timeLeftText += ":";
+        if (seconds < 10) timeLeftText += "0";
+        timeLeftText += seconds;
+
+        Timer.setText(timeLeftText);
+
+    }
+
 }

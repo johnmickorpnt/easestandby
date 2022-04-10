@@ -36,7 +36,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
         String name = userList.get(position).getTextView3();
         String line = userList.get(position).getDivider();
 
-        holder.setData(resource,rank,score,name,line);
+        holder.setData(rank,score,name);
 
 
 
@@ -51,11 +51,11 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
     public class ViewHolder extends RecyclerView.ViewHolder{
 
 
-        private ImageView imageView;
+
         private TextView textView1;
         private TextView textView2;
         private TextView textView3;
-        private TextView divider;
+
 
 
 
@@ -64,23 +64,23 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
 
 
 
-            imageView =itemView.findViewById(R.id.imageView1);
+
             textView1 =itemView.findViewById(R.id.textview);
             textView2=itemView.findViewById(R.id.textview2);
             textView3 =itemView.findViewById(R.id.textview3);
-            divider =itemView.findViewById(R.id.divider);
+
 
 
         }
 
-        public void setData(int resource, String rank, String score, String name, String line) {
+        public void setData( String rank, String score, String name) {
 
 
-            imageView.setImageResource(resource);
+
             textView1.setText(rank);
             textView2.setText(score);
             textView3.setText(name);
-            divider.setText(line);
+
 
         }
     }

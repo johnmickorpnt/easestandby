@@ -2,84 +2,62 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <RelativeLayout
+        android:background="@drawable/background_border"
         android:layout_width="match_parent"
-        android:layout_height="95dp">
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/imageView"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
-            app:cardCornerRadius="60dp">
-
-            <ImageView
-                android:id="@+id/imageView1"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:scaleType="centerCrop"
-                android:src="@drawable/ken"></ImageView>
-        </androidx.cardview.widget.CardView>
+        android:layout_height="95dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp">
 
         <TextView
             android:id="@+id/textview"
-            android:layout_width="120dp"
+            android:layout_width="73dp"
             android:layout_height="30dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="20dp"
-            android:layout_toRightOf="@+id/imageView"
-            android:text="No.1"
+            android:gravity="center"
+            android:text="#1"
             android:textColor="@color/black"
             android:textSize="20sp"></TextView>
 
         <TextView
             android:id="@+id/textview2"
-            android:layout_width="80dp"
-            android:layout_height="30dp"
-            android:layout_marginLeft="75dp"
+            android:layout_width="74dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="62dp"
             android:layout_marginTop="20dp"
-            android:layout_toRightOf="@+id/textview"
-            android:text="10 points"
-            android:textSize="12sp">
+            android:layout_toRightOf="@+id/textview3"
+            android:fontFamily="@font/abeezee"
+            android:gravity="center"
+            android:text="12 points"
+            android:textColor="@color/black"
+            android:textSize="20sp">
 
 
         </TextView>
-
 
         <TextView
             android:id="@+id/textview3"
-            android:layout_width="140dp"
-            android:layout_height="30dp"
-            android:layout_below="@id/textview"
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:layout_below="@+id/textview"
+            android:layout_marginStart="23dp"
             android:layout_marginLeft="16dp"
-            android:layout_marginTop="11dp"
-            android:layout_toRightOf="@+id/imageView"
+            android:layout_marginTop="-38dp"
+            android:layout_marginRight="5dp"
+            android:layout_toEndOf="@+id/textview"
+            android:gravity="center"
             android:text="Grade 7, Ken Cocjin"
+            android:textColor="@color/black"
             android:textSize="15sp"></TextView>
 
 
-        <TextView
-            android:id="@+id/divider"
-            android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:layout_below="@id/imageView"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="-5dp"
-            android:layout_toRightOf="@+id/imageView"
-            android:text="----------------------------------------"
-            android:textColor="@color/black"
-            android:textSize="15sp">
-
-
-        </TextView>
-
-
     </RelativeLayout>
-
-
 
 
 </RelativeLayout>
