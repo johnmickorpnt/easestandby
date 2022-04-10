@@ -11,6 +11,7 @@ import android.os.CountDownTimer;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -48,12 +49,12 @@ public class level extends AppCompatActivity{
         user = fAuth.getCurrentUser();
 
         //     For Grade_7
+        Grade_7 timer = new Grade_7();
         Easy = findViewById(R.id.Easy);
         Easy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(), Grade_7.class));
-               Grade_7 timer = new Grade_7();
                 timer.startTimer();
             }
         });

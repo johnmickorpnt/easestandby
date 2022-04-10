@@ -17,29 +17,72 @@
         android:textColor="#1C1C1C"
         android:textStyle="italic"
         android:textAlignment="center"
-        android:textSize="20sp">
+        android:textSize="20sp"/>
 
+    <TextView
+        android:id="@+id/TimerTextView"
+        android:layout_width="284dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="62dp"
+        android:padding="1dp"
+        android:text="10:00"
+        android:textAlignment="center"
+        android:textSize="32dp"
+        android:textStyle="italic">
     </TextView>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/selctedoption"
+            android:visibility="gone"
+            android:id="@+id/selectoption"
+            android:textAlignment="center"
+            android:textColor="#ffffff">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/CorrectAnswer"
+            android:textColor="#ffffff"
+            android:visibility="gone"
+            android:textAlignment="center"
+            android:text="@string/correctanswer">
+
+        </TextView>
+
+    </LinearLayout>
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="120dp"
-        android:layout_marginTop="35dp"
-        android:layout_marginBottom="60dp"
-        android:gravity="center"
         android:paddingLeft="5dp"
-        android:paddingRight="5dp">
+        android:paddingRight="5dp"
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="70dp"
+        android:gravity="center">
 
         <TextView
             android:id="@+id/question"
-            android:layout_marginTop="1dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/textborder"
-            android:paddingLeft="15dp"
             android:paddingTop="20dp"
+            android:paddingLeft="15dp"
             android:paddingRight="15dp"
+            android:background="@drawable/textborder"
             android:text="@string/question_1"
             android:textColor="#1F1F1F"
             android:textSize="18dp">
@@ -48,52 +91,52 @@
     </LinearLayout>
 
     <LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:id="@+id/FirstTwoOption"
-    android:layout_gravity="center"
-    android:paddingLeft="40dp"
-    android:paddingRight="40dp"
-    android:orientation="vertical">
-
-
-    <TextView
-        android:id="@+id/optionA"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:background="@drawable/choicesborder"
-        android:paddingLeft="5dp"
-        android:paddingTop="10dp"
-        android:paddingRight="5dp"
-        android:paddingBottom="10dp"
-        android:text="@string/question1_A"
-        android:textAlignment="center"
-        android:textColor="#272343"
-        android:textSize="17dp">
-
-    </TextView>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:id="@+id/optionB"
-        android:text="@string/question1_B"
-        android:background="@drawable/choicesborder"
-        android:textSize="17dp"
-        android:layout_marginTop="10dp"
-        android:textColor="#272343"
-        android:textAlignment="center"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
-        android:paddingRight="5dp"
-        android:paddingLeft="5dp">
-
-    </TextView>
+        android:layout_height="wrap_content"
+        android:id="@+id/FirstTwoOption"
+        android:layout_gravity="center"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:orientation="vertical">
 
 
+        <TextView
+            android:id="@+id/optionA"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/choicesborder"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="10dp"
+            android:text="@string/question1_A"
+            android:textAlignment="center"
+            android:textColor="#272343"
+            android:textSize="17dp">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/optionB"
+            android:text="@string/question1_B"
+            android:background="@drawable/choicesborder"
+            android:textSize="17dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#272343"
+            android:textAlignment="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp">
+
+        </TextView>
 
 
-</LinearLayout>
+
+
+    </LinearLayout>
 
 
     <LinearLayout
@@ -120,10 +163,8 @@
             android:paddingTop="10dp"
             android:paddingBottom="10dp"
             android:paddingRight="5dp"
-            android:paddingLeft="5dp"
-            >
+            android:paddingLeft="5dp"/>
 
-        </TextView>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="60dp"
@@ -172,9 +213,9 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         android:layout_marginTop="40dp"
-        android:progressTint="#9CFFFA"
         android:backgroundTint="#ffe6e6"
         android:indeterminate="false">
+
     </ProgressBar>
 
 
