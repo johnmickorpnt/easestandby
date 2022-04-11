@@ -36,7 +36,7 @@ public class Grade_7 extends level {
     private TextView chechkout1,checkout2;
     public TextView Timer;
     private CountDownTimer countDownTimer;
-    private  long timeLeftMilsec = 600000;
+    private  long timeLeftMilsec = 6000;
     int currentIndex;
     int mscore=0;
     int qn=1;
@@ -197,6 +197,7 @@ public class Grade_7 extends level {
         if(currentIndex==0)
         {
             generateQuestions();
+            countDownTimer.cancel();
             AlertDialog.Builder alert=new AlertDialog.Builder(this);
             alert.setTitle("Game Over");
             alert.setCancelable(false);
@@ -220,6 +221,9 @@ public class Grade_7 extends level {
                     progressBar.setProgress(0);
                     score.setText("Score" + mscore +"/" +questionBank.length);
                     questionnumber.setText(qn + "/" + questionBank.length +"Question");
+                    timeLeftMilsec = 6000;
+                    countDownTimer.start();
+
                 }
             });
 
@@ -343,8 +347,37 @@ public class Grade_7 extends level {
 
             @Override
             public void onFinish() {
+                countDownTimer.cancel();
+                timeLeftMilsec = 6000;
+                final boolean[] newGame = {false};
+                AlertDialog.Builder alert = new AlertDialog.Builder(Grade_7.this);
+                alert.setTitle("Game Over");
+                alert.setCancelable(false);
+                alert.setMessage("Your Score" + mscore +"points");
+                alert.setPositiveButton("Back", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        save();
+                        finish();
+                    }
+                });
 
-
+                alert.setNegativeButton("Try Again", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+//                    generateQuestions();
+                        newGame[0] = true;
+                        save();
+                        mscore=0;
+                        qn=1;
+                        progressBar.setProgress(0);
+                        score.setText("Score" + mscore +"/" +questionBank.length);
+                        questionnumber.setText(qn + "/" + questionBank.length +"Question");
+                        timeLeftMilsec = 6000;
+                        countDownTimer.start();
+                    }
+                });
+                alert.show();
             }
         }.start();
 

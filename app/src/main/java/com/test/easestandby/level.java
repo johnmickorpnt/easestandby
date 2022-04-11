@@ -49,7 +49,6 @@ public class level extends AppCompatActivity{
         user = fAuth.getCurrentUser();
 
         //     For Grade_7
-        Grade_7 timer = new Grade_7();
         Easy = findViewById(R.id.Easy);
         Easy.setOnClickListener(new View.OnClickListener() {
             @Override
