@@ -82,6 +82,7 @@ public class Grade_7 extends level {
         checkout2=findViewById(R.id.CorrectAnswer);
         progressBar=findViewById(R.id.progress_bar);
 
+        startTimer();
         CurrentQuestion=questionBank[currentIndex].getQuestionid();
         question.setText(CurrentQuestion);
         CurrentOptionA=questionBank[currentIndex].getOptionA();

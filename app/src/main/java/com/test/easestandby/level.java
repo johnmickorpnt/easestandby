@@ -55,7 +55,7 @@ public class level extends AppCompatActivity{
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(), Grade_7.class));
-                timer.startTimer();
+//                timer.startTimer();
             }
         });
         // For Grade_8
