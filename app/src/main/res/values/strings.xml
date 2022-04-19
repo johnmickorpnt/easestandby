@@ -25,56 +25,56 @@
 
 
     //GRADE 7
-    <string name="question_1">What agency of the Philippines government observes typhoons via weather satellite? </string>
-    <string name="question1_A">Philippine Weather Administration </string>
-    <string name="question1_B">National Weather Administration</string>
-    <string name="question1_C">PHIVOLCS</string>
-    <string name="question1_D">PAGASA</string>
-    <string name="answer_1">PAGASA</string>
+    <string name="question_1">What is a typhoon?  </string>
+    <string name="question1_A">Its an earthquake </string>
+    <string name="question1_B">Its a tropical cyclone</string>
+    <string name="question1_C">Its a part of the Pacific Ring of Fire </string>
+    <string name="question1_D">None of the above</string>
+    <string name="answer_1">Its a tropical cyclone</string>
 
 
-    <string name="question_2">What tropical cyclone carries a wind velocity of more than 220 kph ?</string>
-    <string name="question_2A">tropical depression</string>
-    <string name="question_2B">super typhoon</string>
-    <string name="question_2C">tropical storm</string>
-    <string name="question_2D">typhoon</string>
-    <string name="answer_2">super typhoon</string>
+    <string name="question_2">What does P.A.R. stands for ?</string>
+    <string name="question_2A">Philippine Area of Readiness</string>
+    <string name="question_2B">Philippines Area of Responsibility</string>
+    <string name="question_2C">Philippine Area of Responsibility</string>
+    <string name="question_2D">Philippine Are Ready</string>
+    <string name="answer_2">Philippine Area of Responsibility</string>
 
 
-    <string name="question_3">When public storm raises to signal no.3. the expected wind velocity of the tropical cyclone is ?  </string>
-    <string name="question_3A"> 62-88 kph </string>
-    <string name="question_3B"> 39-61 kph </string>
-    <string name="question_3C"> 89-117 kph  </string>
-    <string name="question_3D"> 185-above 60kph </string>
-    <string name="answer_3">89-117 kph</string>
+    <string name="question_3">What does PAGASA stands for?  </string>
+    <string name="question_3A"> Phillipine Atmospheric Geophysical  and  Astronomical Services Administration </string>
+    <string name="question_3B">  Phillipine Atmospheric Geophysical  and  Astrology Services Administration </string>
+    <string name="question_3C">  Pilipinas Atmospheric Geophysical  and  Astronomical Services Administrations </string>
+    <string name="question_3D"> None of the above </string>
+    <string name="answer_3"> Phillipine Atmospheric Geophysical  and  Astronomical Services Administration</string>
 
-    <string name="question_4">What part of tropical cyclone brings great damage to property? </string>
-    <string name="question_4A">rainbands </string>
-    <string name="question_4B">lightning</string>
-    <string name="question_4C">eyewall</string>
-    <string name="question_4D">eye</string>
-    <string name="answer_4">eyewall</string>
+    <string name="question_4">It is the role to provide information such as the weather forecast, advisories, tropical cyclone and flood bulletins warnings</string>
+    <string name="question_4A">PAGASA </string>
+    <string name="question_4B">DENR</string>
+    <string name="question_4C">DepEd</string>
+    <string name="question_4D">DSWD</string>
+    <string name="answer_4">PAGASA</string>
 
-    <string name="question_5">Why does PAGASA announces public storms signals in advance? </string>
-    <string name="question_5A">so that people can prepare for the possible effects of the tropical cyclone</string>
-    <string name="question_5B">so that people can buy extra goods for the family</string>
-    <string name="question_5C">so that people can plan for their activities </string>
-    <string name="question_5D">so that people can rest at home </string>
-    <string name="answer_5">so that people can prepare for the possible effects of the tropical cyclone</string>
+    <string name="question_5">Why is Philippines prone to typhoon? </string>
+    <string name="question_5A">Because it is located far the equator and faces the east Atlantic, </string>
+    <string name="question_5B">Due to its graphical location</string>
+    <string name="question_5C">Because it is a small country </string>
+    <string name="question_5D">None of the above </string>
+    <string name="answer_5">Due to its graphical location</string>
 
-    <string name="question_6">How does rotation of the Earth affect the nature of tropical cyclones? </string>
-    <string name="question_6A">It proves a favorable venue for the formation of a tropical cyclone</string>
-    <string name="question_6B">It intensifies the wind velocity of a tropical cyclone</string>
-    <string name="question_6C">It deflects the motion of a tropical cyclone</string>
-    <string name="question_6D">It weakens a tropical cyclone </string>
-    <string name="answer_6">It proves a favorable venue for the formation of a tropical cyclone</string>
+    <string name="question_6">It is the effect of typhoon </string>
+    <string name="question_6A">Earthquake </string>
+    <string name="question_6B">Fire</string>
+    <string name="question_6C">Volcanic Eruption</string>
+    <string name="question_6D">Flood </string>
+    <string name="answer_6">Flood</string>
 
-    <string name="question_7">Which does not include in this list? </string>
-    <string name="question_7A">Tropical typhoon</string>
-    <string name="question_7B">Tropical cyclone</string>
-    <string name="question_7C">Tropical storm</string>
-    <string name="question_7D">Storm surge</string>
-    <string name="answer_7">Storm surge</string>
+    <string name="question_7">What is the average typhoons in the Philippines? </string>
+    <string name="question_7A">5</string>
+    <string name="question_7B">10</string>
+    <string name="question_7C">15</string>
+    <string name="question_7D">20</string>
+    <string name="answer_7">20</string>
 
     <string name="question_8">In which of the following situations will the strength of a tropical cyclone probably weaken?</string>
     <string name="question_8A">When it travels on bodies of water </string>
@@ -103,43 +103,42 @@
 
 
     //GRADE 8
-    <string name="question_11">Do you think the destructive effects of a tropical cyclone can be mitigated through preparations ? </string>
-    <string name="question_11A">TRUE, because by being prepared we can help to prevent or minimize the damages that will occur. Thus, leading ourselves to safety.</string>
-    <string name="question_11B">FALSE, I don’ think that is the case. There are better alternatives for this part. We can just carry on with our daily routines. </string>
+    <string name="question_11">Do you think the destructive effects of a tropical cyclone can be  avoided through preparations ?</string>
+    <string name="question_11A">TRUE, because by being prepared we can help to prevent/minimize damages</string>
+    <string name="question_11B">FALSE, I don’t think that is the case</string>
     <string name="question_11C">Maybe</string>
     <string name="question_11D">None of the Above</string>
-    <string name="answer_11A">TRUE,because by being prepared we can help to prevent or minimize the damages that will occur.Thus,leading ourselves to safety.</string>
+    <string name="answer_11A">TRUE, because by being prepared we can help to prevent/minimize damage</string>
 
 
-    <string name="question_12">The occurrence of a tropical cyclone can be predicted.Hence,there is no need to worry and prepare ahead of time,right?</string>
-    <string name="question_12A">TRUE,since we can anticipate it. Why prepare when we can just wait for the it and do something about the typhoon afterwards.
-</string>
-    <string name="question_12B">FALSE, whether we can predict it or not it’s always best to be prepare things or having a backup plan if things went not according as plan. </string>
+    <string name="question_12">The occurrence of a tropical cyclone can be predicted.Therefore, no need to worry and prepare ahead of time, right?</string>
+    <string name="question_12A">TRUE,since we can anticipate it and no need to take action</string>
+    <string name="question_12B">FALSE, whether we can predict it or not it’s always best to be prepared </string>
     <string name="question_12C">Maybe</string>
     <string name="question_12D">None of the above</string>
-    <string name="answer_12B">FALSE,whether we can predict it or not it’s always best to be prepare things or having a backup plan if things went not according as plan. It’s better to be safe than sorry.</string>
+    <string name="answer_12B">FALSE, whether we can predict it or not it’s always best to be prepared</string>
 
 
-    <string name="question_13">Panic-Buying of goods is advisable in times of calamities</string>
+    <string name="question_13">Is panic-buying of goods is advisable in times of calamities?</string>
     <string name="question_13A">TRUE,since buying foods at times of need is essential and having a scarce food is not right especially since there is a calamity.</string>
-    <string name="question_13B">FALSE,panic buying will the increase of products getting sold out quickly and results into getting few products or none. It’s best to buy ahead of time and stack the goods that has longer expiration date so that when calamity occurs we don’t have to risk ourselves to go outside.</string>
+    <string name="question_13B">FALSE,panic buying will increase of products getting sold out quickly and results into getting few products or none.</string>
     <string name="question_13C">Maybe</string>
     <string name="question_13D">None of the above</string>
-    <string name="answer_13B">FALSE, panic buying will the increase of products getting sold out quickly and results into getting few products or none. It’s best to buy ahead of time and stack the goods that has longer expiration date so that when calamity occurs we don’t have to risk ourselves to go outside. </string>
+    <string name="answer_13B">FALSE,panic buying will  increase of products getting sold out quickly and results into getting few products or none. </string>
 
-    <string name="question_14">Do you think coordinating with the local authorities will greatly help in the preparation for the possible effects of a typhoon.</string>
-    <string name="question_14A">TRUE,since working with local authorities will help us be updated with the news and further improve the speed of the performance in preparing for the typhoon</string>
+    <string name="question_14">Does coordinating with the local authorities will greatly help in the preparation for the possible effects of a typhoon?</string>
+    <string name="question_14A">TRUE,since working with local authorities will help us be updated with the news</string>
     <string name="question_14B">FALSE,since there is no need for that and just focus on your own.</string>
     <string name="question_14C">Maybe</string>
     <string name="question_14D">None of the Above</string>
-    <string name="answer_14A">TRUE, since working with local authorities will help us be updated with the news and further improve the speed of the performance in preparing for the typhoon</string>
+    <string name="answer_14A">TRUE,since working with local authorities will help us be updated with the news</string>
 
     <string name="question_15">Is it safe to stay inside the car during floodwater?</string>
     <string name="question_15A">YES, since we can just stay inside and wait for rescue </string>
-    <string name="question_15B">NO,because we will get trapped inside the car and drowning ourselves to death should the water get inside.</string>
+    <string name="question_15B">NO,because we will get trapped inside the car.</string>
     <string name="question_15C">Maybe</string>
     <string name="question_15D">None of the Above</string>
-    <string name="answer_15">NO,because we will get trapped inside the car and drowning ourselves to death should the water get inside. </string>
+    <string name="answer_15">NO,because we will get trapped inside </string>
 
     <string name="question_16">It is the measure of how much damage an earthquake causes the surfaces?</string>
     <string name="question_16A">Intensity</string>
@@ -148,7 +147,7 @@
     <string name="question_16D">Richer sale </string>
     <string name="answer_16A">Intensity</string>
 
-    <string name="question_17">It is an earthquake associated with volcanic activities? </string>
+    <string name="question_17">It is an earthquake involved with volcanic activities? </string>
     <string name="question_17A">Intensity </string>
     <string name="question_17B">Volcanic Earthquake </string>
     <string name="question_17C">Magnitude </string>
@@ -339,7 +338,6 @@
     <string name="Grade8"> Grade 8 </string>
     <string name="Grade9"> Grade 9 </string>
     <string name="Grade10"> Grade 10 </string>
-
 
 
 </resources>

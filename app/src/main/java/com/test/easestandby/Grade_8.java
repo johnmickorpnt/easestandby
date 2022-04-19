@@ -3,6 +3,7 @@ package com.test.easestandby;
 import android.annotation.SuppressLint;
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.util.Log;
 import android.view.View;
 import android.widget.ProgressBar;
@@ -33,6 +34,9 @@ public class Grade_8 extends level {
     private TextView optionA,optionB,optionC,optionD;
     private TextView questionnumber,question,score;
     private TextView chechkout1,checkout2;
+    public TextView Timer;
+    private CountDownTimer countDownTimer;
+    private  long timeLeftMilsec = 60000;
     int currentIndex;
     int mscore=0;
     int qn=1;
@@ -55,7 +59,7 @@ public class Grade_8 extends level {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_quiz23);
+        setContentView(R.layout.activity_quiz2);
         generateQuestions();
         optionA=findViewById(R.id.optionA);
         optionB=findViewById(R.id.optionB);
@@ -68,6 +72,8 @@ public class Grade_8 extends level {
         UserID = fAuth.getCurrentUser().getUid();
         user = fAuth.getCurrentUser();
 
+
+        Timer = findViewById(R.id.TimerTextView);
         question = findViewById(R.id.question);
         score=findViewById(R.id.score);
         questionnumber=findViewById(R.id.QuestionNumber);
@@ -76,6 +82,7 @@ public class Grade_8 extends level {
         checkout2=findViewById(R.id.CorrectAnswer);
         progressBar=findViewById(R.id.progress_bar);
 
+        startTimer();
         CurrentQuestion=questionBank[currentIndex].getQuestionid();
         question.setText(CurrentQuestion);
         CurrentOptionA=questionBank[currentIndex].getOptionA();
@@ -137,12 +144,12 @@ public class Grade_8 extends level {
 
         if(m.equals(n))
         {
-            Toast.makeText(getApplicationContext(),"Right",Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(),"Correct",Toast.LENGTH_SHORT).show();
             mscore=mscore+1;
         }
         else
         {
-            Toast.makeText(getApplicationContext(),"Wrong",Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(),"Incorrect",Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -190,6 +197,7 @@ public class Grade_8 extends level {
         if(currentIndex==0)
         {
             generateQuestions();
+            countDownTimer.cancel();
             AlertDialog.Builder alert=new AlertDialog.Builder(this);
             alert.setTitle("Game Over");
             alert.setCancelable(false);
@@ -213,6 +221,8 @@ public class Grade_8 extends level {
                     progressBar.setProgress(0);
                     score.setText("Score" + mscore +"/" +questionBank.length);
                     questionnumber.setText(qn + "/" + questionBank.length +"Question");
+                    timeLeftMilsec = 60000;
+                    countDownTimer.start();
                 }
             });
 
@@ -324,4 +334,71 @@ public class Grade_8 extends level {
         }
         return full;
     }
+
+    // Countdown TIMER
+    public void startTimer() {
+        countDownTimer = new CountDownTimer(timeLeftMilsec,1000) {
+            @Override
+            public void onTick(long l) {
+                timeLeftMilsec = l;
+                updateTimer();
+            }
+
+            @Override
+            public void onFinish() {
+                currentIndex = 0;
+                countDownTimer.cancel();
+                timeLeftMilsec = 60000;
+                final boolean[] newGame = {false};
+                AlertDialog.Builder alert = new AlertDialog.Builder(Grade_8.this);
+                alert.setTitle("Game Over");
+                alert.setCancelable(false);
+                alert.setMessage("Your Score" + mscore +"points");
+                alert.setPositiveButton("Back", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        save();
+                        finish();
+                    }
+                });
+
+                alert.setNegativeButton("Try Again", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+//                    generateQuestions();
+                        newGame[0] = true;
+                        save();
+                        mscore=0;
+                        qn=1;
+                        progressBar.setProgress(0);
+                        score.setText("Score" + mscore +"/" +questionBank.length);
+                        questionnumber.setText(qn + "/" + questionBank.length +"Question");
+                        timeLeftMilsec = 60000;
+                        countDownTimer.start();
+                    }
+                });
+                alert.show();
+            }
+        }.start();
+
+    }
+    public  void updateTimer() {
+        int minutes = (int) timeLeftMilsec / 60000;
+        int seconds =  (int) timeLeftMilsec % 60000 / 1000;
+
+        String timeLeftText;
+
+        timeLeftText = " " + minutes;
+        timeLeftText += ":";
+        if (seconds < 10) timeLeftText += "0";
+        timeLeftText += seconds;
+        Log.d("timer",timeLeftText);
+
+        Timer.setText(timeLeftText);
+
+    }
+
+
+
+
 }

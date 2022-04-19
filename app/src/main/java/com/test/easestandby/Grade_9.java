@@ -141,12 +141,12 @@ public class Grade_9 extends level {
 
         if(m.equals(n))
         {
-            Toast.makeText(getApplicationContext(),"Right",Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(),"Correct",Toast.LENGTH_SHORT).show();
             mscore=mscore+1;
         }
         else
         {
-            Toast.makeText(getApplicationContext(),"Wrong",Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(),"Incorrect",Toast.LENGTH_SHORT).show();
         }
 
 

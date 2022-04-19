@@ -10,7 +10,9 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AlertDialog;
 
 import com.google.android.gms.tasks.OnFailureListener;
@@ -36,7 +38,7 @@ public class Grade_7 extends level {
     private TextView chechkout1,checkout2;
     public TextView Timer;
     private CountDownTimer countDownTimer;
-    private  long timeLeftMilsec = 6000;
+    private  long timeLeftMilsec = 60000;
     int currentIndex;
     int mscore=0;
     int qn=1;
@@ -65,6 +67,7 @@ public class Grade_7 extends level {
         optionB=findViewById(R.id.optionB);
         optionC=findViewById(R.id.optionC);
         optionD=findViewById(R.id.optionD);
+
 
         Timer = findViewById(R.id.TimerTextView);
         fAuth = FirebaseAuth.getInstance();
@@ -144,12 +147,12 @@ public class Grade_7 extends level {
 
         if(m.equals(n))
         {
-            Toast.makeText(getApplicationContext(),"Right",Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(),"Correct",Toast.LENGTH_SHORT).show();
             mscore=mscore+1;
         }
         else
         {
-            Toast.makeText(getApplicationContext(),"Wrong",Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(),"Incorrect",Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -201,7 +204,7 @@ public class Grade_7 extends level {
             AlertDialog.Builder alert=new AlertDialog.Builder(this);
             alert.setTitle("Game Over");
             alert.setCancelable(false);
-            alert.setMessage("Your Score" + mscore +"points");
+            alert.setMessage("Your Score"+ " " + mscore +"points");
             alert.setPositiveButton("Back", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
@@ -210,7 +213,7 @@ public class Grade_7 extends level {
                 }
             });
 
-            alert.setNegativeButton("Try Again", new DialogInterface.OnClickListener() {
+            alert.setNegativeButton("Try Again",  new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
 //                    generateQuestions();
@@ -221,7 +224,7 @@ public class Grade_7 extends level {
                     progressBar.setProgress(0);
                     score.setText("Score" + mscore +"/" +questionBank.length);
                     questionnumber.setText(qn + "/" + questionBank.length +"Question");
-                    timeLeftMilsec = 6000;
+                    timeLeftMilsec = 60000;
                     countDownTimer.start();
 
                 }
@@ -260,61 +263,55 @@ public class Grade_7 extends level {
             int currIndex = getRandomNumber(1, 10);
             Log.i("current_index_random",Integer.toString(currIndex));
             if(currIndex == 1 && !usedNumbers.contains(currIndex)){
-                questionBank[x-1] = new answerclass(R.string.question_11, R.string.question_11A, R.string.question_11B, R.string.question_11C, R.string.question_11D, R.string.answer_11A);
+                questionBank[x-1] = new answerclass(R.string.question_1, R.string.question1_A, R.string.question1_B, R.string.question1_C, R.string.question1_D, R.string.answer_1);
                 x++;
                 usedNumbers.add(currIndex);
             }
             else if(currIndex == 2 && !usedNumbers.contains(currIndex)){
-                questionBank[x-1] = new answerclass(R.string.question_12, R.string.question_12A, R.string.question_12B, R.string.question_12C, R.string.question_12D, R.string.answer_12B);
+                questionBank[x-1] = new answerclass(R.string.question_2, R.string.question_2A, R.string.question_2B, R.string.question_2C, R.string.question_2D, R.string.answer_2);
                 x++;
                 usedNumbers.add(currIndex);
             }
             else if(currIndex == 3 && !usedNumbers.contains(currIndex)){
-                questionBank[x-1] = new answerclass(R.string.question_13, R.string.question_13A, R.string.question_13B, R.string.question_13C, R.string.question_13D, R.string.answer_13B);
+                questionBank[x-1] = new answerclass(R.string.question_3, R.string.question_3A, R.string.question_3B, R.string.question_3C, R.string.question_3D, R.string.answer_3);
                 x++;
                 usedNumbers.add(currIndex);
             }
             else if(currIndex == 4 && !usedNumbers.contains(currIndex)){
-                questionBank[x-1] = new answerclass(R.string.question_14, R.string.question_14A, R.string.question_14B, R.string.question_14C, R.string.question_14D, R.string.answer_14A);
+                questionBank[x-1] = new answerclass(R.string.question_4, R.string.question_4A, R.string.question_4B, R.string.question_4C, R.string.question_4D, R.string.answer_4);
                 x++;
                 usedNumbers.add(currIndex);
             }
             else if(currIndex == 5 && !usedNumbers.contains(currIndex)){
-                questionBank[x-1] = new answerclass(R.string.question_15, R.string.question_15A, R.string.question_15B, R.string.question_15C, R.string.question_15D, R.string.answer_15);
+                questionBank[x-1] = new answerclass(R.string.question_5, R.string.question_5A, R.string.question_5B, R.string.question_5C, R.string.question_5D, R.string.answer_5);
                 x++;
                 usedNumbers.add(currIndex);
             }
             else if(currIndex == 6 && !usedNumbers.contains(currIndex)){
-                questionBank[x-1] = new answerclass(R.string.question_16, R.string.question_16A, R.string.question_16B, R.string.question_16C, R.string.question_16D, R.string.answer_16A);
+                questionBank[x-1] = new answerclass(R.string.question_6, R.string.question_6A, R.string.question_6B, R.string.question_6C, R.string.question_6D, R.string.answer_6);
                 x++;
                 usedNumbers.add(currIndex);
             }
             else if(currIndex == 7 && !usedNumbers.contains(currIndex)){
-                questionBank[x-1] = new answerclass(R.string.question_17, R.string.question_17A, R.string.question_17B, R.string.question_17C, R.string.question_17D, R.string.answer_17);
+                questionBank[x-1] = new answerclass(R.string.question_7, R.string.question_7A, R.string.question_7B, R.string.question_7C, R.string.question_7D, R.string.answer_7);
                 x++;
                 usedNumbers.add(currIndex);
             }
             else if(currIndex == 8 && !usedNumbers.contains(currIndex)) {
-                questionBank[x-1] = new answerclass(R.string.question_18, R.string.question_18A, R.string.question_18B, R.string.question_18C, R.string.question_18D, R.string.answer_18);
+                questionBank[x-1] = new answerclass(R.string.question_8, R.string.question_8A, R.string.question_8B, R.string.question_8C, R.string.question_8D, R.string.answer_8);
                 usedNumbers.add(currIndex);
                 x++;
             }
 
-
-            else if(currIndex == 8 && !usedNumbers.contains(currIndex)) {
-                questionBank[x-1] = new answerclass(R.string.question_18, R.string.question_18A, R.string.question_18B, R.string.question_18C, R.string.question_18D, R.string.answer_18);
-                usedNumbers.add(currIndex);
-                x++;
-            }
 
             else if(currIndex == 9 && !usedNumbers.contains(currIndex)) {
-                questionBank[x-1] = new answerclass(R.string.question_19, R.string.question_19A, R.string.question_19B, R.string.question_19C, R.string.question_19D, R.string.answer_19);
+                questionBank[x-1] = new answerclass(R.string.question_9, R.string.question_9A, R.string.question_9B, R.string.question_9C, R.string.question_9D, R.string.answer_9);
                 usedNumbers.add(currIndex);
                 x++;
             }
 
             else if(currIndex == 10 && !usedNumbers.contains(currIndex)) {
-                questionBank[x-1] = new answerclass(R.string.question_20, R.string.question_20A, R.string.question_20B, R.string.question_20C, R.string.question_20D, R.string.answer_20);
+                questionBank[x-1] = new answerclass(R.string.question_10, R.string.question_10A, R.string.question_10B, R.string.question_10C, R.string.question_10D, R.string.answer_10);
                 usedNumbers.add(currIndex);
                 x++;
             }
@@ -336,6 +333,10 @@ public class Grade_7 extends level {
         return full;
     }
 
+//
+
+
+
     // Countdown TIMER
     public void startTimer() {
         countDownTimer = new CountDownTimer(timeLeftMilsec,1000) {
@@ -347,8 +348,9 @@ public class Grade_7 extends level {
 
             @Override
             public void onFinish() {
+                currentIndex = 0;
                 countDownTimer.cancel();
-                timeLeftMilsec = 6000;
+                timeLeftMilsec = 60000;
                 final boolean[] newGame = {false};
                 AlertDialog.Builder alert = new AlertDialog.Builder(Grade_7.this);
                 alert.setTitle("Game Over");
@@ -373,7 +375,23 @@ public class Grade_7 extends level {
                         progressBar.setProgress(0);
                         score.setText("Score" + mscore +"/" +questionBank.length);
                         questionnumber.setText(qn + "/" + questionBank.length +"Question");
-                        timeLeftMilsec = 6000;
+                        timeLeftMilsec = 60000;
+                        countDownTimer.start();
+                    }
+                });
+
+                alert.setNegativeButton("Try Again", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+//                    generateQuestions();
+                        newGame[0] = true;
+                        save();
+                        mscore=0;
+                        qn=1;
+                        progressBar.setProgress(0);
+                        score.setText("Score" + mscore +"/" +questionBank.length);
+                        questionnumber.setText(qn + "/" + questionBank.length +"Question");
+                        timeLeftMilsec = 60000;
                         countDownTimer.start();
                     }
                 });

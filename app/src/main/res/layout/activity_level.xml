@@ -29,7 +29,7 @@
             android:layout_alignParentEnd="true"
             android:layout_marginTop="5dp"
             android:backgroundTint="#e6e600"
-            android:text="Grade 7"
+            android:text="Easy"
             android:textColor="@color/black" />
 
         <Button
@@ -43,7 +43,7 @@
             android:layout_marginTop="5dp"
             android:backgroundTint="#33cc33"
             android:gravity="center"
-            android:text="Grade 8"
+            android:text="Average"
             android:textColor="@color/black" />
 
         <Button
@@ -56,7 +56,7 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
             android:gravity="center"
-            android:text="Grade 9"
+            android:text="Hard"
             android:textColor="@color/black" />
 
         <Button
@@ -69,7 +69,7 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
             android:gravity="center"
-            android:text="Grade 10"
+            android:text="Difficult"
             android:textColor="@color/black" />
 
 

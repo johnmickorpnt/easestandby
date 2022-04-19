@@ -29,7 +29,7 @@
             android:id="@+id/textview2"
             android:layout_width="74dp"
             android:layout_height="65dp"
-            android:layout_marginLeft="62dp"
+            android:layout_marginLeft="30dp"
             android:layout_marginTop="20dp"
             android:layout_toRightOf="@+id/textview3"
             android:fontFamily="@font/abeezee"
@@ -43,18 +43,18 @@
 
         <TextView
             android:id="@+id/textview3"
-            android:layout_width="wrap_content"
+            android:layout_width="160dp"
             android:layout_height="64dp"
             android:layout_below="@+id/textview"
-            android:layout_marginStart="23dp"
+            android:layout_marginStart="10dp"
             android:layout_marginLeft="16dp"
-            android:layout_marginTop="-38dp"
+            android:layout_marginTop="-41dp"
             android:layout_marginRight="5dp"
             android:layout_toEndOf="@+id/textview"
             android:gravity="center"
             android:text="Grade 7, Ken Cocjin"
             android:textColor="@color/black"
-            android:textSize="15sp"></TextView>
+            android:textSize="14sp"></TextView>
 
 
     </RelativeLayout>

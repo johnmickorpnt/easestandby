@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/QuestionNumber"
         android:text="@string/question_number"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="1dp"
         android:textColor="#1C1C1C"
         android:textStyle="italic"
         android:textAlignment="center"
@@ -72,7 +72,7 @@
         android:paddingLeft="5dp"
         android:paddingRight="5dp"
         android:layout_marginBottom="60dp"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="10dp"
         android:gravity="center">
 
         <TextView
@@ -91,13 +91,13 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:id="@+id/FirstTwoOption"
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
         android:layout_gravity="center"
+        android:orientation="vertical"
         android:paddingLeft="40dp"
-        android:paddingRight="40dp"
-        android:orientation="vertical">
+        android:paddingRight="40dp">
 
 
         <TextView
@@ -112,28 +112,26 @@
             android:text="@string/question1_A"
             android:textAlignment="center"
             android:textColor="#272343"
-            android:textSize="17dp">
+            android:textSize="15dp">
 
         </TextView>
 
         <TextView
+            android:id="@+id/optionB"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:id="@+id/optionB"
-            android:text="@string/question1_B"
-            android:background="@drawable/choicesborder"
-            android:textSize="17dp"
             android:layout_marginTop="10dp"
-            android:textColor="#272343"
-            android:textAlignment="center"
+            android:background="@drawable/choicesborder"
+            android:paddingLeft="5dp"
             android:paddingTop="10dp"
-            android:paddingBottom="10dp"
             android:paddingRight="5dp"
-            android:paddingLeft="5dp">
+            android:paddingBottom="10dp"
+            android:text="@string/question1_B"
+            android:textAlignment="center"
+            android:textColor="#272343"
+            android:textSize="15dp">
 
         </TextView>
-
-
 
 
     </LinearLayout>
@@ -156,7 +154,7 @@
             android:id="@+id/optionC"
             android:text="@string/question1_C"
             android:background="@drawable/choicesborder"
-            android:textSize="17dp"
+            android:textSize="15dp"
             android:layout_marginTop="10dp"
             android:textColor="#272343"
             android:textAlignment="center"
@@ -170,7 +168,7 @@
             android:layout_height="60dp"
             android:id="@+id/optionD"
             android:text="@string/question1_D"
-            android:textSize="17dp"
+            android:textSize="15dp"
             android:background="@drawable/choicesborder"
             android:textColor="#272343"
             android:layout_marginTop="10dp"
@@ -213,7 +211,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         android:layout_marginTop="40dp"
-        android:backgroundTint="#ffe6e6"
+        android:progressTint="#9CFFFA"
         android:indeterminate="false">
 
     </ProgressBar>
