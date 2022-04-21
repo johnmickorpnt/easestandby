@@ -156,17 +156,26 @@ public class Grade_8 extends level {
     private void save(){
         Map<String, Object> scores = new HashMap<>();
         int finScore = mscore;
-        Log.d("tagZ", String.valueOf(mscore));
+        float pct =  ((float) mscore / 10) * (float) 100;
         DocumentReference documentReference = fStore.collection("users").document(UserID);
         documentReference.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
             @Override
             public void onSuccess(DocumentSnapshot documentSnapshot) {
                 String username = documentSnapshot.getString("email");
+                HashMap<String, Boolean> levels = (HashMap<String, Boolean>) documentSnapshot.get("levels");
+                if(Math.round(pct) >= 70){
+                    passed(levels);
+                }
                 documentSnapshot.getString("email");
                 store(username, scores, finScore);
             }
         });
+    }
 
+    private void passed(Map<String, Boolean> levels){
+        DocumentReference user = fStore.collection("users").document(UserID);
+        levels.put("is_level2_clear", true);
+        user.update("levels", levels);
     }
 
     public void store(String username, Map scoreList, int finScore){

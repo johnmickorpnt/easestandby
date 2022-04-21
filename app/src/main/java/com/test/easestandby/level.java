@@ -26,6 +26,7 @@ import com.google.firebase.storage.StorageReference;
 
 import java.lang.reflect.GenericArrayType;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 
@@ -83,19 +84,23 @@ public class level extends AppCompatActivity{
                 startActivity(new Intent(getApplicationContext(), Grade_10.class));
             }
         });
+        initBtns();
+    }
+    private void initBtns(){
         DocumentReference documentReference = fStore.collection("users").document(UserID);
         documentReference.addSnapshotListener(this, new EventListener<DocumentSnapshot>() {
             @Override
             public void onEvent(@Nullable DocumentSnapshot documentSnapshot, @Nullable FirebaseFirestoreException e){
                 if (documentSnapshot.exists()){
                     try {
-                        List<Long> levels = (List<Long>) documentSnapshot.get("levels");
-                        Log.d("haha", String.valueOf(levels.size()));
-                        for(int x = 0; x < (int)levels.size(); x++){
+                        HashMap<String, Boolean> levels = (HashMap<String, Boolean>) documentSnapshot.get("levels");
+                        Log.d("tagZ", Boolean.toString(levels.get("is_level1_clear")));
+                        Log.d("tagZ", String.valueOf(levels.size()));
+                        for(int x = 1; x < levels.size(); x++){
                             Button btn = (x == 1) ? (Average) : ((x == 2) ? (Hard) : (Difficult));
-                            if(x == 1 && levels.get(x).intValue() == 0){disableButton(btn);}
-                            if(x == 2 && levels.get(x).intValue() == 0){disableButton(btn);}
-                            if(x == 3 && levels.get(x).intValue() == 0){disableButton(btn);}
+                            if(x == 1 && !levels.get("is_level" + x + "_clear")) disableButton(btn);
+                            if(x == 2 && !levels.get("is_level" + x + "_clear")) disableButton(btn);
+                            if(x == 3 && !levels.get("is_level" + x + "_clear")) disableButton(btn);
                         }
                     }catch (Exception exception){
                         Log.d("error", e.getMessage());
@@ -107,9 +112,16 @@ public class level extends AppCompatActivity{
             }
         });
     }
-
     public void disableButton(Button btn){
         btn.setEnabled(false);
         btn.getBackground().setAlpha(10);
+    }
+
+    @Override
+    public void onRestart()
+    {
+        super.onRestart();
+        finish();
+        startActivity(getIntent());
     }
 }

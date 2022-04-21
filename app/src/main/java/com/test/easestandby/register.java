@@ -26,6 +26,7 @@ import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.nio.charset.StandardCharsets;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -142,10 +143,16 @@ public class register extends AppCompatActivity {
                             userID = fAuth.getCurrentUser().getUid();
                             DocumentReference documentReference = fStore.collection("users").document(userID);
                             Map<String, Object> user = new HashMap<>();
+                            Map<String, Boolean> levels = new HashMap<>();
+                            levels.put("is_level1_clear", false);
+                            levels.put("is_level2_clear", false);
+                            levels.put("is_level3_clear", false);
+                            levels.put("is_level4_clear", false);
                             user.put("fname", fname);
                             user.put("surname", surname);
                             user.put("email", email);
                             user.put("number", number);
+                            user.put("levels", levels);
                             user.put("password", password);
                             documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                                 @Override
