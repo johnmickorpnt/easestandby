@@ -340,6 +340,16 @@
     <string name="Grade10"> Grade 10 </string>
 
 
+    //Register and Login
+    <string name="login"> Already have an account?   <font fgcolor='#01c176'> <u>Login Here</u></font>  </string>
+    <string name="create"> <font fgcolor='#01c176'> <u> Create an Account</u> </font> </string>
+
+
+
+
+
+
+
 </resources>
 
 

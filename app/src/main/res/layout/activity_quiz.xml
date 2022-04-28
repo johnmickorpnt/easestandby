@@ -60,7 +60,6 @@
             android:visibility="gone"
             android:textAlignment="center"
             android:text="@string/correctanswer">
-
         </TextView>
 
     </LinearLayout>

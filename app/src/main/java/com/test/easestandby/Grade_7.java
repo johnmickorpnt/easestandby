@@ -44,6 +44,7 @@ public class Grade_7 extends level {
     int mscore=0;
     int qn=1;
 
+
     ProgressBar progressBar;
     int CurrentQuestion,CurrentOptionA,CurrentOptionB,CurrentOptionC,CurrentOptionD;
     List<Integer> usedNumbers = new ArrayList<Integer>();
@@ -325,6 +326,8 @@ public class Grade_7 extends level {
                 usedNumbers.add(currIndex);
                 x++;
             }
+
+
         }
         Log.i("to_string",toString(usedNumbers));
     }
