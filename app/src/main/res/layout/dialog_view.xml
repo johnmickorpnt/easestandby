@@ -7,6 +7,16 @@
     android:padding="10dp">
 
     <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Overview"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scoreText" />
+
+    <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -36,7 +46,7 @@
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/scoreText">
+        app:layout_constraintTop_toBottomOf="@+id/textView5">
 
         <TextView
             android:id="@+id/qHistory"
@@ -44,7 +54,7 @@
             android:layout_height="wrap_content"
             android:gravity="end"
             android:text=" Question #1: \n Question #2: \n Question #3: \n Question #4: \n Question #5: \n Question #6: \n Question #7: \n Question #8: \n Question #9: \n Question #10:"
-            android:textSize="16sp" />
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/qHistory2"
@@ -52,7 +62,8 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="Incorrect \n Correct \n Incorrect \n  Incorrect \n Correct \n  Incorrect \n Incorrect \n Incorrect \n: Incorrect \n Incorrect"
-            android:textSize="16sp" />
+            android:textSize="20sp"
+            android:textStyle="bold" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
