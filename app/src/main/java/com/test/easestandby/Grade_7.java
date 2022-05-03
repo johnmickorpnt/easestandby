@@ -26,6 +26,9 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 
+import org.w3c.dom.Text;
+
+import java.sql.Array;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -43,6 +46,7 @@ public class Grade_7 extends level {
     int currentIndex;
     int mscore=0;
     int qn=1;
+    boolean[] history = new boolean[10];
 
 
     ProgressBar progressBar;
@@ -104,7 +108,6 @@ public class Grade_7 extends level {
             public void onClick(View view) {
                 checkAnswer(CurrentOptionA);
                 updateQuestion();
-
             }
         });
 
@@ -113,8 +116,6 @@ public class Grade_7 extends level {
             public void onClick(View v) {
                 checkAnswer(CurrentOptionB);
                 updateQuestion();
-
-
             }
         });
         optionC.setOnClickListener(new View.OnClickListener() {
@@ -122,23 +123,18 @@ public class Grade_7 extends level {
             public void onClick(View v) {
                 checkAnswer(CurrentOptionC);
                 updateQuestion();
-
-
             }
         });
         optionD.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 checkAnswer(CurrentOptionD);
                 updateQuestion();
-
             }
         });
     }
 
     private void checkAnswer(int userSelection) {
-
         int correctanswer=questionBank[currentIndex].getAnswerid();
 
         chechkout1.setText(userSelection);
@@ -151,10 +147,12 @@ public class Grade_7 extends level {
         {
             Toast.makeText(getApplicationContext(),"Correct",Toast.LENGTH_SHORT).show();
             mscore=mscore+1;
+            history[currentIndex] = true;
         }
         else
         {
             Toast.makeText(getApplicationContext(),"Incorrect",Toast.LENGTH_SHORT).show();
+            history[currentIndex] = false;
         }
     }
 
@@ -202,20 +200,31 @@ public class Grade_7 extends level {
         });
     }
 
-
     @SuppressLint("SetTextI18n")
     private void updateQuestion() {
         final boolean[] newGame = {false};
         currentIndex=(currentIndex+1)%questionBank.length;
-
+        String qHistory = "";
+        int qNum = 0;
         if(currentIndex==0)
         {
             generateQuestions();
             countDownTimer.cancel();
-            AlertDialog.Builder alert=new AlertDialog.Builder(this);
-            alert.setTitle("Game Over");
+            AlertDialog.Builder alert=new AlertDialog.Builder(Grade_7.this);
+            View dialogView = getLayoutInflater().inflate(R.layout.dialog_view, null);
+            TextView qHistoryText = (TextView) dialogView.findViewById(R.id.qHistory2);
+            TextView scoreText = (TextView) dialogView.findViewById(R.id.scoreText);
+            for(boolean v: history){
+                Log.v("curr_index", Boolean.toString(v));
+                qHistory += ((qNum == 0) ? ("\n") : ("")) + ((v) ? (" Correct") : (" Incorrect")) + "\n";
+                qNum++;
+            }
+            scoreText.setText(String.valueOf(mscore) + "\\10");
+            qHistoryText.setText(qHistory);
+            alert.setView(dialogView);
             alert.setCancelable(false);
-            alert.setMessage("Your Score"+ " " + mscore +"points");
+            Log.v("curr_index", qHistory);
+
             alert.setPositiveButton("Back", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
@@ -237,12 +246,9 @@ public class Grade_7 extends level {
                     questionnumber.setText(qn + "/" + questionBank.length +"Question");
                     timeLeftMilsec = 60000;
                     countDownTimer.start();
-
                 }
             });
-
             alert.show();
-
         }
 
         CurrentQuestion=questionBank[currentIndex].getQuestionid();
@@ -266,7 +272,6 @@ public class Grade_7 extends level {
         progressBar.incrementProgressBy(PROGRESS_BAR);
 
     }
-
 
     private void generateQuestions(){
         usedNumbers.clear();
@@ -332,8 +337,6 @@ public class Grade_7 extends level {
         Log.i("to_string",toString(usedNumbers));
     }
 
-
-
     public static int getRandomNumber(int min, int max) {
         return (new Random()).nextInt((max - min) + 1) + min;
     }
@@ -345,10 +348,6 @@ public class Grade_7 extends level {
         }
         return full;
     }
-
-//
-
-
 
     // Countdown TIMER
     public void startTimer() {
