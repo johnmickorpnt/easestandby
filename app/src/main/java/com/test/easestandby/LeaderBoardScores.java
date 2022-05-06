@@ -1,7 +1,7 @@
 package com.test.easestandby;
 
 public class LeaderBoardScores {
-    public LeaderBoardScores(int rank, int grade, int score, String username) {
+    public LeaderBoardScores(int rank, String grade, int score, String username) {
         this.rank = rank;
         this.grade = grade;
         this.score = score;
@@ -9,11 +9,11 @@ public class LeaderBoardScores {
     }
     public LeaderBoardScores(){}
 
-    public int getGrade() {
+    public String getGrade() {
         return grade;
     }
 
-    public void setGrade(int grade) {
+    public void setGrade(String grade) {
         this.grade = grade;
     }
 
@@ -34,7 +34,7 @@ public class LeaderBoardScores {
     }
 
     public String getStringGrade(){
-        return Integer.toString(grade);
+        return grade;
     }
 
     public String getStringScore(){
@@ -54,7 +54,7 @@ public class LeaderBoardScores {
     }
 
     private int rank;
-    private int grade;
+    private String grade;
     private int score;
     private String username;
 
