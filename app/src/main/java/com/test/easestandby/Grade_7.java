@@ -276,7 +276,7 @@ public class Grade_7 extends level {
     private void generateQuestions(){
         usedNumbers.clear();
         for(int x = 1; x <= 10;){
-            int currIndex = getRandomNumber(1, 15);
+            int currIndex = getRandomNumber(1, 20);
             Log.i("current_index_random",Integer.toString(currIndex));
             if(currIndex == 1 && !usedNumbers.contains(currIndex)){
                 questionBank[x-1] = new answerclass(R.string.question_1, R.string.question1_A, R.string.question1_B, R.string.question1_C, R.string.question1_D, R.string.answer_1);
@@ -356,6 +356,36 @@ public class Grade_7 extends level {
             }
 
             else if(currIndex == 15 && !usedNumbers.contains(currIndex)) {
+                questionBank[x-1] = new answerclass(R.string.question_10, R.string.question_10A, R.string.question_10B, R.string.question_10C, R.string.question_10D, R.string.answer_10);
+                usedNumbers.add(currIndex);
+                x++;
+            }
+
+            else if(currIndex == 16 && !usedNumbers.contains(currIndex)) {
+                questionBank[x-1] = new answerclass(R.string.question_10, R.string.question_10A, R.string.question_10B, R.string.question_10C, R.string.question_10D, R.string.answer_10);
+                usedNumbers.add(currIndex);
+                x++;
+            }
+
+            else if(currIndex == 17 && !usedNumbers.contains(currIndex)) {
+                questionBank[x-1] = new answerclass(R.string.question_10, R.string.question_10A, R.string.question_10B, R.string.question_10C, R.string.question_10D, R.string.answer_10);
+                usedNumbers.add(currIndex);
+                x++;
+            }
+
+            else if(currIndex == 18 && !usedNumbers.contains(currIndex)) {
+                questionBank[x-1] = new answerclass(R.string.question_10, R.string.question_10A, R.string.question_10B, R.string.question_10C, R.string.question_10D, R.string.answer_10);
+                usedNumbers.add(currIndex);
+                x++;
+            }
+
+            else if(currIndex == 19 && !usedNumbers.contains(currIndex)) {
+                questionBank[x-1] = new answerclass(R.string.question_10, R.string.question_10A, R.string.question_10B, R.string.question_10C, R.string.question_10D, R.string.answer_10);
+                usedNumbers.add(currIndex);
+                x++;
+            }
+
+            else if(currIndex == 20 && !usedNumbers.contains(currIndex)) {
                 questionBank[x-1] = new answerclass(R.string.question_10, R.string.question_10A, R.string.question_10B, R.string.question_10C, R.string.question_10D, R.string.answer_10);
                 usedNumbers.add(currIndex);
                 x++;

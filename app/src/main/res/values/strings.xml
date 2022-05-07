@@ -133,6 +133,41 @@
     <string name="question_10D.5">Scheduled </string>
     <string name="answer_10.5">Unexpected</string>
 
+    <string name="question_10.6">A _____ is a giant, rotating storm that brings wind, rain, and destruction.</string>
+    <string name="question_10A.6">Cyclone</string>
+    <string name="question_10B.6">Typhoon</string>
+    <string name="question_10C.6">Hurricane</string>
+    <string name="question_10D.6">None of the above </string>
+    <string name="answer_10.6">Typhoon </string>
+
+    <string name="question_10.7">It is a smaller earthquake following the main shock of a large earthquake.</string>
+    <string name="question_10A.7">foreshock</string>
+    <string name="question_10B.7">none of the above</string>
+    <string name="question_10C.7">aftershock</string>
+    <string name="question_10D.7">main shock </string>
+    <string name="answer_10.7">aftershock  </string>
+
+    <string name="question_10.8">____ is extremely hot liquid and semi-liquid rock located under earth surface.</string>
+    <string name="question_10A.8">Lava</string>
+    <string name="question_10B.8">Magma</string>
+    <string name="question_10C.8">Magna</string>
+    <string name="question_10D.8">I do not know </string>
+    <string name="answer_10.8">Magma</string>
+
+    <string name="question_10.9">When magma flows onto Earth surface, it is called ____. </string>
+    <string name="question_10A.9">Lava</string>
+    <string name="question_10B.9">Magma</string>
+    <string name="question_10C.9">Magna</string>
+    <string name="question_10D.9">I do not know </string>
+    <string name="answer_10.9">Lava</string>
+
+    <string name="question_10.10">16. There is a typhoon approaching to the Philippines and the forecast says your city is on signal number 3. What will you do? </string>
+    <string name="question_10A.10">Play mobile Games</string>
+    <string name="question_10B.10">Prepare stocks like food, batteries, and flashlight</string>
+    <string name="question_10C.10">Prepare popcorn, movies, and snacks so you can relax during the typhoon.</string>
+    <string name="question_10D.10">Call the authorities</string>
+    <string name="answer_10.10">Prepare stocks like food, batteries, and flashlight</string>
+
     <string name="selctedoption">SelectedOption</string>
     <string name="correctanswer">CorrectAnswer</string>
 
