@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/QuestionNumber"
-        android:text="@string/question_number"
+        android:text="@string/question_number2"
         android:layout_marginTop="1dp"
         android:textColor="#1C1C1C"
         android:textStyle="italic"
@@ -199,7 +199,7 @@
             android:id="@+id/score"
             android:textStyle="bold"
             android:textColor="#181817"
-            android:text="@string/score"
+            android:text="@string/score1"
             android:layout_gravity="end"
             android:padding="10dp"/>
 

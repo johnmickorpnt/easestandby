@@ -68,7 +68,6 @@ public class level extends AppCompatActivity{
         });
         // For Grade_9
         Hard = findViewById(R.id.Hard);
-
         Hard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

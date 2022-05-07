@@ -46,7 +46,7 @@ public class Grade_7 extends level {
     int currentIndex;
     int mscore=0;
     int qn=1;
-    boolean[] history = new boolean[10];
+    private boolean[] history = new boolean[10];
 
 
     ProgressBar progressBar;
