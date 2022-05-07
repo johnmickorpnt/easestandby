@@ -36,15 +36,16 @@ public class Grade_8 extends level {
     private TextView chechkout1,checkout2;
     public TextView Timer;
     private CountDownTimer countDownTimer;
-    private  long timeLeftMilsec = 60000;
+    private  long timeLeftMilsec = 121000;
     int currentIndex;
     int mscore=0;
     int qn=1;
-    ProgressBar progressBar;
+    private boolean[] history = new boolean[15];
 
+    ProgressBar progressBar;
     int CurrentQuestion,CurrentOptionA,CurrentOptionB,CurrentOptionC,CurrentOptionD;
     List<Integer> usedNumbers = new ArrayList<Integer>();
-    private answerclass[] questionBank = new answerclass[10];
+    private answerclass[] questionBank = new answerclass[15];
 
     FirebaseAuth fAuth;
     FirebaseFirestore fStore;
@@ -54,7 +55,6 @@ public class Grade_8 extends level {
     int grade = 8;
 
     final int PROGRESS_BAR = (int) Math.ceil(100/questionBank.length);
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -71,7 +71,6 @@ public class Grade_8 extends level {
         storageReference = FirebaseStorage.getInstance().getReference();
         UserID = fAuth.getCurrentUser().getUid();
         user = fAuth.getCurrentUser();
-
 
         Timer = findViewById(R.id.TimerTextView);
         question = findViewById(R.id.question);
@@ -146,17 +145,19 @@ public class Grade_8 extends level {
         {
             Toast.makeText(getApplicationContext(),"Correct",Toast.LENGTH_SHORT).show();
             mscore=mscore+1;
+            history[currentIndex] = true;
         }
         else
         {
             Toast.makeText(getApplicationContext(),"Incorrect",Toast.LENGTH_SHORT).show();
+            history[currentIndex] = false;
         }
     }
 
     private void save(){
         Map<String, Object> scores = new HashMap<>();
         int finScore = mscore;
-        float pct =  ((float) mscore / 10) * (float) 100;
+        float pct =  ((float) mscore / 15) * (float) 100;
         DocumentReference documentReference = fStore.collection("users").document(UserID);
         documentReference.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
             @Override
@@ -201,21 +202,35 @@ public class Grade_8 extends level {
     @SuppressLint("SetTextI18n")
     private void updateQuestion() {
         final boolean[] newGame = {false};
+        String qHistory = "";
+        int qNum = 0;
         currentIndex=(currentIndex+1)%questionBank.length;
-
         if(currentIndex==0)
         {
             generateQuestions();
             countDownTimer.cancel();
-            AlertDialog.Builder alert=new AlertDialog.Builder(this);
-            alert.setTitle("Game Over");
+            AlertDialog.Builder alert=new AlertDialog.Builder(Grade_8.this);
+            View dialogView = getLayoutInflater().inflate(R.layout.dialog_view2, null);
+            TextView qHistoryText = (TextView) dialogView.findViewById(R.id.qHistory4);
+            TextView scoreText = (TextView) dialogView.findViewById(R.id.scoreText2);
+
+            for(boolean v: history){
+                Log.v("curr_index", Boolean.toString(v));
+                qHistory += ((qNum == 0) ? ("\n") : ("")) + ((v) ? ("Correct") : ("Incorrect")) + "\n";
+                qNum++;
+            }
+
+            scoreText.setText(String.valueOf(mscore) + "\\15");
+            qHistoryText.setText(qHistory);
+            alert.setView(dialogView);
             alert.setCancelable(false);
-            alert.setMessage("Your Score" + mscore +"points");
+
             alert.setPositiveButton("Back", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
                     save();
                     finish();
+
                 }
             });
 
@@ -230,7 +245,7 @@ public class Grade_8 extends level {
                     progressBar.setProgress(0);
                     score.setText("Score" + mscore +"/" +questionBank.length);
                     questionnumber.setText(qn + "/" + questionBank.length +"Question");
-                    timeLeftMilsec = 60000;
+                    timeLeftMilsec = 121000;
                     countDownTimer.start();
                 }
             });
@@ -264,8 +279,8 @@ public class Grade_8 extends level {
 
     private void generateQuestions(){
         usedNumbers.clear();
-        for(int x = 1; x <= 10;){
-            int currIndex = getRandomNumber(1, 10);
+        for(int x = 1; x <= 15;){
+            int currIndex = getRandomNumber(1, 15);
             Log.i("current_index_random",Integer.toString(currIndex));
             if(currIndex == 1 && !usedNumbers.contains(currIndex)){
                 questionBank[x-1] = new answerclass(R.string.question_11, R.string.question_11A, R.string.question_11B, R.string.question_11C, R.string.question_11D, R.string.answer_11A);
@@ -326,10 +341,40 @@ public class Grade_8 extends level {
                 usedNumbers.add(currIndex);
                 x++;
             }
+
+
+            else if(currIndex == 11 && !usedNumbers.contains(currIndex)) {
+                questionBank[x-1] = new answerclass(R.string.question_220, R.string.question_220A, R.string.question_220B, R.string.question_220C, R.string.question_22D, R.string.answer_220);
+                usedNumbers.add(currIndex);
+                x++;
+            }
+
+            else if(currIndex == 12 && !usedNumbers.contains(currIndex)) {
+                questionBank[x-1] = new answerclass(R.string.question_230, R.string.question_230A, R.string.question_230B, R.string.question_230C, R.string.question_23D, R.string.answer_230);
+                usedNumbers.add(currIndex);
+                x++;
+            }
+
+            else if(currIndex == 13 && !usedNumbers.contains(currIndex)) {
+                questionBank[x-1] = new answerclass(R.string.question_240, R.string.question_240A, R.string.question_240B, R.string.question_240C, R.string.question_24D, R.string.answer_240);
+                usedNumbers.add(currIndex);
+                x++;
+            }
+            else if(currIndex == 14 && !usedNumbers.contains(currIndex)) {
+                questionBank[x-1] = new answerclass(R.string.question_250, R.string.question_250A, R.string.question_250B, R.string.question_250C, R.string.question_25D, R.string.answer_250);
+                usedNumbers.add(currIndex);
+                x++;
+            }
+
+            else if(currIndex == 15 && !usedNumbers.contains(currIndex)) {
+                questionBank[x-1] = new answerclass(R.string.question_260, R.string.question_260A, R.string.question_260B, R.string.question_260C, R.string.question_260D, R.string.answer_260);
+                usedNumbers.add(currIndex);
+                x++;
+            }
+
         }
         Log.i("to_string",toString(usedNumbers));
     }
-
 
 
     public static int getRandomNumber(int min, int max) {
@@ -357,7 +402,7 @@ public class Grade_8 extends level {
             public void onFinish() {
                 currentIndex = 0;
                 countDownTimer.cancel();
-                timeLeftMilsec = 60000;
+                timeLeftMilsec = 121000;
                 final boolean[] newGame = {false};
                 AlertDialog.Builder alert = new AlertDialog.Builder(Grade_8.this);
                 alert.setTitle("Game Over");
@@ -382,7 +427,7 @@ public class Grade_8 extends level {
                         progressBar.setProgress(0);
                         score.setText("Score" + mscore +"/" +questionBank.length);
                         questionnumber.setText(qn + "/" + questionBank.length +"Question");
-                        timeLeftMilsec = 60000;
+                        timeLeftMilsec = 121000;
                         countDownTimer.start();
                     }
                 });
