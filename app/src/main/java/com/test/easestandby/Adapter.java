@@ -30,7 +30,6 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull Adapter.ViewHolder holder, int position) {
 
-        int resource= userList.get(position).getImageview1();
         String rank = userList.get(position).getTextView1();
         String score = userList.get(position).getTextView2();
         String name = userList.get(position).getTextView3();

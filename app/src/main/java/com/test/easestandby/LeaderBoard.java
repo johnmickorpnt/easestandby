@@ -41,8 +41,8 @@ public class LeaderBoard extends AppCompatActivity {
     private void initData() {
 
         userlist = new ArrayList<>();
-        userlist.add(new ModelClass(R.drawable.ken,"No.1","10pts", "Grade 7, Ken Cocjin","_______________________"));
-        userlist.add(new ModelClass(R.drawable.ken,"No.1","10pts", "Grade 7, Ken Cocjin","_______________________"));
+        userlist.add(new ModelClass("No.1","10pts", "Grade 7, Ken Cocjin","_______________________"));
+        userlist.add(new ModelClass("No.1","10pts", "Grade 7, Ken Cocjin","_______________________"));
 
     }
 

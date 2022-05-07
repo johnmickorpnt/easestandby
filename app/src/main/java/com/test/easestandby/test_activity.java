@@ -94,7 +94,7 @@ public class test_activity extends AppCompatActivity {
                         for(DocumentChange dc : value.getDocumentChanges()){
                             rank++;
                             LeaderBoardScores newScore = dc.getDocument().toObject(LeaderBoardScores.class);
-                            userlist.add(new ModelClass(R.drawable.ken,
+                            userlist.add(new ModelClass(
                                     "No." + String.valueOf(rank),
                                     newScore.getStringScore()+ "pts",
                                     (newScore.getGrade()) + ", " + String.valueOf(newScore.getUsername()),
@@ -118,7 +118,8 @@ public class test_activity extends AppCompatActivity {
                         for(DocumentChange dc : value.getDocumentChanges()){
                             rank++;
                             LeaderBoardScores newScore = dc.getDocument().toObject(LeaderBoardScores.class);
-                            userlist.add(new ModelClass(R.drawable.ken,
+                            Log.d("yawa", newScore.getGrade());
+                            userlist.add(new ModelClass(
                                     "#" + String.valueOf(rank),
                                     newScore.getStringScore()+ "pts",
                                     newScore.getGrade() + ", " + String.valueOf(newScore.getUsername()),
