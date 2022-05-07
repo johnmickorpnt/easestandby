@@ -25,7 +25,7 @@
 
 
     //GRADE 7
-    <string name="question_1">What is a typhoon?  </string>
+    <string name="question_1">Typhoon is also known for?  </string>
     <string name="question1_A">Its an earthquake </string>
     <string name="question1_B">Its a tropical cyclone</string>
     <string name="question1_C">Its a part of the Pacific Ring of Fire </string>
@@ -33,7 +33,7 @@
     <string name="answer_1">Its a tropical cyclone</string>
 
 
-    <string name="question_2">What does P.A.R. stands for ?</string>
+    <string name="question_2">What does P.A.R. stands for?</string>
     <string name="question_2A">Philippine Area of Readiness</string>
     <string name="question_2B">Philippines Area of Responsibility</string>
     <string name="question_2C">Philippine Area of Responsibility</string>
@@ -48,7 +48,7 @@
     <string name="question_3D"> None of the above </string>
     <string name="answer_3"> Phillipine Atmospheric Geophysical  and  Astronomical Services Administration</string>
 
-    <string name="question_4">It is the role to provide information such as the weather forecast, advisories, tropical cyclone and flood bulletins warnings</string>
+    <string name="question_4">Their role is to provide information such as the weather forecast, advisories, tropical cyclone and flood bulletins warnings</string>
     <string name="question_4A">PAGASA </string>
     <string name="question_4B">DENR</string>
     <string name="question_4C">DepEd</string>
@@ -62,14 +62,14 @@
     <string name="question_5D">None of the above </string>
     <string name="answer_5">Due to its graphical location</string>
 
-    <string name="question_6">It is the effect of typhoon </string>
+    <string name="question_6">It is the effect of a strong typhoon </string>
     <string name="question_6A">Earthquake </string>
     <string name="question_6B">Fire</string>
     <string name="question_6C">Volcanic Eruption</string>
     <string name="question_6D">Flood </string>
     <string name="answer_6">Flood</string>
 
-    <string name="question_7">What is the average typhoons in the Philippines? </string>
+    <string name="question_7">What is the average number of typhoons in the Philippines? </string>
     <string name="question_7A">5</string>
     <string name="question_7B">10</string>
     <string name="question_7C">15</string>
@@ -97,6 +97,41 @@
     <string name="question_10C">Organize an outing with the family </string>
     <string name="question_10D">All of the above </string>
     <string name="answer_10">Stay at home and prepare for the effects of the typhoons</string>
+
+    <string name="question_10.1">It is a sudden shaking of the Ground.</string>
+    <string name="question_10A.1">Earthquake</string>
+    <string name="question_10B.1">Volcanic Eruption</string>
+    <string name="question_10C.1">Sandstorm</string>
+    <string name="question_10D.1">Landslide</string>
+    <string name="answer_10.1">Earthquake</string>
+
+    <string name="question_10.2">What does PHILVOCS stands for?</string>
+    <string name="question_10A.2">Philippine Institute of Volcanology and Seismology</string>
+    <string name="question_10B.2">Philippines Institute of Volcanic and Seismetic</string>
+    <string name="question_10C.2">Philippines Instite of Vulkanic and Systematic</string>
+    <string name="question_10D.2">None of the above</string>
+    <string name="answer_10.2">Philippine Institute of Volcanology and Seismology</string>
+
+    <string name="question_10.3">This disaster release spew hot, dangerous gases, ash, lava, and rock that are powerfully destructive.</string>
+    <string name="question_10A.3">Volcanic Eruption</string>
+    <string name="question_10B.3">Typhoon</string>
+    <string name="question_10C.3">Forest Fire</string>
+    <string name="question_10D.3">None of the above</string>
+    <string name="answer_10.3">Volcanic Eruption</string>
+
+    <string name="question_10.4">It is a path along the Pacific ocean, wherein active volcanoes and frequent earthquakes can be found?</string>
+    <string name="question_10A.4">Ring of Earthquake</string>
+    <string name="question_10B.4">Ring of fire</string>
+    <string name="question_10C.4">Lord of the Rings</string>
+    <string name="question_10D.4">Ring of water </string>
+    <string name="answer_10.4">Ring of fire</string>
+
+    <string name="question_10.5">A natural disaster is a(n) ____ event.</string>
+    <string name="question_10A.5">Expected</string>
+    <string name="question_10B.5">Unexpected</string>
+    <string name="question_10C.5">Planned</string>
+    <string name="question_10D.5">Scheduled </string>
+    <string name="answer_10.5">Unexpected</string>
 
     <string name="selctedoption">SelectedOption</string>
     <string name="correctanswer">CorrectAnswer</string>
@@ -140,7 +175,7 @@
     <string name="question_15D">None of the Above</string>
     <string name="answer_15">NO, because we will get trapped inside the car</string>
 
-    <string name="question_16"> What does PHIVOLCS stands for ? </string>
+    <string name="question_16"> What does PHIVOLCS stands for? </string>
     <string name="question_16A">Philippine Institute of Volcanology and Seismology</string>
     <string name="question_16B">Philippines Institute of Volcanic and Seismetic</string>
     <string name="question_16C"> Philippines Instite of Vulkanic and Systematic</string>
