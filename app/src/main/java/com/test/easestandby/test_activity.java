@@ -44,7 +44,7 @@ public class test_activity extends AppCompatActivity {
     Adapter adapter;
 
     final FirebaseFirestore db = FirebaseFirestore.getInstance();
-    String grades[] = {"All", "Grade 7", "Grade 8", "Grade 9" ,"Grade 10"};
+    String grades[] = {"All", "Easy", "Average", "Hard" ,"Difficult"};
     AutoCompleteTextView autoCompleteTextView;
     ArrayAdapter<String> adapterItems;
 
@@ -61,8 +61,9 @@ public class test_activity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 String item = parent.getItemAtPosition(position).toString();
+                Log.d("item", item);
                 clear();
-                item = (item == "All") ? ("0") : (item.substring(item.indexOf(" ")).trim());
+                item = (item == "All") ? ("0") : (item.trim());
                 filter(item);
             }
         });
@@ -81,7 +82,7 @@ public class test_activity extends AppCompatActivity {
         if(grade=="0"){
             initData();
         }
-        db.collection("leaderboards").whereEqualTo("grade",Integer.parseInt(grade)).orderBy("score", Query.Direction.DESCENDING)
+        db.collection("leaderboards").whereEqualTo("grade", grade).orderBy("score", Query.Direction.DESCENDING)
                 .addSnapshotListener(new EventListener<QuerySnapshot>() {
                     @Override
                     public void onEvent(@Nullable QuerySnapshot value, @Nullable FirebaseFirestoreException error) {
@@ -96,7 +97,7 @@ public class test_activity extends AppCompatActivity {
                             userlist.add(new ModelClass(R.drawable.ken,
                                     "No." + String.valueOf(rank),
                                     newScore.getStringScore()+ "pts",
-                                    "Grade " + String.valueOf(newScore.getGrade()) + ", " + String.valueOf(newScore.getUsername()),
+                                    (newScore.getGrade()) + ", " + String.valueOf(newScore.getUsername()),
                                     "_______________________"));
                         }
                         adapter.notifyDataSetChanged();
@@ -120,7 +121,7 @@ public class test_activity extends AppCompatActivity {
                             userlist.add(new ModelClass(R.drawable.ken,
                                     "#" + String.valueOf(rank),
                                     newScore.getStringScore()+ "pts",
-                                    "Grade " + String.valueOf(newScore.getGrade()) + ", " + String.valueOf(newScore.getUsername()),
+                                    newScore.getGrade() + ", " + String.valueOf(newScore.getUsername()),
                                     "_______________________"));
                         }
                         adapter.notifyDataSetChanged();

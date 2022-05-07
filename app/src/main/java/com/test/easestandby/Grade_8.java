@@ -181,7 +181,7 @@ public class Grade_8 extends level {
 
     public void store(String username, Map scoreList, int finScore){
         scoreList.put("score", finScore);
-        scoreList.put("grade", grade);
+        scoreList.put("grade", "Average");
         scoreList.put("username", username);
         fStore.collection("leaderboards").document()
                 .set(scoreList)
