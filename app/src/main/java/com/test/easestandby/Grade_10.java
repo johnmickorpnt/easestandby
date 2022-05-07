@@ -241,7 +241,7 @@ public class Grade_10 extends level {
 
     public void store(String username, Map scoreList, int finScore){
         scoreList.put("score", finScore);
-        scoreList.put("grade", grade);
+        scoreList.put("grade", "Difficult");
         scoreList.put("username", username);
         fStore.collection("leaderboards").document()
                 .set(scoreList)
