@@ -2,6 +2,8 @@ package com.test.easestandby;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -22,6 +24,7 @@ import java.util.List;
 public class LeaderBoard extends AppCompatActivity {
 
     // Recycler View
+    private Button GoBack;
     RecyclerView recyclerView;
     LinearLayoutManager layoutManager;
     List<ModelClass>userlist;
@@ -31,14 +34,25 @@ public class LeaderBoard extends AppCompatActivity {
 
 
     @Override
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_leaderboard);
         // Attach a listener to read the data at our posts reference
-        Log.v("yawa", "ahhaahah");
+        Log.v("hehe", "hihi");
     }
 
     private void initData() {
+        GoBack = findViewById(R.id.GoBack);
+
+        //Go Back
+        GoBack = findViewById(R.id.GoBack);
+        GoBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
 
         userlist = new ArrayList<>();
         userlist.add(new ModelClass("No.1","10pts", "Grade 7, Ken Cocjin","_______________________"));

@@ -39,6 +39,8 @@ public class level extends AppCompatActivity{
     FirebaseUser user;
     String UserID;
     StorageReference storageReference;
+
+    private Button GoBack;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,6 +51,16 @@ public class level extends AppCompatActivity{
         UserID = fAuth.getCurrentUser().getUid();
         user = fAuth.getCurrentUser();
 
+        GoBack = findViewById(R.id.GoBack);
+
+        //Go Back
+        GoBack = findViewById(R.id.GoBack);
+        GoBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
         //     For Grade_7
         Easy = findViewById(R.id.Easy);
         Easy.setOnClickListener(new View.OnClickListener() {
@@ -58,6 +70,8 @@ public class level extends AppCompatActivity{
 //                timer.startTimer();
             }
         });
+
+
         // For Grade_8
         Average = findViewById(R.id.Average);
         Average.setOnClickListener(new View.OnClickListener() {
@@ -85,6 +99,7 @@ public class level extends AppCompatActivity{
         });
         initBtns();
     }
+
     private void initBtns(){
         DocumentReference documentReference = fStore.collection("users").document(UserID);
         documentReference.addSnapshotListener(this, new EventListener<DocumentSnapshot>() {

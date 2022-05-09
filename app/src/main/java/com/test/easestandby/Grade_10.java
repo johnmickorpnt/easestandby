@@ -283,7 +283,7 @@ public class Grade_10 extends level {
     private void generateQuestions(){
         usedNumbers.clear();
         for(int x = 1; x <= 25;){
-            int currIndex = getRandomNumber(1, 25);
+            int currIndex = getRandomNumber(1, 35);
             Log.i("current_index_random",Integer.toString(currIndex));
             if(currIndex == 1 && !usedNumbers.contains(currIndex)){
                 questionBank[x-1] = new answerclass(R.string.question_31, R.string.question31_A, R.string.question31_B, R.string.question31_C, R.string.question31_D, R.string.answer_31);
@@ -429,6 +429,68 @@ public class Grade_10 extends level {
                 usedNumbers.add(currIndex);
                 x++;
             }
+
+            else if(currIndex == 26 && !usedNumbers.contains(currIndex)) {
+                questionBank[x-1] = new answerclass(R.string.question_496, R.string.question_496A, R.string.question_496B, R.string.question_496C, R.string.question_496D, R.string.answer_496);
+                usedNumbers.add(currIndex);
+                x++;
+            }
+
+            else if(currIndex == 27 && !usedNumbers.contains(currIndex)) {
+                questionBank[x-1] = new answerclass(R.string.question_497, R.string.question_497A, R.string.question_497B, R.string.question_497C, R.string.question_497D, R.string.answer_497);
+                usedNumbers.add(currIndex);
+                x++;
+            }
+
+            else if(currIndex == 28 && !usedNumbers.contains(currIndex)) {
+                questionBank[x-1] = new answerclass(R.string.question_498, R.string.question_498A, R.string.question_498B, R.string.question_498C, R.string.question_498D, R.string.answer_498);
+                usedNumbers.add(currIndex);
+                x++;
+            }
+
+            else if(currIndex == 29 && !usedNumbers.contains(currIndex)) {
+                questionBank[x-1] = new answerclass(R.string.question_499, R.string.question_499A, R.string.question_499B, R.string.question_499C, R.string.question_499D, R.string.answer_499);
+                usedNumbers.add(currIndex);
+                x++;
+            }
+
+            else if(currIndex == 30 && !usedNumbers.contains(currIndex)) {
+                questionBank[x-1] = new answerclass(R.string.question_500, R.string.question_500A, R.string.question_500B, R.string.question_500C, R.string.question_500D, R.string.answer_500);
+                usedNumbers.add(currIndex);
+                x++;
+            }
+
+            else if(currIndex == 31 && !usedNumbers.contains(currIndex)) {
+                questionBank[x-1] = new answerclass(R.string.question_501, R.string.question_501A, R.string.question_501B, R.string.question_501C, R.string.question_501D, R.string.answer_501);
+                usedNumbers.add(currIndex);
+                x++;
+            }
+
+            else if(currIndex == 32 && !usedNumbers.contains(currIndex)) {
+                questionBank[x-1] = new answerclass(R.string.question_502, R.string.question_502A, R.string.question_502B, R.string.question_502C, R.string.question_502D, R.string.answer_502);
+                usedNumbers.add(currIndex);
+                x++;
+            }
+
+            else if(currIndex == 33 && !usedNumbers.contains(currIndex)) {
+                questionBank[x-1] = new answerclass(R.string.question_503, R.string.question_503A, R.string.question_503B, R.string.question_503C, R.string.question_503D, R.string.answer_503);
+                usedNumbers.add(currIndex);
+                x++;
+            }
+
+            else if(currIndex == 34 && !usedNumbers.contains(currIndex)) {
+                questionBank[x-1] = new answerclass(R.string.question_504, R.string.question_504A, R.string.question_504B, R.string.question_504C, R.string.question_504D, R.string.answer_504);
+                usedNumbers.add(currIndex);
+                x++;
+            }
+
+            else if(currIndex == 35 && !usedNumbers.contains(currIndex)) {
+                questionBank[x-1] = new answerclass(R.string.question_505, R.string.question_505A, R.string.question_505B, R.string.question_505C, R.string.question_505D, R.string.answer_505);
+                usedNumbers.add(currIndex);
+                x++;
+            }
+
+
 
 
         }

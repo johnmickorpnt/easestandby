@@ -25,13 +25,12 @@
 
 
     //GRADE 7
-    <string name="question_1">Typhoon is also known for?  </string>
-    <string name="question1_A">Its an earthquake </string>
-    <string name="question1_B">Its a tropical cyclone</string>
-    <string name="question1_C">Its a part of the Pacific Ring of Fire </string>
-    <string name="question1_D">None of the above</string>
-    <string name="answer_1">Its a tropical cyclone</string>
-
+    <string name="question_1">Is it true that Earthquakes can trigger tsunami?</string>
+    <string name="question1_A">True</string>
+    <string name="question1_B">False</string>
+    <string name="question1_C">I do not know</string>
+    <string name="question1_D">Maybe</string>
+    <string name="answer_1">True</string>
 
     <string name="question_2">What does P.A.R. stands for?</string>
     <string name="question_2A">Philippine Area of Readiness</string>
@@ -40,8 +39,7 @@
     <string name="question_2D">Philippine Are Ready</string>
     <string name="answer_2">Philippine Area of Responsibility</string>
 
-
-    <string name="question_3">What does PAGASA stands for?  </string>
+    <string name="question_3">What does PAGASA stands for?</string>
     <string name="question_3A"> Phillipine Atmospheric Geophysical  and  Astronomical Services Administration </string>
     <string name="question_3B">  Phillipine Atmospheric Geophysical  and  Astrology Services Administration </string>
     <string name="question_3C">  Pilipinas Atmospheric Geophysical  and  Astronomical Services Administrations </string>
@@ -76,20 +74,19 @@
     <string name="question_7D">20</string>
     <string name="answer_7">20</string>
 
-    <string name="question_8">In which of the following situations will the strength of a tropical cyclone probably weaken?</string>
-    <string name="question_8A">When it travels on bodies of water </string>
-    <string name="question_8B">When it is still in the warm ocean </string>
-    <string name="question_8C">When it travels outside the par </string>
-    <string name="question_8D">When it makes a landfall</string>
-    <string name="answer_8">When it makes a landfall</string>
+    <string name="question_8">During an earthquake, what is the best thing to do?</string>
+    <string name="question_8A">Duck, Cover, and Hold</string>
+    <string name="question_8B">Record or Video the happenings</string>
+    <string name="question_8C">Post it on Social Media</string>
+    <string name="question_8D">Go out immediately</string>
+    <string name="answer_8">Duck, Cover, and Hold</string>
 
-    <string name="question_9">Rather than following in a straight line from the polar region to the equator, winds are deflected due to the ____________.</string>
-    <string name="question_9A">Earth’s topography </string>
-    <string name="question_9B">Earth’s atmosphere</string>
-    <string name="question_9C">Earth’s gravity </string>
-    <string name="question_9D">Coriolis effect</string>
-    <string name="answer_9">Coriolis effect</string>
-
+    <string name="question_9">Which of the following is responsible for  relevant information of the volcanic and earthquake?</string>
+    <string name="question_9A">PAGASA</string>
+    <string name="question_9B">DepEd</string>
+    <string name="question_9C">DSWD</string>
+    <string name="question_9D">PHIVOLCS</string>
+    <string name="answer_9">PHIVOLCS</string>
 
     <string name="question_10">What is the BEST thing to do when there is a tropical typhoon? </string>
     <string name="question_10A">Ignore the weather condition and just go on with usual routines</string>
@@ -145,7 +142,7 @@
     <string name="question_10B.7">none of the above</string>
     <string name="question_10C.7">aftershock</string>
     <string name="question_10D.7">main shock </string>
-    <string name="answer_10.7">aftershock  </string>
+    <string name="answer_10.7">aftershock</string>
 
     <string name="question_10.8">____ is extremely hot liquid and semi-liquid rock located under earth surface.</string>
     <string name="question_10A.8">Lava</string>
@@ -154,14 +151,14 @@
     <string name="question_10D.8">I do not know </string>
     <string name="answer_10.8">Magma</string>
 
-    <string name="question_10.9">When magma flows onto Earth surface, it is called ____. </string>
-    <string name="question_10A.9">Lava</string>
-    <string name="question_10B.9">Magma</string>
-    <string name="question_10C.9">Magna</string>
-    <string name="question_10D.9">I do not know </string>
-    <string name="answer_10.9">Lava</string>
+    <string name="question_10.9">This natural disaster can trigger flash floods, earthquakes, mudflows and rockfalls.</string>
+    <string name="question_10A.9">Mountain</string>
+    <string name="question_10B.9">Hill</string>
+    <string name="question_10C.9">Explosion</string>
+    <string name="question_10D.9">Volcano</string>
+    <string name="answer_10.9">Volcano</string>
 
-    <string name="question_10.10">16. There is a typhoon approaching to the Philippines and the forecast says your city is on signal number 3. What will you do? </string>
+    <string name="question_10.10">There is a typhoon approaching to the Philippines and the forecast says your city is on signal number 3. What will you do? </string>
     <string name="question_10A.10">Play mobile Games</string>
     <string name="question_10B.10">Prepare stocks like food, batteries, and flashlight</string>
     <string name="question_10C.10">Prepare popcorn, movies, and snacks so you can relax during the typhoon.</string>
@@ -172,6 +169,12 @@
     <string name="correctanswer">CorrectAnswer</string>
 
 
+
+
+
+
+
+
     //GRADE 8
     <string name="question_11">Do you think the destructive effects of a tropical cyclone can be avoided through preparations ?</string>
     <string name="question_11A">TRUE, because by being prepared we can help to prevent/minimize damages</string>
@@ -180,28 +183,26 @@
     <string name="question_11D">None of the Above</string>
     <string name="answer_11A">TRUE, because by being prepared we can help to prevent/minimize damages</string>
 
+    <string name="question_12">Typhoon is also known as a term ______ ______?</string>
+    <string name="question_12A">Tropical Cyclone</string>
+    <string name="question_12B">Heavy Storm</string>
+    <string name="question_12C">Heavy Rain</string>
+    <string name="question_12D">Huge Phenomena</string>
+    <string name="answer_12B">Tropical Cyclone</string>
 
-    <string name="question_12">The occurrence of a tropical cyclone can be predicted.Therefore, no need to worry and prepare ahead of time</string>
-    <string name="question_12A">TRUE, since we can anticipate it and no need to take action</string>
-    <string name="question_12B">FALSE, whether we can predict it or not it’s always best to be prepared</string>
-    <string name="question_12C">Maybe</string>
-    <string name="question_12D">None of the above</string>
-    <string name="answer_12B">FALSE, whether we can predict it or not it’s always best to be prepared</string>
+    <string name="question_13">____ is the number that characterizes the relative size of an earthquake.</string>
+    <string name="question_13A">Magnitude</string>
+    <string name="question_13B">Attitude</string>
+    <string name="question_13C">Altitude</string>
+    <string name="question_13D">Richter Scale</string>
+    <string name="answer_13B">Magnitude</string>
 
-
-    <string name="question_13">Is panic-buying of goods is advisable in times of calamities?</string>
-    <string name="question_13A">TRUE,since buying foods at times of need is essential</string>
-    <string name="question_13B">FALSE,panic buying will increase of products getting sold out quickly</string>
-    <string name="question_13C">Maybe</string>
-    <string name="question_13D">None of the above</string>
-    <string name="answer_13B">FALSE,panic buying will increase of products getting sold out quickly</string>
-
-    <string name="question_14">Does coordinating with the local authorities will greatly help in the preparation for the possible effects of a typhoon?</string>
-    <string name="question_14A">TRUE,since working with local authorities will help us update with the news</string>
-    <string name="question_14B">FALSE,since there is no need for that and just focus on your own.</string>
-    <string name="question_14C">Maybe</string>
-    <string name="question_14D">None of the Above</string>
-    <string name="answer_14A">TRUE,since working with local authorities will help us update with the news</string>
+    <string name="question_14">Which of the following is not an effect of an Earthquake?</string>
+    <string name="question_14A">Damage to buildings</string>
+    <string name="question_14B">Landslides and rockslides</string>
+    <string name="question_14C">Trigger tsunamis</string>
+    <string name="question_14D">Air pollution</string>
+    <string name="answer_14A">Air pollution</string>
 
     <string name="question_15">Is it safe to stay inside the car during floodwater?</string>
     <string name="question_15A">YES, since we can just stay inside and wait for rescue</string>
@@ -210,7 +211,7 @@
     <string name="question_15D">None of the Above</string>
     <string name="answer_15">NO, because we will get trapped inside the car</string>
 
-    <string name="question_16"> What does PHIVOLCS stands for? </string>
+    <string name="question_16"> What does PHIVOLCS stands for?</string>
     <string name="question_16A">Philippine Institute of Volcanology and Seismology</string>
     <string name="question_16B">Philippines Institute of Volcanic and Seismetic</string>
     <string name="question_16C"> Philippines Instite of Vulkanic and Systematic</string>
@@ -239,26 +240,25 @@
     <string name="answer_19">Earthquake</string>
 
     <string name="question_20">It refers to a scientist that studies earthquake</string>
-    <string name="question_20A"> surface waves</string>
-    <string name="question_20B">psychologist</string>
-    <string name="question_20C">physiologists </string>
-    <string name="question_20D">seismologist</string>
-    <string name="answer_20">seismologist</string>
+    <string name="question_20A">Surface Waves</string>
+    <string name="question_20B">Psychologist</string>
+    <string name="question_20C">Physiologists </string>
+    <string name="question_20D">Seismologist</string>
+    <string name="answer_20">Seismologist</string>
 
-    <string name="question_220"> If volcanic eruption occurs, what will you do ?</string>
+    <string name="question_220"> If volcanic eruption occurs, what will you do?</string>
     <string name="question_220A">Play Video Games </string>
     <string name="question_220B">Do nothing</string>
-    <string name="question_220C">Evacuate and move far away from the volcanic activity</string>
-    <string name="question_220D"> None of the Above</string>
-    <string name="answer_220">Evacuate and move far away from the volcanic activity</string>
+    <string name="question_220C">Evacuate and move far away from the volcano</string>
+    <string name="question_220D">None of the Above</string>
+    <string name="answer_220">Evacuate and move far away from the volcano</string>
 
-    <string name="question_230"> Is it advisable to open your plugin electronic devices when the socket is wet due the flood?</string>
-    <string name="question_230A">Yes, because we have to charge our smartphones nowadays. </string>
-    <string name="question_230B">No, because there is a chance that we might get electrified </string>
-    <string name="question_230C"> Maybe</string>
-    <string name="question_230D"> None of the above</string>
-    <string name="answer_230"> No, because there is a chance that we might get electrified </string>
-
+    <string name="question_230">When magma flows onto Earth surface, it is called ____.</string>
+    <string name="question_230A">Lava</string>
+    <string name="question_230B">Magma</string>
+    <string name="question_230C">Magna</string>
+    <string name="question_230D">I do not know</string>
+    <string name="answer_230">Lava</string>
 
     <string name="question_240">A place where majority of earthquakes lies</string>
     <string name="question_240A">Pacific Ring of Fire</string>
@@ -267,29 +267,106 @@
     <string name="question_240D">Atlantic Ocean</string>
     <string name="answer_240">Pacific Ring of Fire</string>
 
-
-    <string name="question_250">When evacuating into the evacuation center what are things you need to bring? </string>
+    <string name="question_250">When evacuating into the evacuation center what are things you need to bring?</string>
     <string name="question_250A">Emergency kits like flashlight,mobile phone,medicine,blankets and etc</string>
-    <string name="question_250B">Vehicles, Xbox One, and Ps5  </string>
+    <string name="question_250B"> Xbox and Ps5  </string>
     <string name="question_250C">Nothing</string>
-    <string name="question_250D">None of the above</string>
+    <string name="question_250D">Tablet</string>
     <string name="answer_250">Emergency kits like flashlight,mobile phone,medicine,blankets and etc</string>
 
-
-    <string name="question_260">Should an earthquake occur what action will you utilize? </string>
-    <string name="question_260A">Drop, Cover and Hold On </string>
-    <string name="question_260B">Stop,Drop and Roll </string>
-    <string name="question_260C">Nothing</string>
+    <string name="question_260">If an Earthquake occur what action will you utilize? </string>
+    <string name="question_260A">Duck, Cover and Hold</string>
+    <string name="question_260B">Stop,Drop and Roll</string>
+    <string name="question_260C">Record the happenings</string>
     <string name="question_260D">None of the above</string>
-    <string name="answer_260">Should an earthquake occur what reaction will you utilize? </string>
+    <string name="answer_260">Duck, Cover and Hold</string>
 
+    // Additional
+    <string name="question_261">A _____ is a giant, rotating storm that brings wind, rain, and destruction. </string>
+    <string name="question_261A">Cyclone</string>
+    <string name="question_261B">Typhoon</string>
+    <string name="question_261C">Hurricane</string>
+    <string name="question_261D">None of the above</string>
+    <string name="answer_261">Typhoon</string>
 
+    <string name="question_262">It is a smaller earthquake following the main shock of a large earthquake </string>
+    <string name="question_262A">Foreshock</string>
+    <string name="question_262B">Aftershock</string>
+    <string name="question_262C">Main Shock</string>
+    <string name="question_262D">None of the above</string>
+    <string name="answer_262">Aftershock</string>
+
+    <string name="question_263">When magma flows onto Earth surface, it is called ____. </string>
+    <string name="question_263A">Magma</string>
+    <string name="question_263B">Magna</string>
+    <string name="question_263C">Lava</string>
+    <string name="question_263D">None of the above</string>
+    <string name="answer_263">Lava</string>
+
+    <string name="question_264">These are types of volcanoes that are likely to erupt again and has a recent history of eruptions.</string>
+    <string name="question_264A">Dormant Volcanoes</string>
+    <string name="question_264B">Extinct Volcanoes</string>
+    <string name="question_264C">Active Volcanoes</string>
+    <string name="question_264D">Inactive volcanoes</string>
+    <string name="answer_264">Active Volcanoes</string>
+
+    <string name="question_265">____ is extremely hot liquid and semi-liquid rock located under earths surface.</string>
+    <string name="question_265A">Lava</string>
+    <string name="question_265B">Magna</string>
+    <string name="question_265C">None of the above</string>
+    <string name="question_265D">Magma</string>
+    <string name="answer_265">Magma</string>
+
+    <string name="question_266">What does PAGASA stands for?</string>
+    <string name="question_266A">Philippine Atmospheric Geophysical and Astronomical Services Administration</string>
+    <string name="question_266B">Philippine Atmospheric Geophysical and Astrology Services Administration</string>
+    <string name="question_266C">Pilipinas Atmospheric Geophysical and Astronomical Services Administrations</string>
+    <string name="question_266D">None of the above</string>
+    <string name="answer_266">Phillipine Atmospheric Geophysical and Astronomical Services Administration</string>
+
+    <string name="question_267">Volcanic Eruption is not a type of natural disaster?</string>
+    <string name="question_267A">True</string>
+    <string name="question_267B">False</string>
+    <string name="question_267C">Maybe</string>
+    <string name="question_267D">None of the above</string>
+    <string name="answer_267">False</string>
+
+    <string name="question_268">Earthquake is a type of natural disaster?</string>
+    <string name="question_268A">True</string>
+    <string name="question_268B">False</string>
+    <string name="question_268C">Maybe</string>
+    <string name="question_268D">None of the above</string>
+    <string name="answer_268">True</string>
+
+    <string name="question_269">What is NOT the right thing to do During a Typhoon</string>
+    <string name="question_269A">Stay at home</string>
+    <string name="question_269B">Cancel all travel or outdoor activities</string>
+    <string name="question_269C">Keep yourself updated on the latest weather news.</string>
+    <string name="question_269D">Just play games the whole time of the Typhoon</string>
+    <string name="answer_269">Play mobile games the whole time of the Typhoon</string>
+
+    <string name="question_2691">Typhoon is a type of natural disaster?</string>
+    <string name="question_2691A">True</string>
+    <string name="question_2691B">False</string>
+    <string name="question_2691C">Maybe</string>
+    <string name="question_2691D">None of the above</string>
+    <string name="answer_2691">True</string>
 
     <string name="selectedoption2">SelectedOption</string>
     <string name="correctanswer2">CorrectAnswer</string>
 
     <string name="question_number2">1/15 Question</string>
     <string name="score1">Score 0/15</string>
+
+
+
+
+
+
+
+
+
+
 
 
     //GRADE 9
@@ -300,14 +377,12 @@
     <string name="question21_D">None of the above</string>
     <string name="answer_21">Tectonic Plate</string>
 
-
-    <string name="question_22">Is a scientiest who studies the Earths atmosphere, which is related to the weather</string>
+    <string name="question_22">Is a Scientist who studies the Earths atmosphere, which is related to the weather</string>
     <string name="question_22A">News Caster</string>
     <string name="question_22B"> Dermatologist</string>
     <string name="question_22C">Meteorologist</string>
     <string name="question_22D">None of the Above</string>
     <string name="answer_22C">Meteorologist</string>
-
 
     <string name="question_23">Which of the following is responsible for  relevant information of the volcanic and earthquake? </string>
     <string name="question_23A">PAGASA</string>
@@ -321,7 +396,7 @@
     <string name="question_24B">Surface waves</string>
     <string name="question_24C">Seismologist</string>
     <string name="question_24D">Magnitude </string>
-    <string name="answer_24">Seimoslogist</string>
+    <string name="answer_24">Seismologist</string>
 
     <string name="question_25">This is a presence of water on supposedly dry land due to abnormal rise of water level</string>
     <string name="question_25A"> Waterfall </string>
@@ -358,7 +433,6 @@
     <string name="question_29D">None of the above</string>
     <string name="answer_29B">YES, since they will only shake the people and the building what harm can it cause</string>
 
-
     <string name="question_30">Earthquakes do pose threats to people and buildings.</string>
     <string name="question_30A"> True, that is why we have to prepare counter measures</string>
     <string name="question_30B">False, it is unpredictable</string>
@@ -366,20 +440,19 @@
     <string name="question_30D">None of the above</string>
     <string name="answer_30A">True, that is why we have to prepare counter measures</string>
 
-    <string name="question_270">This is caused by an earthquake and Japanese word for "harbor wave"</string>
+    <string name="question_270">This is caused by an earthquake and also known in Japanese word for "harbor wave"</string>
     <string name="question270_A">Tsukoyomi</string>
     <string name="question270_B">Takoyaki</string>
     <string name="question270_C">Tsukomi</string>
     <string name="question270_D">Tsunami</string>
     <string name="answer_270">Tsunami</string>
 
-    <string name="question_271"> Is when lava and gas are released from a volcano—sometimes explosive. </string>
+    <string name="question_271">It is when lava and gas are released from a volcano—sometimes explosive.</string>
     <string name="question271_A">Volcanic Eruption</string>
     <string name="question271_B">Volcanic Emit</string>
     <string name="question271_C">Volcanic Explosition</string>
     <string name="question271_D">None of the above</string>
     <string name="answer_271">Volcanic Eruption</string>
-
 
     <string name="question_272">This is an earthquake caused by a volcanic activity</string>
     <string name="question272_A">Tectonic Plate</string>
@@ -388,14 +461,12 @@
     <string name="question272_D">None of the above</string>
     <string name="answer_272">Volcanic Eruption</string>
 
-
-    <string name="question_273">Is a practice or preparedness exercise for if an earthquake occurs</string>
-    <string name="question273_A"> Earthquake </string>
-    <string name="question273_B">Earthquake Drills</string>
+    <string name="question_273">It is the practice or preparedness exercise for if an earthquake occurs</string>
+    <string name="question273_A">Fire Drill</string>
+    <string name="question273_B">Earthquake Drill</string>
     <string name="question273_C">911</string>
-    <string name="question273_D">None of the above</string>
-    <string name="answer_273">Earthquake Drills</string>
-
+    <string name="question273_D">Dance Drill</string>
+    <string name="answer_273">Earthquake Drill</string>
 
     <string name="question_274">Severe weather disturbance characterized by strong winds and heavy rains which revolve around a central low pressure area</string>
     <string name="question274_A"> Rim of Fire</string>
@@ -411,14 +482,12 @@
     <string name="question275_D">None of the above</string>
     <string name="answer_275">Eye,Eyewall,and Rainbands</string>
 
-
-    <string name="question_276">Is it safe water from floods? </string>
+    <string name="question_276">Is the water from the floods safe to drink?</string>
     <string name="question276_A">True, especially when thirsty</string>
     <string name="question276_B">False, contaminated water results to sickness</string>
     <string name="question276_C"> Why not ? </string>
     <string name="question276_D">None of the above</string>
     <string name="answer_276">False, contaminated water results to sickness</string>
-
 
     <string name="question_278">The weather forecaster said that it will be rainy but you saw it sunny. Is it still recommended to bring an umbrella?</string>
     <string name="question278_A">Yes, whether it rains or not always bring umbrella</string>
@@ -441,6 +510,76 @@
     <string name="question280_D">None of the above</string>
     <string name="answer_280">Steven who watches news to be aware and to prepare in case</string>
 
+    //Additional
+    <string name="question_282">____ describes the degree of shaking caused by an earthquake at a given place and decreases with distance from the earthquake epicenter.</string>
+    <string name="question282_A">Intensity</string>
+    <string name="question282_B">Magnitude</string>
+    <string name="question282_C">Richter scale</string>
+    <string name="question282_D">Aftershock</string>
+    <string name="answer_282">Intensity</string>
+
+    <string name="question_283">It is a type of volcano that is active and is having an eruption</string>
+    <string name="question283_A">Active Volcano</string>
+    <string name="question283_B">Extinct Volcano</string>
+    <string name="question283_C">Erupting Volcano</string>
+    <string name="question283_D">Dormant Volcano</string>
+    <string name="answer_283">Erupting Volcano</string>
+
+    <string name="question_284">This volcano is the second most active volcano in the Philippines that is found in the province of Batangas. </string>
+    <string name="question284_A">Taal</string>
+    <string name="question284_B">Pinatubo</string>
+    <string name="question284_C">Mayon</string>
+    <string name="question284_D">Kanlaon</string>
+    <string name="answer_284">Taal</string>
+
+    <string name="question_285">Is it advisable to open your plugin electronic devices when the socket is wet due the flood?</string>
+    <string name="question285_A">Yes, because we have to charge our smartphones nowadays.</string>
+    <string name="question285_B">No, because there is a chance that we might get electrified</string>
+    <string name="question285_C">Maybe</string>
+    <string name="question285_D">None of the above</string>
+    <string name="answer_285">No, because there is a chance that we might get electrified</string>
+
+    <string name="question_286">Is panic-buying of goods is advisable in times of calamities?</string>
+    <string name="question286_A">TRUE, since buying foods at times of need is essential</string>
+    <string name="question286_B">FALSE, panic buying will increase of products getting sold out quickly</string>
+    <string name="question286_C">Maybe</string>
+    <string name="question286_D">None of the above</string>
+    <string name="answer_286">FALSE, panic buying will increase of products getting sold out quickly</string>
+
+    <string name="question_287">It is a term used for Tropical cyclones in the Western Pacific</string>
+    <string name="question287_A">Typhoon</string>
+    <string name="question287_B">Cyclone</string>
+    <string name="question287_C">Hurricane</string>
+    <string name="question287_D">Super Typhoon</string>
+    <string name="answer_287">Typhoon</string>
+
+    <string name="question_288">When magma flows onto Earth surface, it is called ____.</string>
+    <string name="question288_A">Lava</string>
+    <string name="question288_B">Magma</string>
+    <string name="question288_C">Magna</string>
+    <string name="question288_D">I do not know</string>
+    <string name="answer_288">Lava</string>
+
+    <string name="question_289">A type of volcano that has not had an eruption for at least 10,000 years and is not expected to erupt again in a time scale of the future.</string>
+    <string name="question289_A">Active Volcano</string>
+    <string name="question289_B">Extinct Volcano</string>
+    <string name="question289_C">Dormant Volcano</string>
+    <string name="question289_D">Erupting Volcano</string>
+    <string name="answer_289">Extinct Volcano</string>
+
+    <string name="question_290">It is a type of volcano that is active and is having an eruption</string>
+    <string name="question290_A">Active Volcano</string>
+    <string name="question290_B">Extinct Volcano</string>
+    <string name="question290_C">Erupting Volcano</string>
+    <string name="question290_D">Dormant Volcano</string>
+    <string name="answer_290">Erupting Volcano</string>
+
+    <string name="question_281">It is a smaller earthquake following the main shock of a large earthquake</string>
+    <string name="question281_A">Foreshock</string>
+    <string name="question281_B">Aftershock</string>
+    <string name="question281_C">G-Shock</string>
+    <string name="question281_D">Main Shock</string>
+    <string name="answer_281">Aftershock</string>
 
     <string name="selectedoption3">SelectedOption</string>
     <string name="correctanswer3">CorrectAnswer</string>
@@ -451,13 +590,15 @@
 
 
 
+
+
     //GRADE 10
-    <string name="question_31">You can play in floodwaters if you are a good swimmer </string>
-    <string name="question31_A"> Yes,because we wont drown</string>
-    <string name="question31_B"> No,due to the floods contamination</string>
-    <string name="question31_C"> Maybe</string>
+    <string name="question_31">Can you play in floodwaters if you are a good swimmer </string>
+    <string name="question31_A">Yes,because we wont drown</string>
+    <string name="question31_B">No,because the floods may have contamination</string>
+    <string name="question31_C">Maybe</string>
     <string name="question31_D">None of the Above</string>
-    <string name="answer_31"> No,due to the floods contamination</string>
+    <string name="answer_31">No,because the floods may have contamination</string>
 
 
     <string name="question_32"> Is a vent or an opening in the ground which has hot gases, rocks and lava ejected </string>
@@ -468,7 +609,7 @@
     <string name="answer_32">Volcano</string>
 
 
-    <string name="question_33"> Many volcanoes on Earth are found in this location</string>
+    <string name="question_33">Many volcanoes on Earth are found in this location</string>
     <string name="question_33A">The Pacific Ring of Fire</string>
     <string name="question_33B">Vent</string>
     <string name="question_33C">Islands</string>
@@ -479,10 +620,10 @@
     <string name="question_34A">National Disaster Risk Reduction and Management Council</string>
     <string name="question_34B">National Disaster Risk Reduction and Managerment Council </string>
     <string name="question_34C">National Disaster Risk Reduce and Management Council</string>
-    <string name="question_34D">NOne of the above</string>
+    <string name="question_34D">None of the above</string>
     <string name="answer_34D">National Disaster Risk Reduction and Management Council</string>
 
-    <string name="question_35"> Is a working group of various government, non-government, civil sector and private sector organizations of the Government of the Republic of the Philippines</string>
+    <string name="question_35">Is a working group of various government, non-government, civil sector and private sector organizations of the Government of the Republic of the Philippines</string>
     <string name="question_35A">DSWD</string>
     <string name="question_35B">GSIS</string>
     <string name="question_35C">NDRRMC</string>
@@ -517,14 +658,12 @@
     <string name="question_39D">None of the Above</string>
     <string name="answer_39C">Seek cover and wear a K-N95 mask in case of ash falls and rock falls</string>
 
-
-    <string name="question_40">Which effect is most likely from a hurricane?</string>
+    <string name="question_40">Which effect is most likely from a Typhoon?</string>
     <string name="question_40A">Damage homes due to flooding</string>
     <string name="question_40B">Forest fires due to lightning strikes </string>
     <string name="question_40C">Debris falling down</string>
     <string name="question_40D">None of the Above</string>
     <string name="answer_40">Damage homes due to flooding</string>
-
 
     <string name="question_481"> Which of the following generally handles disasters-related problem</string>
     <string name="question_481A">DSWD</string>
@@ -533,15 +672,12 @@
     <string name="question_481D">NDRRMC</string>
     <string name="answer_481">NDRRMC</string>
 
-
-
     <string name="question_482"> What do you call the center of the typhoon? </string>
     <string name="question_482A">Rainbrands</string>
     <string name="question_482B">Tail</string>
     <string name="question_482C">Eyewall</string>
     <string name="question_482D">Eye</string>
     <string name="answer_482">Eye</string>
-
 
     <string name="question_483"> Which scenario describes the damage caused by an earthquake </string>
     <string name="question_483A">A flooded city on the coast with trees damaged by high winds</string>
@@ -550,14 +686,12 @@
     <string name="question_483D">None of the Above</string>
     <string name="answer_483">Ground Shaking and damages to structures</string>
 
-
-    <string name="question_484"> Which of the following generally handles disasters-related problem</string>
+    <string name="question_484"> Which of the following generally handles relief operation on disaster-related problem</string>
     <string name="question_484A">DSWD</string>
     <string name="question_484B">PAGASA</string>
     <string name="question_484C">PHIVOLCS</string>
     <string name="question_484D">NDRRMC</string>
-    <string name="answer_484">NDRRMC</string>
-
+    <string name="answer_484">DSWD</string>
 
     <string name="question_485">A person trapped outside during a thunderstorm should</string>
     <string name="question_485A">Lie in ditch or other low-lying areas</string>
@@ -566,14 +700,12 @@
     <string name="question_485D">None of the Above</string>
     <string name="answer_485">Stay away from trees, water and tall objects</string>
 
-
-    <string name="question_486"> Before a typhoon strikes, the best thing to do is</string>
+    <string name="question_486"> Before a typhoon happens, the best thing to do is?</string>
     <string name="question_486A">Go outside to watch for the hurricane.</string>
     <string name="question_486B">Soaked yourself in the rain</string>
     <string name="question_486C">Know the evacuation route in case of an evacuation</string>
     <string name="question_486D">None of the Above</string>
     <string name="answer_486">Know the evacuation route in case of an evacuation</string>
-
 
     <string name="question_487"> Which of the following best describes an earthquake</string>
     <string name="question_487A">It is located in the Pacific Ring of Fire</string>
@@ -582,62 +714,54 @@
     <string name="question_487D">All of the Above</string>
     <string name="answer_487">A violent shaking of the Earth that occurs when two tectonic plates bump into each other</string>
 
-
-    <string name="question_488">This happens when the sea level increases during a typhoon, especially the coastal area</string>
-    <string name="question_488A">storm surge</string>
-    <string name="question_488B">flash flood </string>
-    <string name="question_488C">flood</string>
+    <string name="question_488">This happens when the sea level increases during a typhoon, especially from the coastal area</string>
+    <string name="question_488A">Storm surge</string>
+    <string name="question_488B">Flash flood </string>
+    <string name="question_488C">Flood</string>
     <string name="question_488D">landslide</string>
-    <string name="answer_488">storm surge</string>
-
+    <string name="answer_488">Storm surge</string>
 
     <string name="question_489">What is the best thing to do when the typhoon strikes your area </string>
     <string name="question_489A">Stay at home or in safe place and be updated with the news </string>
     <string name="question_489B">All travel and outdoor activities shouldnt be canceled</string>
     <string name="question_489C">Go near flood prone areas</string>
     <string name="question_489D">None of the Above</string>
-    <string name="answer_489">Stay at home or in safe place and be updated with the news </string>
+    <string name="answer_489">Stay at home or in safe place and be updated with the news</string>
 
-
-    <string name="question_490"> Which of the following generally handles disasters-related problem</string>
+    <string name="question_490">When a disaster happened in your area, what should you do?</string>
     <string name="question_490A"> Stare at it and until something happens</string>
     <string name="question_490B">Inform the authorities in order to take action of it</string>
     <string name="question_490C">Go near it and inspect it. </string>
     <string name="question_490D">None of the Above</string>
     <string name="answer_490">Inform the authorities in order to take action of it</string>
 
-
-    <string name="question_491">If you are under or near a volcano the best thing to do is </string>
-    <string name="question_491A">Listen for emergency information alers, and follow the evacuation. </string>
+    <string name="question_491">If you are living near erupting volcano the best thing to do is?</string>
+    <string name="question_491A">Listen for emergency information alerts, and follow the evacuation. </string>
     <string name="question_491B">Run away as fast as you can</string>
     <string name="question_491C">Ignore what is going on in your area</string>
     <string name="question_491D">None of the Above</string>
-    <string name="answer_491">Listen for emergency information alers, and follow the evacuation.</string>
+    <string name="answer_491">Listen for emergency information alerts, and follow the evacuation.</string>
 
-
-    <string name="question_492"> When using your phone, it is also important to  </string>
-    <string name="question_492A">Save emergency numbers, disaster hotilines and contact person</string>
-    <string name="question_492B">Play Mobile Games</string>
+    <string name="question_492"> When using your phone, it is also important to </string>
+    <string name="question_492A">Save emergency numbers, disaster hotlines and contact persons</string>
+    <string name="question_492B">Install Mobile Games</string>
     <string name="question_492C">Scroll through your social media</string>
     <string name="question_492D">None of the Above</string>
-    <string name="answer_492">Save emergency numbers, disaster hotilines and contact person</string>
+    <string name="answer_492">Save emergency numbers, disaster hotlines and contact persons</string>
 
-
-    <string name="question_493"> During a volcanic eruption which of the following is not belong? </string>
+    <string name="question_493"> During a volcanic eruption which of the following should NOT belong? </string>
     <string name="question_493A"> Use an N95 dust mask </string>
     <string name="question_493B">Protect your skin and eyes with glasses/goggles</string>
     <string name="question_493C">Seek cover immediately </string>
     <string name="question_493D">Go outside without no protection</string>
     <string name="answer_493">Go outside without no protection</string>
 
-
-    <string name="question_494">Which is the best statement scenario</string>
-    <string name="question_494A"> Earthquakes are man made</string>
+    <string name="question_494">Which is the best statement in this scenario</string>
+    <string name="question_494A">Earthquakes are man made</string>
     <string name="question_494B">Earthquakes is a joke and no need to be concern for it</string>
     <string name="question_494C">Earthquakes it is predictable </string>
     <string name="question_494D">None of the above</string>
     <string name="answer_494">None of the above</string>
-
 
     <string name="question_495">Why does PAGASA announces public storms signals in advance? </string>
     <string name="question_495A">So that people can prepare for the possible effects of the tropical cyclone</string>
@@ -646,8 +770,76 @@
     <string name="question_495D">So that people can rest at home </string>
     <string name="answer_495">So that people can prepare for the possible effects of the tropical cyclone</string>
 
+    // Additional
+    <string name="question_496">Does coordinating with the local authorities will greatly help in the preparation for the possible effects of a typhoon?</string>
+    <string name="question_496A">TRUE, since working with local authorities will help us update with the news</string>
+    <string name="question_496B">FALSE, since there is no need for that and just focus on your own.</string>
+    <string name="question_496C">Maybe</string>
+    <string name="question_496D">None of the Above</string>
+    <string name="answer_496">TRUE, since working with local authorities will help us update with the news </string>
 
+    <string name="question_497">The event or occurrence of a tropical cyclone can be predicted. Therefore, no need to worry and prepare ahead of time.</string>
+    <string name="question_497A">TRUE, since we can anticipate it and no need to act.</string>
+    <string name="question_497B">FALSE, whether we can predict it or not it’s always best to be prepared.</string>
+    <string name="question_497C">Maybe</string>
+    <string name="question_497D">None of the Above</string>
+    <string name="answer_497">FALSE, whether we can predict it or not it’s always best to be prepared.</string>
 
+    <string name="question_498">Which of the following can make a tropical cyclone weaken?</string>
+    <string name="question_498A">When it travels on bodies of water</string>
+    <string name="question_498B">When it is still in the warm ocean </string>
+    <string name="question_498C">When it travels outside the P.A.R</string>
+    <string name="question_498D">When it makes a landfall</string>
+    <string name="answer_498">When it makes a landfall</string>
+
+    <string name="question_499">The “__ ___”is a scenario of an earthquake from the West Valley Fault, a 100-kilometer fault through six cities in Metro Manila and nearby provinces.</string>
+    <string name="question_499A">Big One</string>
+    <string name="question_499B">The Big One </string>
+    <string name="question_499C">Big Two </string>
+    <string name="question_499D">Big Earthquake</string>
+    <string name="answer_499">Big One</string>
+
+    <string name="question_500">A _____ type of earthquake that occurs when the earth crust breaks due to geological forces on rocks and plates that cause physical and chemical changes.</string>
+    <string name="question_500A">Tectonic Earthquake </string>
+    <string name="question_500B">Volcanic Earthquake </string>
+    <string name="question_500C">Collapse Earthquake</string>
+    <string name="question_500D">None of the Above</string>
+    <string name="answer_500">Tectonic Earthquake </string>
+
+    <string name="question_501">What is NOT the right thing to do During a Typhoon</string>
+    <string name="question_501A">Stay at home</string>
+    <string name="question_501B">Cancel all travel or outdoor activities</string>
+    <string name="question_501C">Keep yourself updated on the latest weather news</string>
+    <string name="question_501D">Just play games the whole time of the Typhoon</string>
+    <string name="answer_501">Just play games the whole time of the Typhoon</string>
+
+    <string name="question_502">Is ashfall or volcanic ash safe to inhale for human and animals?</string>
+    <string name="question_502A">Yes</string>
+    <string name="question_502B">No</string>
+    <string name="question_502C">Maybe</string>
+    <string name="question_502D">I do not know</string>
+    <string name="answer_502">No</string>
+
+    <string name="question_503">It is also known as a Deposit of a volcanic Ash</string>
+    <string name="question_503A">Ashfall</string>
+    <string name="question_503B">Mudflow</string>
+    <string name="question_503C">Lava</string>
+    <string name="question_503D">Magma</string>
+    <string name="answer_503">Ashfall</string>
+
+    <string name="question_504">It is the Highest volcano in the Philippines</string>
+    <string name="question_504A">Mount Apo</string>
+    <string name="question_504B">Mayon Volcano</string>
+    <string name="question_504C">Mount Ragang</string>
+    <string name="question_504D">Mount Canlaon</string>
+    <string name="answer_504">Mount Apo</string>
+
+    <string name="question_505">This is an earthquake caused by movements of tectonic plates</string>
+    <string name="question_505A">Tectonic Plate</string>
+    <string name="question_505B">Surface Waves</string>
+    <string name="question_505C">Seismologist</string>
+    <string name="question_505D">None of the above</string>
+    <string name="answer_505">Tectonic Plate</string>
 
     <string name="selectedoption4">SelectedOption</string>
     <string name="correctanswer4">CorrectAnswer</string>

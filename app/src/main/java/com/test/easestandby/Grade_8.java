@@ -280,8 +280,9 @@ public class Grade_8 extends level {
     private void generateQuestions(){
         usedNumbers.clear();
         for(int x = 1; x <= 15;){
-            int currIndex = getRandomNumber(1, 15);
+            int currIndex = getRandomNumber(1, 25);
             Log.i("current_index_random",Integer.toString(currIndex));
+
             if(currIndex == 1 && !usedNumbers.contains(currIndex)){
                 questionBank[x-1] = new answerclass(R.string.question_11, R.string.question_11A, R.string.question_11B, R.string.question_11C, R.string.question_11D, R.string.answer_11A);
                 x++;
@@ -357,7 +358,56 @@ public class Grade_8 extends level {
                 usedNumbers.add(currIndex);
                 x++;
             }
-
+            else if(currIndex == 16 && !usedNumbers.contains(currIndex)) {
+                questionBank[x-1] = new answerclass(R.string.question_261, R.string.question_261A, R.string.question_261B, R.string.question_261C, R.string.question_261D, R.string.answer_261);
+                usedNumbers.add(currIndex);
+                x++;
+            }
+            else if(currIndex == 17 && !usedNumbers.contains(currIndex)) {
+                questionBank[x-1] = new answerclass(R.string.question_262, R.string.question_262A, R.string.question_262B, R.string.question_262C, R.string.question_262D, R.string.answer_262);
+                usedNumbers.add(currIndex);
+                x++;
+            }
+            else if(currIndex == 18 && !usedNumbers.contains(currIndex)) {
+                questionBank[x-1] = new answerclass(R.string.question_263, R.string.question_263A, R.string.question_263B, R.string.question_263C, R.string.question_263D, R.string.answer_263);
+                usedNumbers.add(currIndex);
+                x++;
+            }
+            else if(currIndex == 19 && !usedNumbers.contains(currIndex)) {
+                questionBank[x-1] = new answerclass(R.string.question_264, R.string.question_264A, R.string.question_264B, R.string.question_264C, R.string.question_264D, R.string.answer_264);
+                usedNumbers.add(currIndex);
+                x++;
+            }
+            else if(currIndex == 20 && !usedNumbers.contains(currIndex)) {
+                questionBank[x-1] = new answerclass(R.string.question_265, R.string.question_265A, R.string.question_265B, R.string.question_265C, R.string.question_265D, R.string.answer_265);
+                usedNumbers.add(currIndex);
+                x++;
+            }
+            else if(currIndex == 21 && !usedNumbers.contains(currIndex)) {
+                questionBank[x-1] = new answerclass(R.string.question_266, R.string.question_266A, R.string.question_266B, R.string.question_266C, R.string.question_266D, R.string.answer_266);
+                usedNumbers.add(currIndex);
+                x++;
+            }
+            else if(currIndex == 22 && !usedNumbers.contains(currIndex)) {
+                questionBank[x-1] = new answerclass(R.string.question_267, R.string.question_267A, R.string.question_267B, R.string.question_267C, R.string.question_267D, R.string.answer_267);
+                usedNumbers.add(currIndex);
+                x++;
+            }
+            else if(currIndex == 23 && !usedNumbers.contains(currIndex)) {
+                questionBank[x-1] = new answerclass(R.string.question_268, R.string.question_268A, R.string.question_268B, R.string.question_268C, R.string.question_268D, R.string.answer_268);
+                usedNumbers.add(currIndex);
+                x++;
+            }
+            else if(currIndex == 24 && !usedNumbers.contains(currIndex)) {
+                questionBank[x-1] = new answerclass(R.string.question_269, R.string.question_269A, R.string.question_269B, R.string.question_269C, R.string.question_269D, R.string.answer_269);
+                usedNumbers.add(currIndex);
+                x++;
+            }
+            else if(currIndex == 25 && !usedNumbers.contains(currIndex)) {
+                questionBank[x-1] = new answerclass(R.string.question_2691, R.string.question_2691A, R.string.question_2691B, R.string.question_2691C, R.string.question_2691D, R.string.answer_2691);
+                usedNumbers.add(currIndex);
+                x++;
+            }
         }
         Log.i("to_string",toString(usedNumbers));
     }

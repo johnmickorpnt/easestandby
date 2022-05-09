@@ -11,20 +11,31 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+
         <ImageView
             android:id="@+id/imageView5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
             android:layout_marginTop="5dp"
+            android:layout_marginEnd="0dp"
             android:scaleType="centerInside"
             android:src="@drawable/leaderboard" />
-
+        <Button
+            android:id="@+id/GoBack"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:drawableTop="@drawable/ic_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
         <RelativeLayout
             android:id="@+id/relativeLayout4"
             android:layout_width="match_parent"
             android:layout_height="46dp"
             android:layout_below="@+id/imageView5"
             android:layout_marginTop="5dp">
+
 
             <TextView
                 android:id="@+id/textView"

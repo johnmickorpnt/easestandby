@@ -54,6 +54,7 @@ public class profile extends AppCompatActivity {
     FirebaseUser user;
     StorageReference storageReference;
 
+    private Button GoBack;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -71,6 +72,8 @@ public class profile extends AppCompatActivity {
         fAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();
         storageReference = FirebaseStorage.getInstance().getReference();
+
+        GoBack = findViewById(R.id.GoBack);
 
 
 
@@ -125,10 +128,17 @@ public class profile extends AppCompatActivity {
                         }
                     }
                 });
+        //Go Back
+        GoBack = findViewById(R.id.GoBack);
+        GoBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
 
 
-
-
+        //change password
         changepassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

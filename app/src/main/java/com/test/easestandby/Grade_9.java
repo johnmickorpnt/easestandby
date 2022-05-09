@@ -280,7 +280,7 @@ public class Grade_9 extends level {
     private void generateQuestions(){
         usedNumbers.clear();
         for(int x = 1; x <= 20;){
-            int currIndex = getRandomNumber(1,20);
+            int currIndex = getRandomNumber(1,30);
             Log.i("current_index_random",Integer.toString(currIndex));
             if(currIndex == 1 && !usedNumbers.contains(currIndex)){
                 questionBank[x-1] = new answerclass(R.string.question_21, R.string.question21_A, R.string.question21_B, R.string.question21_C, R.string.question21_D, R.string.answer_21);
@@ -393,9 +393,69 @@ public class Grade_9 extends level {
                 x++;
             }
 
+            else if(currIndex == 21 && !usedNumbers.contains(currIndex)) {
+                questionBank[x-1] = new answerclass(R.string.question_282, R.string.question282_A, R.string.question282_B, R.string.question282_C, R.string.question282_D, R.string.answer_282);
+                usedNumbers.add(currIndex);
+                x++;
+            }
+
+            else if(currIndex == 22 && !usedNumbers.contains(currIndex)) {
+                questionBank[x-1] = new answerclass(R.string.question_283, R.string.question283_A, R.string.question283_B, R.string.question283_C, R.string.question283_D, R.string.answer_283);
+                usedNumbers.add(currIndex);
+                x++;
+            }
+
+            else if(currIndex == 23 && !usedNumbers.contains(currIndex)) {
+                questionBank[x-1] = new answerclass(R.string.question_284, R.string.question284_A, R.string.question284_B, R.string.question284_C, R.string.question284_D, R.string.answer_284);
+                usedNumbers.add(currIndex);
+                x++;
+            }
+
+            else if(currIndex == 24 && !usedNumbers.contains(currIndex)) {
+                questionBank[x-1] = new answerclass(R.string.question_285, R.string.question285_A, R.string.question285_B, R.string.question285_C, R.string.question285_D, R.string.answer_285);
+                usedNumbers.add(currIndex);
+                x++;
+            }
+
+            else if(currIndex == 25 && !usedNumbers.contains(currIndex)) {
+                questionBank[x-1] = new answerclass(R.string.question_286, R.string.question286_A, R.string.question286_B, R.string.question286_C, R.string.question286_D, R.string.answer_286);
+                usedNumbers.add(currIndex);
+                x++;
+            }
+
+            else if(currIndex == 26 && !usedNumbers.contains(currIndex)) {
+                questionBank[x-1] = new answerclass(R.string.question_287, R.string.question287_A, R.string.question287_B, R.string.question287_C, R.string.question287_D, R.string.answer_287);
+                usedNumbers.add(currIndex);
+                x++;
+            }
+
+            else if(currIndex == 27 && !usedNumbers.contains(currIndex)) {
+                questionBank[x-1] = new answerclass(R.string.question_288, R.string.question288_A, R.string.question288_B, R.string.question288_C, R.string.question288_D, R.string.answer_288);
+                usedNumbers.add(currIndex);
+                x++;
+            }
+
+            else if(currIndex == 28 && !usedNumbers.contains(currIndex)) {
+                questionBank[x-1] = new answerclass(R.string.question_289, R.string.question289_A, R.string.question289_B, R.string.question289_C, R.string.question289_D, R.string.answer_289);
+                usedNumbers.add(currIndex);
+                x++;
+            }
+
+            else if(currIndex == 29 && !usedNumbers.contains(currIndex)) {
+                questionBank[x-1] = new answerclass(R.string.question_290, R.string.question290_A, R.string.question290_B, R.string.question290_C, R.string.question290_D, R.string.answer_290);
+                usedNumbers.add(currIndex);
+                x++;
+            }
+
+            else if(currIndex == 30 && !usedNumbers.contains(currIndex)) {
+                questionBank[x-1] = new answerclass(R.string.question_281, R.string.question281_A, R.string.question281_B, R.string.question281_C, R.string.question281_D, R.string.answer_281);
+                usedNumbers.add(currIndex);
+                x++;
+            }
         }
         Log.i("to_string",toString(usedNumbers));
     }
+
     public static int getRandomNumber(int min, int max) {
         return (new Random()).nextInt((max - min) + 1) + min;
     }
