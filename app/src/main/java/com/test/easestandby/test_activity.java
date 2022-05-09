@@ -12,6 +12,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
+import android.widget.Button;
 import android.widget.Toast;
 
 import com.google.firebase.database.ChildEventListener;
@@ -42,9 +43,9 @@ public class test_activity extends AppCompatActivity {
     LinearLayoutManager layoutManager;
     List<ModelClass> userlist;
     Adapter adapter;
-
+    Button backBtn;
     final FirebaseFirestore db = FirebaseFirestore.getInstance();
-    String grades[] = {"All", "Easy", "Average", "Hard" ,"Difficult"};
+    String grades[] = {"All", "Easy", "Medium", "Hard" ,"Expert"};
     AutoCompleteTextView autoCompleteTextView;
     ArrayAdapter<String> adapterItems;
 
@@ -53,7 +54,14 @@ public class test_activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_leaderboard);
         autoCompleteTextView = findViewById(R.id.auto_complete_txt);
+        backBtn = findViewById(R.id.GoBack);
 
+        backBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
         adapterItems = new ArrayAdapter<>(this,  R.layout.lsit_item, grades);
         autoCompleteTextView.setAdapter(adapterItems);
 
