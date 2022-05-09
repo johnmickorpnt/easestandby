@@ -54,6 +54,8 @@ public class EditProfile extends AppCompatActivity {
     FirebaseUser user;
     StorageReference storageReference;
 
+    private Button GoBack;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -80,7 +82,7 @@ public class EditProfile extends AppCompatActivity {
         user = fAuth.getCurrentUser();
         storageReference = FirebaseStorage.getInstance().getReference();
 
-
+        GoBack = findViewById(R.id.GoBack);
 
 
         ActivityResultLauncher<String> mgetContent = registerForActivityResult(new ActivityResultContracts.GetContent(),
@@ -107,7 +109,14 @@ public class EditProfile extends AppCompatActivity {
             }
         });
 
-
+        //Go Back
+        GoBack = findViewById(R.id.GoBack);
+        GoBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
 
         editPic.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -6,7 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".EditProfile">
 
-
+    <Button
+        android:id="@+id/GoBack"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:drawableTop="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editName"
