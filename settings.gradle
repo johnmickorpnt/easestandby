@@ -9,4 +9,4 @@ dependencyResolutionManagement {
 rootProject.name = "easestandby"
 include ':app'
 include ':unityLibrary'
-project(':unityLibrary').projectDir=new File('D:\\MICHAEL\\Capstone Final\\unityLibrary')
+project(':unityLibrary').projectDir=new File('C:\\Users\\kenco\\OneDrive\\Desktop\\V2_VN\\EASESTANDBY_UPDATED\\easestandby\\unityLibrary')

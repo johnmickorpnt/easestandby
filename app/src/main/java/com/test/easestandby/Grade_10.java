@@ -40,12 +40,12 @@ public class Grade_10 extends level {
     int currentIndex;
     int mscore=0;
     int qn=1;
-    private boolean[] history = new boolean[25];
+    private boolean[] history = new boolean[15];
 
     ProgressBar progressBar;
     int CurrentQuestion,CurrentOptionA,CurrentOptionB,CurrentOptionC,CurrentOptionD;
     List<Integer> usedNumbers = new ArrayList<Integer>();
-    private answerclass[] questionBank = new answerclass[25];
+    private answerclass[] questionBank = new answerclass[15];
 
     FirebaseAuth fAuth;
     FirebaseFirestore fStore;
@@ -161,7 +161,7 @@ public class Grade_10 extends level {
     private void save(){
         Map<String, Object> scores = new HashMap<>();
         int finScore = mscore;
-        float pct =  ((float) mscore / 25) * (float) 100;
+        float pct =  ((float) mscore / 15) * (float) 100;
         DocumentReference documentReference = fStore.collection("users").document(UserID);
         documentReference.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
             @Override
@@ -223,7 +223,7 @@ public class Grade_10 extends level {
                 qNum++;
             }
 
-            scoreText.setText(String.valueOf(mscore) + "\\10");
+            scoreText.setText(String.valueOf(mscore) + "\\15");
             qHistoryText.setText(qHistory);
             alert.setView(dialogView);
             alert.setCancelable(false);
@@ -282,7 +282,7 @@ public class Grade_10 extends level {
 
     private void generateQuestions(){
         usedNumbers.clear();
-        for(int x = 1; x <= 25;){
+        for(int x = 1; x <= 15;){
             int currIndex = getRandomNumber(1, 35);
             Log.i("current_index_random",Integer.toString(currIndex));
             if(currIndex == 1 && !usedNumbers.contains(currIndex)){

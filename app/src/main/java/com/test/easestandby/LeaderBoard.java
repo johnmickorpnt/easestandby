@@ -40,9 +40,7 @@ public class LeaderBoard extends AppCompatActivity {
         setContentView(R.layout.activity_leaderboard);
         // Attach a listener to read the data at our posts reference
         Log.v("hehe", "hihi");
-    }
 
-    private void initData() {
         GoBack = findViewById(R.id.GoBack);
 
         //Go Back
@@ -53,6 +51,12 @@ public class LeaderBoard extends AppCompatActivity {
                 finish();
             }
         });
+
+    }
+
+
+
+    private void initData() {
 
         userlist = new ArrayList<>();
         userlist.add(new ModelClass("No.1","10pts", "Grade 7, Ken Cocjin","_______________________"));

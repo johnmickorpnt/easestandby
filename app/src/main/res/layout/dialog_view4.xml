@@ -32,7 +32,7 @@
         android:id="@+id/scoreText3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="0/25"
+        android:text="0/15"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -53,7 +53,7 @@
             android:id="@+id/qHistory7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=" Question #1: \n Question #2: \n Question #3: \n Question #4: \n Question #5: \n Question #6: \n Question #7: \n Question #8: \n Question #9: \n Question #10:\n Question #11:\n Question #12: \n Question #13: \n Question #14: \n Question #15: \n Question #16: \n Question #17: \n Question #18: \n Question #19: \n Question #20: \n Question #21: \n Question #22: \n Question #23: \n Question #24: \n Question #25: "
+            android:text=" Question #1: \n Question #2: \n Question #3: \n Question #4: \n Question #5: \n Question #6: \n Question #7: \n Question #8: \n Question #9: \n Question #10:\n Question #11:\n Question #12: \n Question #13: \n Question #14: \n Question #15:"
             android:textSize="18sp" />
 
         <TextView
@@ -61,7 +61,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Incorrect \n Correct \n Incorrect \n  Incorrect \n Correct \n  Incorrect \n Incorrect \n Incorrect \n: Incorrect \n Incorrect \n Incorrect \n Incorrect \n Incorrect \n Incorrect \n Incorrect \n Incorrect \n Incorrect \n Incorrect \n Incorrect \n Incorrect  \n Incorrect  \n Incorrect  \n Incorrect  \n Incorrect  \n Incorrect "
+            android:text="Incorrect \n Correct \n Incorrect \n  Incorrect \n Correct \n  Incorrect \n Incorrect \n Incorrect \n: Incorrect \n Incorrect \n Incorrect \n Incorrect \n Incorrect \n Incorrect \n Incorrect "
             android:textSize="18sp"
             android:textStyle="bold" />
     </LinearLayout>

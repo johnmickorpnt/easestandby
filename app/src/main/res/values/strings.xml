@@ -355,8 +355,8 @@
     <string name="selectedoption2">SelectedOption</string>
     <string name="correctanswer2">CorrectAnswer</string>
 
-    <string name="question_number2">1/15 Question</string>
-    <string name="score1">Score 0/15</string>
+    <string name="question_number2">1/10 Question</string>
+    <string name="score1">Score 0/10</string>
 
 
 
@@ -585,8 +585,8 @@
     <string name="correctanswer3">CorrectAnswer</string>
 
 
-    <string name="question_number3">1/20 Question</string>
-    <string name="score2">Score 0/20</string>
+    <string name="question_number3">1/15 Question</string>
+    <string name="score2">Score 0/15</string>
 
 
 
@@ -845,8 +845,8 @@
     <string name="correctanswer4">CorrectAnswer</string>
 
 
-    <string name="question_number4">1/25 Question</string>
-    <string name="score3">Score 0/25</string>
+    <string name="question_number4">1/15 Question</string>
+    <string name="score3">Score 0/15</string>
 
 
 
