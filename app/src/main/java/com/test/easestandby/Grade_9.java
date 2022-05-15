@@ -36,7 +36,7 @@ public class Grade_9 extends level {
     private TextView chechkout1,checkout2;
     public TextView Timer;
     private CountDownTimer countDownTimer;
-    private  long timeLeftMilsec = 301000;
+    private  long timeLeftMilsec = 900000;
     int currentIndex;
     int mscore=0;
     int qn=1;
@@ -482,7 +482,7 @@ public class Grade_9 extends level {
             public void onFinish() {
                 currentIndex = 0;
                 countDownTimer.cancel();
-                timeLeftMilsec = 301000;
+                timeLeftMilsec = 900000;
                 final boolean[] newGame = {false};
                 AlertDialog.Builder alert = new AlertDialog.Builder(Grade_9.this);
                 alert.setTitle("Game Over");
@@ -507,7 +507,7 @@ public class Grade_9 extends level {
                         progressBar.setProgress(0);
                         score.setText("Score" + mscore +"/" +questionBank.length);
                         questionnumber.setText(qn + "/" + questionBank.length +"Question");
-                        timeLeftMilsec = 301000;
+                        timeLeftMilsec = 900000;
                         countDownTimer.start();
                     }
                 });

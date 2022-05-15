@@ -72,7 +72,7 @@ public class level extends AppCompatActivity{
         });
 
 
-        // For Grade_8
+//         For Grade_8
         Average = findViewById(R.id.Average);
         Average.setOnClickListener(new View.OnClickListener() {
             @Override

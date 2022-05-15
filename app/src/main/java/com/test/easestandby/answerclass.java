@@ -1,20 +1,24 @@
 package com.test.easestandby;
 
+import android.view.View;
+import android.widget.ImageView;
+
 public class answerclass {
+
+
 
     private int optionA,optionB,optionC,optionD,questionid,answerid;
 
-    public answerclass(int questionide, int optiona, int optionb, int optionc, int optiond, int answeride)
+
+    public answerclass( int questionide, int optiona, int optionb, int optionc, int optiond, int answeride)
     {
+
         questionid=questionide;
         optionA=optiona;
         optionB=optionb;
         optionC=optionc;
         optionD=optiond;
         answerid=answeride;
-
-
-
     }
 
 
@@ -33,6 +37,9 @@ public class answerclass {
     public int getOptionD() {
         return optionD;
     }
+
+
+
 
     public int getQuestionid() {
         return questionid;

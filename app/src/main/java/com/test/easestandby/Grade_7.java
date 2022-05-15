@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.util.Log;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -42,7 +43,7 @@ public class Grade_7 extends level {
     private TextView chechkout1,checkout2;
     public TextView Timer;
     private CountDownTimer countDownTimer;
-    private  long timeLeftMilsec = 60000;
+    private  long timeLeftMilsec = 600000;
     int currentIndex;
     int mscore=0;
     int qn=1;
@@ -69,11 +70,11 @@ public class Grade_7 extends level {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
         generateQuestions();
+//        generateImages();
         optionA=findViewById(R.id.optionA);
         optionB=findViewById(R.id.optionB);
         optionC=findViewById(R.id.optionC);
         optionD=findViewById(R.id.optionD);
-
 
         Timer = findViewById(R.id.TimerTextView);
         fAuth = FirebaseAuth.getInstance();
@@ -82,11 +83,9 @@ public class Grade_7 extends level {
         UserID = fAuth.getCurrentUser().getUid();
         user = fAuth.getCurrentUser();
 
-
         question = findViewById(R.id.question);
         score=findViewById(R.id.score);
         questionnumber=findViewById(R.id.QuestionNumber);
-
         chechkout1=findViewById(R.id.selectoption);
         checkout2=findViewById(R.id.CorrectAnswer);
         progressBar=findViewById(R.id.progress_bar);
@@ -208,6 +207,7 @@ public class Grade_7 extends level {
         int qNum = 0;
         if(currentIndex==0)
         {
+
             generateQuestions();
             countDownTimer.cancel();
             AlertDialog.Builder alert=new AlertDialog.Builder(Grade_7.this);
@@ -273,62 +273,81 @@ public class Grade_7 extends level {
 
     }
 
+
     private void generateQuestions(){
         usedNumbers.clear();
         for(int x = 1; x <= 10;){
-            int currIndex = getRandomNumber(1, 20);
+            int currIndex = getRandomNumber(1,20);
             Log.i("current_index_random",Integer.toString(currIndex));
-            if(currIndex == 1 && !usedNumbers.contains(currIndex)){
-                questionBank[x-1] = new answerclass(R.string.question_1, R.string.question1_A, R.string.question1_B, R.string.question1_C, R.string.question1_D, R.string.answer_1);
+            if(currIndex == 1 && !usedNumbers.contains(currIndex) ){
+                questionBank[x-1] = new answerclass (R.string.question_1, R.string.question1_A, R.string.question1_B, R.string.question1_C, R.string.question1_D, R.string.answer_1);
                 x++;
                 usedNumbers.add(currIndex);
+
             }
             else if(currIndex == 2 && !usedNumbers.contains(currIndex)){
                 questionBank[x-1] = new answerclass(R.string.question_2, R.string.question_2A, R.string.question_2B, R.string.question_2C, R.string.question_2D, R.string.answer_2);
                 x++;
                 usedNumbers.add(currIndex);
+
+
             }
             else if(currIndex == 3 && !usedNumbers.contains(currIndex)){
                 questionBank[x-1] = new answerclass(R.string.question_3, R.string.question_3A, R.string.question_3B, R.string.question_3C, R.string.question_3D, R.string.answer_3);
                 x++;
                 usedNumbers.add(currIndex);
+
+
+
             }
             else if(currIndex == 4 && !usedNumbers.contains(currIndex)){
                 questionBank[x-1] = new answerclass(R.string.question_4, R.string.question_4A, R.string.question_4B, R.string.question_4C, R.string.question_4D, R.string.answer_4);
                 x++;
                 usedNumbers.add(currIndex);
+
+
             }
             else if(currIndex == 5 && !usedNumbers.contains(currIndex)){
                 questionBank[x-1] = new answerclass(R.string.question_5, R.string.question_5A, R.string.question_5B, R.string.question_5C, R.string.question_5D, R.string.answer_5);
                 x++;
                 usedNumbers.add(currIndex);
+
             }
             else if(currIndex == 6 && !usedNumbers.contains(currIndex)){
                 questionBank[x-1] = new answerclass(R.string.question_6, R.string.question_6A, R.string.question_6B, R.string.question_6C, R.string.question_6D, R.string.answer_6);
                 x++;
                 usedNumbers.add(currIndex);
+
+
+
             }
             else if(currIndex == 7 && !usedNumbers.contains(currIndex)){
                 questionBank[x-1] = new answerclass(R.string.question_7, R.string.question_7A, R.string.question_7B, R.string.question_7C, R.string.question_7D, R.string.answer_7);
                 x++;
                 usedNumbers.add(currIndex);
+
+
+
             }
             else if(currIndex == 8 && !usedNumbers.contains(currIndex)) {
                 questionBank[x-1] = new answerclass(R.string.question_8, R.string.question_8A, R.string.question_8B, R.string.question_8C, R.string.question_8D, R.string.answer_8);
                 usedNumbers.add(currIndex);
                 x++;
+
             }
 
             else if(currIndex == 9 && !usedNumbers.contains(currIndex)) {
                 questionBank[x-1] = new answerclass(R.string.question_9, R.string.question_9A, R.string.question_9B, R.string.question_9C, R.string.question_9D, R.string.answer_9);
                 usedNumbers.add(currIndex);
                 x++;
+
             }
 
             else if(currIndex == 10 && !usedNumbers.contains(currIndex)) {
                 questionBank[x-1] = new answerclass(R.string.question_10, R.string.question_10A, R.string.question_10B, R.string.question_10C, R.string.question_10D, R.string.answer_10);
                 usedNumbers.add(currIndex);
                 x++;
+
             }
 
             else if(currIndex == 11 && !usedNumbers.contains(currIndex)) {
@@ -419,7 +438,7 @@ public class Grade_7 extends level {
             public void onFinish() {
                 currentIndex = 0;
                 countDownTimer.cancel();
-                timeLeftMilsec = 60000;
+                timeLeftMilsec = 610000;
                 final boolean[] newGame = {false};
                 AlertDialog.Builder alert = new AlertDialog.Builder(Grade_7.this);
                 alert.setTitle("Game Over");
@@ -444,7 +463,7 @@ public class Grade_7 extends level {
                         progressBar.setProgress(0);
                         score.setText("Score" + mscore +"/" +questionBank.length);
                         questionnumber.setText(qn + "/" + questionBank.length +"Question");
-                        timeLeftMilsec = 60000;
+                        timeLeftMilsec = 600000;
                         countDownTimer.start();
                     }
                 });
@@ -460,7 +479,7 @@ public class Grade_7 extends level {
                         progressBar.setProgress(0);
                         score.setText("Score" + mscore +"/" +questionBank.length);
                         questionnumber.setText(qn + "/" + questionBank.length +"Question");
-                        timeLeftMilsec = 60000;
+                        timeLeftMilsec = 600000;
                         countDownTimer.start();
                     }
                 });

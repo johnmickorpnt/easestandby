@@ -35,9 +35,12 @@
             android:exported="true"
             android:hardwareAccelerated="false"
             android:launchMode="singleTask"
-            android:screenOrientation="sensorLandscape"
-            android:theme="@style/UnityThemeSelector"
-            tools:ignore="IntentFilterExportedReceiver" >
+            android:screenOrientation="landscape"
+            android:theme="@style/UnityThemeSelector" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+
             <meta-data
                 android:name="unityplayer.UnityActivity"
                 android:value="true" />
@@ -57,7 +60,7 @@
             android:value="portrait|landscape" />
         <meta-data
             android:name="unity.build-id"
-            android:value="0876000d-d077-4f2d-a12a-bed4dd957883" />
+            android:value="e7847fc1-a8b5-42a2-abfb-b78bba3a52db" />
     </application>
 
 </manifest>

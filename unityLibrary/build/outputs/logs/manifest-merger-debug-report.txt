@@ -1,8 +1,8 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:3:1-23:12
-INJECTED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:3:1-23:12
-INJECTED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:3:1-23:12
+ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:3:1-25:12
+INJECTED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:3:1-25:12
+INJECTED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:3:1-25:12
 	package
 		ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:3:70-98
 		INJECTED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml
@@ -12,99 +12,103 @@ INJECTED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestan
 	xmlns:android
 		ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:3:11-69
 application
-ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:4:3-15:17
+ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:4:3-17:17
 activity#com.unity3d.player.UnityPlayerActivity
-ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:5:5-10:16
+ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:5:5-12:16
 	android:screenOrientation
-		ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:5:111-154
+		ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:5:111-148
 	android:launchMode
-		ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:5:155-186
+		ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:5:149-180
 	android:hardwareAccelerated
-		ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:5:369-404
+		ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:5:363-398
 	android:exported
 		ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:6:9-32
-	tools:ignore
-		ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:7:9-52
 	android:configChanges
-		ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:5:187-368
+		ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:5:181-362
 	android:theme
 		ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:5:69-110
 	android:name
 		ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:5:15-68
+intent-filter#action:name:android.intent.action.MAIN
+ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:7:7-9:23
+action#android.intent.action.MAIN
+ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:8:9-61
+	android:name
+		ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:8:17-58
 meta-data#unityplayer.UnityActivity
-ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:8:7-82
+ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:10:7-82
 	android:value
-		ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:8:59-79
+		ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:10:59-79
 	android:name
-		ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:8:18-58
+		ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:10:18-58
 meta-data#android.notch_support
-ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:9:7-78
+ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:11:7-78
 	android:value
-		ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:9:55-75
+		ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:11:55-75
 	android:name
-		ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:9:18-54
+		ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:11:18-54
 meta-data#unity.splash-mode
-ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:11:5-69
+ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:13:5-69
 	android:value
-		ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:11:49-66
+		ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:13:49-66
 	android:name
-		ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:11:16-48
+		ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:13:16-48
 meta-data#unity.splash-enable
-ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:12:5-74
+ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:14:5-74
 	android:value
-		ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:12:51-71
+		ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:14:51-71
 	android:name
-		ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:12:16-50
+		ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:14:16-50
 meta-data#notch.config
-ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:13:5-81
+ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:15:5-81
 	android:value
-		ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:13:44-78
+		ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:15:44-78
 	android:name
-		ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:13:16-43
+		ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:15:16-43
 meta-data#unity.build-id
-ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:14:5-101
+ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:16:5-101
 	android:value
-		ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:14:46-98
+		ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:16:46-98
 	android:name
-		ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:14:16-45
+		ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:16:16-45
 uses-feature#0x00030000
-ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:16:3-52
+ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:18:3-52
 	android:glEsVersion
-		ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:16:17-49
+		ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:18:17-49
 uses-feature#android.hardware.vulkan.version
-ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:17:3-91
+ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:19:3-91
 	android:required
-		ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:17:64-88
+		ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:19:64-88
 	android:name
-		ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:17:17-63
+		ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:19:17-63
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:18:3-65
+ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:20:3-65
 	android:name
-		ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:18:20-62
+		ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:20:20-62
 uses-feature#android.hardware.sensor.accelerometer
-ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:19:3-97
+ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:21:3-97
 	android:required
-		ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:19:70-94
+		ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:21:70-94
 	android:name
-		ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:19:17-69
+		ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:21:17-69
 uses-feature#android.hardware.touchscreen
-ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:20:3-88
+ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:22:3-88
 	android:required
-		ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:20:61-85
+		ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:22:61-85
 	android:name
-		ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:20:17-60
+		ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:22:17-60
 uses-feature#android.hardware.touchscreen.multitouch
-ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:21:3-99
+ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:23:3-99
 	android:required
-		ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:21:72-96
+		ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:23:72-96
 	android:name
-		ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:21:17-71
+		ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:23:17-71
 uses-feature#android.hardware.touchscreen.multitouch.distinct
-ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:22:3-108
+ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:24:3-108
 	android:required
-		ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:22:81-105
+		ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:24:81-105
 	android:name
-		ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:22:17-80
+		ADDED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml:24:17-80
 uses-sdk
 INJECTED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\kenco\OneDrive\Desktop\V2_VN\EASESTANDBY_UPDATED\easestandby\unityLibrary\src\main\AndroidManifest.xml

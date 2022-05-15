@@ -31,6 +31,7 @@
     <string name="question1_C">I do not know</string>
     <string name="question1_D">Maybe</string>
     <string name="answer_1">True</string>
+    // https://www.dosomething.org/us/facts/11-facts-about-tsunamis
 
     <string name="question_2">What does P.A.R. stands for?</string>
     <string name="question_2A">Philippine Area of Readiness</string>
@@ -38,6 +39,8 @@
     <string name="question_2C">Philippine Area of Responsibility</string>
     <string name="question_2D">Philippine Are Ready</string>
     <string name="answer_2">Philippine Area of Responsibility</string>
+    //https://commons.wikimedia.org/wiki/File:PAGASA_Philippine_Area_of_Responsibility_-_en.svg#/media/File:PAGASA_Philippine_Area_of_Responsibility_-_tl.svg
+
 
     <string name="question_3">What does PAGASA stands for?</string>
     <string name="question_3A"> Phillipine Atmospheric Geophysical  and  Astronomical Services Administration </string>
@@ -45,6 +48,7 @@
     <string name="question_3C">  Pilipinas Atmospheric Geophysical  and  Astronomical Services Administrations </string>
     <string name="question_3D"> None of the above </string>
     <string name="answer_3"> Phillipine Atmospheric Geophysical  and  Astronomical Services Administration</string>
+ //https://www.pngitem.com/middle/hwhJbbi_pagasa-logo-pagasa-hd-png-download/
 
     <string name="question_4">Their role is to provide information such as the weather forecast, advisories, tropical cyclone and flood bulletins warnings</string>
     <string name="question_4A">PAGASA </string>
@@ -52,6 +56,7 @@
     <string name="question_4C">DepEd</string>
     <string name="question_4D">DSWD</string>
     <string name="answer_4">PAGASA</string>
+ //https://www.clipartmax.com/download/m2i8N4i8H7H7N4K9_don-t-know-symbol/
 
     <string name="question_5">Why is Philippines prone to typhoon? </string>
     <string name="question_5A">Because it is located far the equator and faces the east Atlantic, </string>
@@ -59,6 +64,7 @@
     <string name="question_5C">Because it is a small country </string>
     <string name="question_5D">None of the above </string>
     <string name="answer_5">Due to its graphical location</string>
+ //https://www.clipartmax.com/download/m2i8N4i8H7H7N4K9_don-t-know-symbol/
 
     <string name="question_6">It is the effect of a strong typhoon </string>
     <string name="question_6A">Earthquake </string>
@@ -66,6 +72,7 @@
     <string name="question_6C">Volcanic Eruption</string>
     <string name="question_6D">Flood </string>
     <string name="answer_6">Flood</string>
+ //https://www.clipartmax.com/download/m2i8Z5m2N4d3G6N4_typhoon-cliparts-typhoon-clipart-png/
 
     <string name="question_7">What is the average number of typhoons in the Philippines? </string>
     <string name="question_7A">5</string>
@@ -73,6 +80,7 @@
     <string name="question_7C">15</string>
     <string name="question_7D">20</string>
     <string name="answer_7">20</string>
+ // https://www.clipartmax.com/middle/m2H7K9G6K9N4N4H7_lgbt-philippines-map-of-the-philippines-black-and-white/
 
     <string name="question_8">During an earthquake, what is the best thing to do?</string>
     <string name="question_8A">Duck, Cover, and Hold</string>
@@ -80,6 +88,8 @@
     <string name="question_8C">Post it on Social Media</string>
     <string name="question_8D">Go out immediately</string>
     <string name="answer_8">Duck, Cover, and Hold</string>
+ // https://www.clipartmax.com/download/m2K9A0m2d3A0A0d3_clipart-emoticons-question-face-question-face-emoticon/
+
 
     <string name="question_9">Which of the following is responsible for  relevant information of the volcanic and earthquake?</string>
     <string name="question_9A">PAGASA</string>
@@ -87,6 +97,7 @@
     <string name="question_9C">DSWD</string>
     <string name="question_9D">PHIVOLCS</string>
     <string name="answer_9">PHIVOLCS</string>
+  // https://www.clipartmax.com/middle/m2i8Z5d3m2H7d3d3_philippine-institute-of-volcanology-and-seismology/
 
     <string name="question_10">What is the BEST thing to do when there is a tropical typhoon? </string>
     <string name="question_10A">Ignore the weather condition and just go on with usual routines</string>
@@ -94,6 +105,7 @@
     <string name="question_10C">Organize an outing with the family </string>
     <string name="question_10D">All of the above </string>
     <string name="answer_10">Stay at home and prepare for the effects of the typhoons</string>
+   // https://www.clipartmax.com/download/m2K9A0m2d3A0A0d3_clipart-emoticons-question-face-question-face-emoticon/
 
     <string name="question_10.1">It is a sudden shaking of the Ground.</string>
     <string name="question_10A.1">Earthquake</string>
@@ -101,6 +113,7 @@
     <string name="question_10C.1">Sandstorm</string>
     <string name="question_10D.1">Landslide</string>
     <string name="answer_10.1">Earthquake</string>
+    //https://www.clipartmax.com/download/m2i8H7m2G6b1N4A0_earthquake-landslide-free-clip-art/
 
     <string name="question_10.2">What does PHILVOCS stands for?</string>
     <string name="question_10A.2">Philippine Institute of Volcanology and Seismology</string>
@@ -108,6 +121,7 @@
     <string name="question_10C.2">Philippines Instite of Vulkanic and Systematic</string>
     <string name="question_10D.2">None of the above</string>
     <string name="answer_10.2">Philippine Institute of Volcanology and Seismology</string>
+ // https://www.clipartmax.com/download/m2K9A0m2d3A0A0d3_clipart-emoticons-question-face-question-face-emoticon/
 
     <string name="question_10.3">This disaster release spew hot, dangerous gases, ash, lava, and rock that are powerfully destructive.</string>
     <string name="question_10A.3">Volcanic Eruption</string>
@@ -115,6 +129,7 @@
     <string name="question_10C.3">Forest Fire</string>
     <string name="question_10D.3">None of the above</string>
     <string name="answer_10.3">Volcanic Eruption</string>
+    // https://www.clipartmax.com/middle/m2i8N4A0G6G6K9H7_magma-seeps-through-transparent-volcano/
 
     <string name="question_10.4">It is a path along the Pacific ocean, wherein active volcanoes and frequent earthquakes can be found?</string>
     <string name="question_10A.4">Ring of Earthquake</string>
@@ -122,6 +137,7 @@
     <string name="question_10C.4">Lord of the Rings</string>
     <string name="question_10D.4">Ring of water </string>
     <string name="answer_10.4">Ring of fire</string>
+// https://www.clipartmax.com/middle/m2H7Z5K9G6d3b1i8_earth-green-globe-pacific-ocean-globe-png/
 
     <string name="question_10.5">A natural disaster is a(n) ____ event.</string>
     <string name="question_10A.5">Expected</string>
@@ -129,13 +145,15 @@
     <string name="question_10C.5">Planned</string>
     <string name="question_10D.5">Scheduled </string>
     <string name="answer_10.5">Unexpected</string>
+// https://www.clipartmax.com/middle/m2i8H7m2G6i8K9K9_surviving-tsunamis-house-in-flood-clipart/
 
     <string name="question_10.6">A _____ is a giant, rotating storm that brings wind, rain, and destruction.</string>
-    <string name="question_10A.6">Cyclone</string>
-    <string name="question_10B.6">Typhoon</string>
-    <string name="question_10C.6">Hurricane</string>
+    <string name="question_10A.6">Fire Tornado</string>
+    <string name="question_10B.6">Tornado</string>
+    <string name="question_10C.6">Typhoon</string>
     <string name="question_10D.6">None of the above </string>
     <string name="answer_10.6">Typhoon </string>
+    // questions emoticon.png
 
     <string name="question_10.7">It is a smaller earthquake following the main shock of a large earthquake.</string>
     <string name="question_10A.7">foreshock</string>
@@ -143,6 +161,7 @@
     <string name="question_10C.7">aftershock</string>
     <string name="question_10D.7">main shock </string>
     <string name="answer_10.7">aftershock</string>
+    // shaking png
 
     <string name="question_10.8">____ is extremely hot liquid and semi-liquid rock located under earth surface.</string>
     <string name="question_10A.8">Lava</string>
@@ -150,6 +169,7 @@
     <string name="question_10C.8">Magna</string>
     <string name="question_10D.8">I do not know </string>
     <string name="answer_10.8">Magma</string>
+    // volcanic.png
 
     <string name="question_10.9">This natural disaster can trigger flash floods, earthquakes, mudflows and rockfalls.</string>
     <string name="question_10A.9">Mountain</string>
@@ -157,6 +177,7 @@
     <string name="question_10C.9">Explosion</string>
     <string name="question_10D.9">Volcano</string>
     <string name="answer_10.9">Volcano</string>
+    // emoticon question
 
     <string name="question_10.10">There is a typhoon approaching to the Philippines and the forecast says your city is on signal number 3. What will you do? </string>
     <string name="question_10A.10">Play mobile Games</string>
@@ -164,6 +185,7 @@
     <string name="question_10C.10">Prepare popcorn, movies, and snacks so you can relax during the typhoon.</string>
     <string name="question_10D.10">Call the authorities</string>
     <string name="answer_10.10">Prepare stocks like food, batteries, and flashlight</string>
+    // https://www.clipartmax.com/middle/m2i8A0A0N4d3i8H7_watch-online-news-using-ipad-vector-goes-around-comes-around-karma/
 
     <string name="selctedoption">SelectedOption</string>
     <string name="correctanswer">CorrectAnswer</string>
@@ -182,6 +204,7 @@
     <string name="question_11C">Maybe</string>
     <string name="question_11D">None of the Above</string>
     <string name="answer_11A">TRUE, because by being prepared we can help to prevent/minimize damages</string>
+    //https://www.clipartmax.com/download/m2i8N4K9N4m2Z5i8_flat-long-shadow-brain-icon-modern-design-philosophy-icon-png/
 
     <string name="question_12">Typhoon is also known as a term ______ ______?</string>
     <string name="question_12A">Tropical Cyclone</string>
@@ -189,6 +212,7 @@
     <string name="question_12C">Heavy Rain</string>
     <string name="question_12D">Huge Phenomena</string>
     <string name="answer_12B">Tropical Cyclone</string>
+    // https://www.clipartmax.com/download/m2K9A0A0m2A0m2d3_storm-clipart-tropical-storm-hurricane-png/
 
     <string name="question_13">____ is the number that characterizes the relative size of an earthquake.</string>
     <string name="question_13A">Magnitude</string>
@@ -196,6 +220,7 @@
     <string name="question_13C">Altitude</string>
     <string name="question_13D">Richter Scale</string>
     <string name="answer_13B">Magnitude</string>
+    //https://www.clipartmax.com/download/m2i8N4K9N4m2Z5i8_flat-long-shadow-brain-icon-modern-design-philosophy-icon-png/
 
     <string name="question_14">Which of the following is not an effect of an Earthquake?</string>
     <string name="question_14A">Damage to buildings</string>
@@ -203,6 +228,7 @@
     <string name="question_14C">Trigger tsunamis</string>
     <string name="question_14D">Air pollution</string>
     <string name="answer_14A">Air pollution</string>
+    // questions.png
 
     <string name="question_15">Is it safe to stay inside the car during floodwater?</string>
     <string name="question_15A">YES, since we can just stay inside and wait for rescue</string>
@@ -210,6 +236,7 @@
     <string name="question_15C">Maybe</string>
     <string name="question_15D">None of the Above</string>
     <string name="answer_15">NO, because we will get trapped inside the car</string>
+    // car flood
 
     <string name="question_16"> What does PHIVOLCS stands for?</string>
     <string name="question_16A">Philippine Institute of Volcanology and Seismology</string>
@@ -217,6 +244,8 @@
     <string name="question_16C"> Philippines Instite of Vulkanic and Systematic</string>
     <string name="question_16D">None of the above</string>
     <string name="answer_16A">Philippine Institute of Volcanology and Seismology</string>
+    //https://www.clipartmax.com/middle/m2i8Z5d3m2H7d3d3_philippine-institute-of-volcanology-and-seismology/
+
 
     <string name="question_17">What do you call an earthquake that is caused by a volcano?</string>
     <string name="question_17A">Volcanic Earthquake</string>
@@ -224,6 +253,7 @@
     <string name="question_17C">Volcanic Emits </string>
     <string name="question_17D">None of the above</string>
     <string name="answer_17">Volcanic Earthquake</string>
+    // philosophy png
 
     <string name="question_18">It refers to the measure of the energy released by an earthquake </string>
     <string name="question_18A">Intensity </string>
@@ -231,6 +261,7 @@
     <string name="question_18C">Power</string>
     <string name="question_18D">None of the Above </string>
     <string name="answer_18">Magnitude</string>
+    //  emoticon question
 
     <string name="question_19">It is a sudden and violent shaking of the ground, causing great destruction</string>
     <string name="question_19A">Tornado</string>
@@ -238,13 +269,16 @@
     <string name="question_19C">Forest Fire</string>
     <string name="question_19D">Earthquake</string>
     <string name="answer_19">Earthquake</string>
+    //
+
 
     <string name="question_20">It refers to a scientist that studies earthquake</string>
     <string name="question_20A">Surface Waves</string>
-    <string name="question_20B">Psychologist</string>
-    <string name="question_20C">Physiologists </string>
+    <string name="question_20B">Earthquakegistt</string>
+    <string name="question_20C">I do not know </string>
     <string name="question_20D">Seismologist</string>
     <string name="answer_20">Seismologist</string>
+ //https://www.clipartmax.com/download/m2i8i8Z5i8Z5i8i8_science-clip-art-kid-scientist-clipart/
 
     <string name="question_220"> If volcanic eruption occurs, what will you do?</string>
     <string name="question_220A">Play Video Games </string>
@@ -252,6 +286,7 @@
     <string name="question_220C">Evacuate and move far away from the volcano</string>
     <string name="question_220D">None of the Above</string>
     <string name="answer_220">Evacuate and move far away from the volcano</string>
+ //https://www.clipartmax.com/download/m2i8N4A0G6G6K9H7_magma-seeps-through-transparent-volcano/
 
     <string name="question_230">When magma flows onto Earth surface, it is called ____.</string>
     <string name="question_230A">Lava</string>
@@ -259,6 +294,7 @@
     <string name="question_230C">Magna</string>
     <string name="question_230D">I do not know</string>
     <string name="answer_230">Lava</string>
+    // Volcanic pic
 
     <string name="question_240">A place where majority of earthquakes lies</string>
     <string name="question_240A">Pacific Ring of Fire</string>
@@ -266,6 +302,8 @@
     <string name="question_240C">Pacific Ocean</string>
     <string name="question_240D">Atlantic Ocean</string>
     <string name="answer_240">Pacific Ring of Fire</string>
+//https://www.clipartmax.com/download/m2H7Z5K9G6d3b1i8_earth-green-globe-pacific-ocean-globe-png/
+
 
     <string name="question_250">When evacuating into the evacuation center what are things you need to bring?</string>
     <string name="question_250A">Emergency kits like flashlight,mobile phone,medicine,blankets and etc</string>
@@ -273,6 +311,7 @@
     <string name="question_250C">Nothing</string>
     <string name="question_250D">Tablet</string>
     <string name="answer_250">Emergency kits like flashlight,mobile phone,medicine,blankets and etc</string>
+    //https://www.clipartmax.com/download/m2i8K9H7A0G6N4A0_1-ultimate-emergency-kit-item-novelty-rambling-ramblers-mix-birthday-sport/
 
     <string name="question_260">If an Earthquake occur what action will you utilize? </string>
     <string name="question_260A">Duck, Cover and Hold</string>
@@ -280,14 +319,16 @@
     <string name="question_260C">Record the happenings</string>
     <string name="question_260D">None of the above</string>
     <string name="answer_260">Duck, Cover and Hold</string>
+//https://www.clipartmax.com/download/m2i8H7m2G6A0b1N4_in-japan-earthquakes-occur-more-frequently-than-in-in-japan-earthquakes-occur/
 
     // Additional
-    <string name="question_261">A _____ is a giant, rotating storm that brings wind, rain, and destruction. </string>
-    <string name="question_261A">Cyclone</string>
-    <string name="question_261B">Typhoon</string>
-    <string name="question_261C">Hurricane</string>
+    <string name="question_261">A _____ is another term for "Typhoon." </string>
+    <string name="question_261A">Whirlwind</string>
+    <string name="question_261B">Hurricane</string>
+    <string name="question_261C">Cyclops</string>
     <string name="question_261D">None of the above</string>
-    <string name="answer_261">Typhoon</string>
+    <string name="answer_261">Hurricane</string>
+    // Typhoon.png
 
     <string name="question_262">It is a smaller earthquake following the main shock of a large earthquake </string>
     <string name="question_262A">Foreshock</string>
@@ -295,6 +336,7 @@
     <string name="question_262C">Main Shock</string>
     <string name="question_262D">None of the above</string>
     <string name="answer_262">Aftershock</string>
+    // earthquake.png
 
     <string name="question_263">When magma flows onto Earth surface, it is called ____. </string>
     <string name="question_263A">Magma</string>
@@ -302,6 +344,7 @@
     <string name="question_263C">Lava</string>
     <string name="question_263D">None of the above</string>
     <string name="answer_263">Lava</string>
+    // volcanic.png
 
     <string name="question_264">These are types of volcanoes that are likely to erupt again and has a recent history of eruptions.</string>
     <string name="question_264A">Dormant Volcanoes</string>
@@ -309,6 +352,7 @@
     <string name="question_264C">Active Volcanoes</string>
     <string name="question_264D">Inactive volcanoes</string>
     <string name="answer_264">Active Volcanoes</string>
+    // volcanic.png
 
     <string name="question_265">____ is extremely hot liquid and semi-liquid rock located under earths surface.</string>
     <string name="question_265A">Lava</string>
@@ -316,6 +360,7 @@
     <string name="question_265C">None of the above</string>
     <string name="question_265D">Magma</string>
     <string name="answer_265">Magma</string>
+    // volcanic.png
 
     <string name="question_266">What does PAGASA stands for?</string>
     <string name="question_266A">Philippine Atmospheric Geophysical and Astronomical Services Administration</string>
@@ -323,6 +368,7 @@
     <string name="question_266C">Pilipinas Atmospheric Geophysical and Astronomical Services Administrations</string>
     <string name="question_266D">None of the above</string>
     <string name="answer_266">Phillipine Atmospheric Geophysical and Astronomical Services Administration</string>
+    //PAGASA.png
 
     <string name="question_267">Volcanic Eruption is not a type of natural disaster?</string>
     <string name="question_267A">True</string>
@@ -330,6 +376,7 @@
     <string name="question_267C">Maybe</string>
     <string name="question_267D">None of the above</string>
     <string name="answer_267">False</string>
+    //
 
     <string name="question_268">Earthquake is a type of natural disaster?</string>
     <string name="question_268A">True</string>
