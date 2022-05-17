@@ -39,6 +39,8 @@
             android:theme="@style/UnityThemeSelector" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
 
             <meta-data
@@ -60,7 +62,7 @@
             android:value="portrait|landscape" />
         <meta-data
             android:name="unity.build-id"
-            android:value="e7847fc1-a8b5-42a2-abfb-b78bba3a52db" />
+            android:value="929f40b7-220d-4b44-9bb2-18dab5eadf58" />
     </application>
 
 </manifest>

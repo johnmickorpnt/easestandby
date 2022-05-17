@@ -124,19 +124,19 @@ public class register extends AppCompatActivity {
                         if (task.isSuccessful()){
 
                             //send verification link
-                            FirebaseUser Fuser = fAuth.getCurrentUser();
-                            Fuser.sendEmailVerification().addOnSuccessListener(new OnSuccessListener<Void>() {
-                                @Override
-                                public void onSuccess(Void unused) {
-                                    Toast.makeText(register.this, "Verification link has sent to your email", Toast.LENGTH_SHORT).show();
-
-                                }
-                            }).addOnFailureListener(new OnFailureListener() {
-                                @Override
-                                public void onFailure(@NonNull Exception e) {
-                                    Log.d("TAG", "onFailure: Email not sent" + e.getMessage());
-                                }
-                            });
+//                            FirebaseUser Fuser = fAuth.getCurrentUser();
+//                            Fuser.sendEmailVerification().addOnSuccessListener(new OnSuccessListener<Void>() {
+//                                @Override
+//                                public void onSuccess(Void unused) {
+//                                    Toast.makeText(register.this, "Verification link has sent to your email", Toast.LENGTH_SHORT).show();
+//
+//                                }
+//                            }).addOnFailureListener(new OnFailureListener() {
+//                                @Override
+//                                public void onFailure(@NonNull Exception e) {
+//                                    Log.d("TAG", "onFailure: Email not sent" + e.getMessage());
+//                                }
+//                            });
 
 
                             Toast.makeText(register.this, "User Created", Toast.LENGTH_SHORT).show();

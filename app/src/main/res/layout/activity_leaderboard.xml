@@ -68,7 +68,7 @@
                 android:layout_height="match_parent"
                 android:layout_below="@+id/relativeLayout4"
                 android:inputType="none"
-                android:text="Filter by Grade..." />
+                android:text="Filter by Level..." />
         </com.google.android.material.textfield.TextInputLayout>
 
         <ScrollView

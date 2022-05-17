@@ -18,12 +18,13 @@
         <entry key="..\:/Users/kenco/OneDrive/Desktop/V2_VN/EASESTANDBY_UPDATED/easestandby/app/src/main/res/drawable/gradient_background.xml" value="0.18376068376068377" />
         <entry key="..\:/Users/kenco/OneDrive/Desktop/V2_VN/EASESTANDBY_UPDATED/easestandby/app/src/main/res/drawable/gradient_background2.xml" value="0.18376068376068377" />
         <entry key="..\:/Users/kenco/OneDrive/Desktop/V2_VN/EASESTANDBY_UPDATED/easestandby/app/src/main/res/drawable/ic_prflbtnn.xml" value="0.18076923076923077" />
+        <entry key="..\:/Users/kenco/OneDrive/Desktop/V2_VN/EASESTANDBY_UPDATED/easestandby/app/src/main/res/layout/activity_edit_profile.xml" value="0.264" />
         <entry key="..\:/Users/kenco/OneDrive/Desktop/V2_VN/EASESTANDBY_UPDATED/easestandby/app/src/main/res/layout/activity_grade71.xml" value="0.18333333333333332" />
         <entry key="..\:/Users/kenco/OneDrive/Desktop/V2_VN/EASESTANDBY_UPDATED/easestandby/app/src/main/res/layout/activity_leaderboard.xml" value="0.264" />
         <entry key="..\:/Users/kenco/OneDrive/Desktop/V2_VN/EASESTANDBY_UPDATED/easestandby/app/src/main/res/layout/activity_level.xml" value="0.4" />
         <entry key="..\:/Users/kenco/OneDrive/Desktop/V2_VN/EASESTANDBY_UPDATED/easestandby/app/src/main/res/layout/activity_login.xml" value="0.2" />
         <entry key="..\:/Users/kenco/OneDrive/Desktop/V2_VN/EASESTANDBY_UPDATED/easestandby/app/src/main/res/layout/activity_main.xml" value="0.264" />
-        <entry key="..\:/Users/kenco/OneDrive/Desktop/V2_VN/EASESTANDBY_UPDATED/easestandby/app/src/main/res/layout/activity_profile.xml" value="0.18333333333333332" />
+        <entry key="..\:/Users/kenco/OneDrive/Desktop/V2_VN/EASESTANDBY_UPDATED/easestandby/app/src/main/res/layout/activity_profile.xml" value="0.4" />
         <entry key="..\:/Users/kenco/OneDrive/Desktop/V2_VN/EASESTANDBY_UPDATED/easestandby/app/src/main/res/layout/activity_quiz.xml" value="0.2" />
         <entry key="..\:/Users/kenco/OneDrive/Desktop/V2_VN/EASESTANDBY_UPDATED/easestandby/app/src/main/res/layout/activity_quiz1.xml" value="0.16709401709401708" />
         <entry key="..\:/Users/kenco/OneDrive/Desktop/V2_VN/EASESTANDBY_UPDATED/easestandby/app/src/main/res/layout/activity_quiz2.xml" value="0.176" />
@@ -31,6 +32,7 @@
         <entry key="..\:/Users/kenco/OneDrive/Desktop/V2_VN/EASESTANDBY_UPDATED/easestandby/app/src/main/res/layout/activity_quiz3.xml" value="0.19895833333333332" />
         <entry key="..\:/Users/kenco/OneDrive/Desktop/V2_VN/EASESTANDBY_UPDATED/easestandby/app/src/main/res/layout/activity_quiz4.xml" value="0.19895833333333332" />
         <entry key="..\:/Users/kenco/OneDrive/Desktop/V2_VN/EASESTANDBY_UPDATED/easestandby/app/src/main/res/layout/activity_register.xml" value="0.264" />
+        <entry key="..\:/Users/kenco/OneDrive/Desktop/V2_VN/EASESTANDBY_UPDATED/easestandby/app/src/main/res/layout/activity_splash_screen.xml" value="0.1" />
         <entry key="..\:/Users/kenco/OneDrive/Desktop/V2_VN/EASESTANDBY_UPDATED/easestandby/app/src/main/res/layout/activity_test.xml" value="0.18333333333333332" />
         <entry key="..\:/Users/kenco/OneDrive/Desktop/V2_VN/EASESTANDBY_UPDATED/easestandby/app/src/main/res/layout/compilation.xml" value="0.11594202898550725" />
         <entry key="..\:/Users/kenco/OneDrive/Desktop/V2_VN/EASESTANDBY_UPDATED/easestandby/app/src/main/res/layout/dialog_view.xml" value="0.264" />

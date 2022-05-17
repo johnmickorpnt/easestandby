@@ -85,33 +85,33 @@ public class profile extends AppCompatActivity {
             }
         });
 
-        verifybtn = findViewById(R.id.verifybtn);
-        verifytext = findViewById(R.id.verifytext);
+//        verifybtn = findViewById(R.id.verifybtn);
+//        verifytext = findViewById(R.id.verifytext);
 
         UserID = fAuth.getCurrentUser().getUid();
         user = fAuth.getCurrentUser();
 
-        if (!user.isEmailVerified()) {
-            verifybtn.setVisibility(View.VISIBLE);
-            verifytext.setVisibility(View.VISIBLE);
-
-            verifybtn.setOnClickListener(new View.OnClickListener(){
-                @Override
-                public void onClick(final View v) {
-                    user.sendEmailVerification().addOnSuccessListener(new OnSuccessListener<Void>() {
-                        @Override
-                        public void onSuccess(Void aVoid) {
-                            Toast.makeText(v.getContext(),"Verification Email Has been Sent.", Toast.LENGTH_SHORT).show();
-                        }
-                    }).addOnFailureListener(new OnFailureListener() {
-                        @Override
-                        public void onFailure(@NonNull Exception e) {
-                            Log.d("tag","Verification failed" + e.getMessage());
-                        }
-                    });
-                }
-            });
-    }
+//        if (!user.isEmailVerified()) {
+//            verifybtn.setVisibility(View.VISIBLE);
+//            verifytext.setVisibility(View.VISIBLE);
+//
+//            verifybtn.setOnClickListener(new View.OnClickListener(){
+//                @Override
+//                public void onClick(final View v) {
+//                    user.sendEmailVerification().addOnSuccessListener(new OnSuccessListener<Void>() {
+//                        @Override
+//                        public void onSuccess(Void aVoid) {
+//                            Toast.makeText(v.getContext(),"Verification Email Has been Sent.", Toast.LENGTH_SHORT).show();
+//                        }
+//                    }).addOnFailureListener(new OnFailureListener() {
+//                        @Override
+//                        public void onFailure(@NonNull Exception e) {
+//                            Log.d("tag","Verification failed" + e.getMessage());
+//                        }
+//                    });
+//                }
+//            });
+//    }
 
         DocumentReference documentReference = fStore.collection("users").document(UserID);
         documentReference.addSnapshotListener(this, new EventListener<DocumentSnapshot>() {
@@ -147,12 +147,13 @@ public class profile extends AppCompatActivity {
                 passwordResetDialog.setTitle("Change Password?");
                 passwordResetDialog.setMessage("Enter your new Password?");
                 passwordResetDialog.setView(changepassword);
-
                 passwordResetDialog.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         //extract email and reset password
                         String newpassword = changepassword.getText().toString();
+
+
                         user.updatePassword(newpassword).addOnSuccessListener(new OnSuccessListener<Void>() {
                             @Override
                             public void onSuccess(Void unused) {
