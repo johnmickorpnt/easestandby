@@ -13,13 +13,17 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 
+import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
+import com.google.firebase.firestore.QuerySnapshot;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 
@@ -184,6 +188,31 @@ public class Grade_10 extends level {
     }
 
     public void store(String username, Map scoreList, int finScore){
+        fStore.collection("leaderboards")
+                .whereEqualTo("username", username)
+                .whereEqualTo("grade", "Expert")
+                .get()
+                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                        if (task.isSuccessful()) {
+                            String id = new String();
+                            task.getResult().size();
+                            for (QueryDocumentSnapshot document : task.getResult()) {
+                                id = document.getId();
+                            }
+                            Log.d("SHESH", id);
+
+                            if(!id.isEmpty()) overwrite(id, scoreList, finScore);
+                            else newScore(username, scoreList, finScore);
+                        } else {
+                            Log.d("SHESH", "Error getting documents: ", task.getException());
+                        }
+                    }
+                });
+    }
+
+    public void newScore(String username, Map scoreList, int finScore){
         scoreList.put("score", finScore);
         scoreList.put("grade", "Expert");
         scoreList.put("username", username);
@@ -200,6 +229,24 @@ public class Grade_10 extends level {
                 Log.d("tagZ", "not added >:(");
             }
         });
+    }
+
+    public void overwrite(String id, Map scoreList, int finScore){
+        Log.d("SHESH", "overwrite: " + id);
+        DocumentReference documentReference = fStore.collection("leaderboards").document(id);
+        documentReference.update("score", finScore)
+                .addOnSuccessListener(new OnSuccessListener<Void>() {
+                    @Override
+                    public void onSuccess(Void aVoid) {
+                        Log.d("SHESH", "DocumentSnapshot successfully updated!");
+                    }
+                })
+                .addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        Log.w("SHESH", "Error updating document", e);
+                    }
+                });
     }
 
     @SuppressLint("SetTextI18n")
