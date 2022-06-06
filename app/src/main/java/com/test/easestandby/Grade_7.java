@@ -197,14 +197,15 @@ public class Grade_7 extends level {
                     public void onComplete(@NonNull Task<QuerySnapshot> task) {
                         if (task.isSuccessful()) {
                             String id = new String();
+                            String oldScore = new String();
                             task.getResult().size();
                             for (QueryDocumentSnapshot document : task.getResult()) {
                                 id = document.getId();
+                                oldScore = document.get("score").toString();
                             }
-                            Log.d("SHESH", id);
 
-                            if(!id.isEmpty()) overwrite(id, scoreList, finScore);
-                            else newScore(username, scoreList, finScore);
+                            if(!id.isEmpty() && Integer.parseInt(oldScore) < finScore) overwrite(id, scoreList, finScore);
+                            else if (id.isEmpty() && oldScore.isEmpty()) newScore(username, scoreList, finScore);
                         } else {
                             Log.d("SHESH", "Error getting documents: ", task.getException());
                         }
