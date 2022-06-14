@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/gradient_background2"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".test_activity">
+    tools:context=".LeaderBoard">
 
     <RelativeLayout
         android:layout_width="match_parent"

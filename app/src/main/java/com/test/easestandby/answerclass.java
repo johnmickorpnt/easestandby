@@ -3,6 +3,8 @@ package com.test.easestandby;
 import android.view.View;
 import android.widget.ImageView;
 
+
+// The constructor for the answer class
 public class answerclass {
 
 

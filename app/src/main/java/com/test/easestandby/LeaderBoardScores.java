@@ -1,5 +1,6 @@
 package com.test.easestandby;
 
+//  This object class shows the leaderboard's row which are rank, score, username
 public class LeaderBoardScores {
     public LeaderBoardScores(int rank, String grade, int score, String username) {
         this.rank = rank;
@@ -7,6 +8,8 @@ public class LeaderBoardScores {
         this.score = score;
         this.username = username;
     }
+
+    // The constructor of the leaderboadscores along with the setters and getters
     public LeaderBoardScores(){}
 
     public String getGrade() {

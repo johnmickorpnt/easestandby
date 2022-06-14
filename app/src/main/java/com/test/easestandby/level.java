@@ -100,6 +100,7 @@ public class level extends AppCompatActivity{
         initBtns();
     }
 
+    // This function is used for checking if the user met the passing score to pass the current level in order to unlock the next level
     private void initBtns(){
         DocumentReference documentReference = fStore.collection("users").document(UserID);
         documentReference.addSnapshotListener(this, new EventListener<DocumentSnapshot>() {
@@ -126,6 +127,7 @@ public class level extends AppCompatActivity{
             }
         });
     }
+    // Will be disabled if not yet unlocked
     public void disableButton(Button btn){
         btn.setEnabled(false);
         btn.getBackground().setAlpha(10);

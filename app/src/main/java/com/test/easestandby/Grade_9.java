@@ -35,6 +35,7 @@ import java.util.Random;
 
 public class Grade_9 extends level {
 
+    //Initiating the variables
     private TextView optionA,optionB,optionC,optionD;
     private TextView questionnumber,question,score;
     private TextView chechkout1,checkout2;
@@ -46,9 +47,11 @@ public class Grade_9 extends level {
     int qn=1;
     private boolean[] history = new boolean[15];
 
+    // This is needed for the quiz in order to track the correct answer of the user
     ProgressBar progressBar;
     int CurrentQuestion,CurrentOptionA,CurrentOptionB,CurrentOptionC,CurrentOptionD;
     List<Integer> usedNumbers = new ArrayList<Integer>();
+    // The constructor for the questions
     private answerclass[] questionBank = new answerclass[15];
 
     FirebaseAuth fAuth;
@@ -84,9 +87,12 @@ public class Grade_9 extends level {
         checkout2=findViewById(R.id.CorrectAnswer);
         progressBar=findViewById(R.id.progress_bar);
 
+        //Calling for the startTimer function
         startTimer();
+        //The Question of the quiz
         CurrentQuestion=questionBank[currentIndex].getQuestionid();
         question.setText(CurrentQuestion);
+        //Choices of the quiz
         CurrentOptionA=questionBank[currentIndex].getOptionA();
         optionA.setText(CurrentOptionA);
         CurrentOptionB=questionBank[currentIndex].getOptionB();
@@ -96,6 +102,7 @@ public class Grade_9 extends level {
         CurrentOptionD=questionBank[currentIndex].getOptionD();
         optionD.setText(CurrentOptionD);
 
+        //Checking of the choices in order to update
        optionA.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View view) {
@@ -105,6 +112,7 @@ public class Grade_9 extends level {
            }
        });
 
+        //Checking of the choices in order to update
         optionB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -114,6 +122,8 @@ public class Grade_9 extends level {
 
             }
         });
+
+        //Checking of the choices in order to update
         optionC.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -121,6 +131,8 @@ public class Grade_9 extends level {
                 updateQuestion();
             }
         });
+
+        //Checking of the choices in order to update
         optionD.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -130,10 +142,9 @@ public class Grade_9 extends level {
         });
 
 
-
-
     }
 
+    // Is used for checking the answer if it's correct
     private void checkAnswer(int userSelection) {
 
         int correctanswer=questionBank[currentIndex].getAnswerid();
@@ -145,18 +156,19 @@ public class Grade_9 extends level {
         String n=checkout2.getText().toString().trim();
 
         if(m.equals(n))
-        {
+        { // This will prompt/notify the user if they get the answer correct
             Toast.makeText(getApplicationContext(),"Correct",Toast.LENGTH_SHORT).show();
             mscore=mscore+1;
             history[currentIndex] = true;
         }
         else
-        {
+        { // This will prompt/notify the user if they get the answer correct
             Toast.makeText(getApplicationContext(),"Incorrect",Toast.LENGTH_SHORT).show();
             history[currentIndex] = false;
         }
     }
 
+    //Used for storing the score in the firebase
     private void save(){
         Map<String, Object> scores = new HashMap<>();
         int finScore = mscore;
@@ -176,12 +188,14 @@ public class Grade_9 extends level {
         });
     }
 
+    // This is used to check whether the user met the passing the score in order to proceed to other level
     private void passed(Map<String, Boolean> levels){
         DocumentReference user = fStore.collection("users").document(UserID);
         levels.put("is_level3_clear", true);
         user.update("levels", levels);
     }
 
+    // This function is used to store in the leaderboard
     public void store(String username, Map scoreList, int finScore){
         fStore.collection("leaderboards")
                 .whereEqualTo("username", username)
@@ -208,6 +222,7 @@ public class Grade_9 extends level {
                 });
     }
 
+    //It will get stored information of the score,grade,and username from the firebase and will be added in the leaderboards
     public void newScore(String username, Map scoreList, int finScore){
         scoreList.put("score", finScore);
         scoreList.put("grade", "Average");
@@ -227,6 +242,7 @@ public class Grade_9 extends level {
         });
     }
 
+    //Overwrites the score when it is higher than the previous one
     public void overwrite(String id, Map scoreList, int finScore){
         Log.d("SHESH", "overwrite: " + id);
         DocumentReference documentReference = fStore.collection("leaderboards").document(id);
@@ -246,6 +262,7 @@ public class Grade_9 extends level {
     }
 
     @SuppressLint("SetTextI18n")
+    //Used to update the questions of the classes
     private void updateQuestion() {
         final boolean[] newGame = {false};
         String qHistory = "";
@@ -270,6 +287,8 @@ public class Grade_9 extends level {
             qHistoryText.setText(qHistory);
             alert.setView(dialogView);
             alert.setCancelable(false);
+
+            // It will display the "Back" once answered all the questions of the quiz
             alert.setPositiveButton("Back", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
@@ -278,6 +297,7 @@ public class Grade_9 extends level {
                 }
             });
 
+            // It wil display the "Try Again" once answered all the questions of the quiz
             alert.setNegativeButton("Try Again", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
@@ -298,8 +318,10 @@ public class Grade_9 extends level {
 
         }
 
+        //Getting the question from the questionBank
         CurrentQuestion=questionBank[currentIndex].getQuestionid();
         question.setText(CurrentQuestion);
+        //Getting the choices from the questionBank
         CurrentOptionA=questionBank[currentIndex].getOptionA();
         optionA.setText(CurrentOptionA);
         CurrentOptionB=questionBank[currentIndex].getOptionB();
@@ -321,9 +343,12 @@ public class Grade_9 extends level {
     }
 
 
+    // This function is used for generating randomize questions
     private void generateQuestions(){
         usedNumbers.clear();
+        //Set the quiz to 15 only questions
         for(int x = 1; x <= 15;){
+            //Will get random number between 1 and 30
             int currIndex = getRandomNumber(1,30);
             Log.i("current_index_random",Integer.toString(currIndex));
             if(currIndex == 1 && !usedNumbers.contains(currIndex)){
@@ -500,6 +525,7 @@ public class Grade_9 extends level {
         Log.i("to_string",toString(usedNumbers));
     }
 
+    //This is the function in order to randomize the number
     public static int getRandomNumber(int min, int max) {
         return (new Random()).nextInt((max - min) + 1) + min;
     }
@@ -523,6 +549,7 @@ public class Grade_9 extends level {
             }
 
             @Override
+            // Once  the user finish all the questions in the quiz, it will display the score and points on the correct answer
             public void onFinish() {
                 currentIndex = 0;
                 countDownTimer.cancel();
@@ -540,6 +567,7 @@ public class Grade_9 extends level {
                     }
                 });
 
+                //Once the timer runs out and not yet done with the question it will display "Try Again" along with the score
                 alert.setNegativeButton("Try Again", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
@@ -560,6 +588,8 @@ public class Grade_9 extends level {
         }.start();
 
     }
+
+    //This is the function updating for the timer
     public  void updateTimer() {
         int minutes = (int) timeLeftMilsec / 60000;
         int seconds =  (int) timeLeftMilsec % 60000 / 1000;
@@ -575,6 +605,4 @@ public class Grade_9 extends level {
         Timer.setText(timeLeftText);
 
     }
-
-
 }

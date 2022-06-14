@@ -1,5 +1,6 @@
 package com.test.easestandby;
 
+//This object class is used for the design of the leaderboard
 public class ModelClass {
 
 
@@ -10,7 +11,7 @@ public class ModelClass {
     private String divider;
 
 
-
+    // Setters
     ModelClass(String textView, String textView2, String textView3, String divider) {
 
 
@@ -19,9 +20,9 @@ public class ModelClass {
         this.textView3 = textView3;
         this.divider = divider;
 
-
     }
 
+    //Getters
     public String getTextView1() {
         return textView;
     }

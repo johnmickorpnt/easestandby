@@ -15,7 +15,7 @@
         android:theme="@style/Theme.Easestandby">
 
         <activity
-            android:name=".test_activity"
+            android:name=".LeaderBoard"
             android:exported="false" />
         <activity
             android:name=".SplashScreen"

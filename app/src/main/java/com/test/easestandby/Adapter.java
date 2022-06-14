@@ -11,6 +11,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
+
+    //Adapter Class used to show the contents of the leaderboard: Rank, Score, and Name
 public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
 
 
@@ -36,9 +38,6 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
         String line = userList.get(position).getDivider();
 
         holder.setData(rank,score,name);
-
-
-
 
     }
 
